@@ -1,5 +1,6 @@
 #include <cmath>
 #include <cstdio>
+#include <cstdlib>
 #include <cstring>
 #include <cassert>
 #include <string>
@@ -412,6 +413,7 @@ namespace transmission {
         case -1:
           return this->swapColor == color;
       }
+      assert(false);
     }
     ElementGroup colorNow() {
       switch (currentState->colorSwapped[id]) {
@@ -482,6 +484,7 @@ namespace transmission {
       assert(currentState->left[id] > 0);
       assert(currentState->left[id] == currentState->amounts[id]);
       currentState->left[id] *= 2;
+      return currentState->amounts[id];
     }
   };
 
@@ -913,22 +916,7 @@ namespace transmission {
 }
 
 
-
 using namespace transmission;
-using namespace geometry;
-
-int main2(int argc, char const *argv[]) {
-Point p1(1.0313, 0.0000);
-Point p2(7.0000, 0.0000);
-Point p3(-0.9687, 0.0000);
-Point p4(-7.2090, 0.0000);
-LineSegment l1(p1, p2);
-LineSegment l2(p3, p4);
-Point po;
-printf("intersect: %d\n", l1.intersect(l2, &po));
-po.print();
-return 1;
-}
 
 int main(int argc, char const *argv[]) {
   currentLevel = new Level();
