@@ -1,0 +1,20 @@
+0 0 -13,-7                    3             # <element id="1" type="CellTransmitter" position="-13,-7,0" scale="1,1,1" rotation="0,0,90" elementGroup="Wave"/>
+1 0 13,8                      3             # <element id="12" type="CellTransmitter" position="13,8,0" scale="1,1,1" rotation="0,0,90" elementGroup="Wave"/>
+2 12 9.440285,-6.743998       3 2 1         # <element id="29" type="Transceiver" position="9.440285,-6.743998,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="2" amount="1" lookupTag=""/>
+3 12 10,4                     3 3 0         # <element id="30" type="Transceiver" position="10,4,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="3" amount="0" lookupTag=""/>
+4 0 -4.601715,8               3             # <element id="31" type="CellTransmitter" position="-4.601715,8,0" scale="1,1,1" rotation="0,0,90" elementGroup="Wave"/>
+5 0 4.398285,-7               3             # <element id="32" type="CellTransmitter" position="4.398285,-7,0" scale="1,1,1" rotation="0,0,90" elementGroup="Wave"/>
+6 11 2.223422,-3.15371        1 3 1 0       # <element id="36" type="SwapperTransmitter" position="2.223422,-3.15371,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="1" swapGroup1="Exchange" amount="0" swapGroup2="Wave"/>
+7 6 6.719136,-3.022002        1 4           # <element id="37" type="Receiver" position="6.719136,-3.022002,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="4"/>
+8 12 0,8                      1 3 3         # <element id="38" type="Transceiver" position="0,8,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="3" amount="3" lookupTag=""/>
+9 12 -10,-3                   3 2 0         # <element id="39" type="Transceiver" position="-10,-3,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="2" amount="0" lookupTag=""/>
+10 11 8,8                     1 3 3 0       # <element id="41" type="SwapperTransmitter" position="8,8,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="3" swapGroup1="Exchange" amount="0" swapGroup2="Wave"/>
+11 11 -6.668571,3.899714      1 3 1 0       # <element id="43" type="SwapperTransmitter" position="-6.668571,3.899714,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="1" swapGroup1="Exchange" amount="0" swapGroup2="Wave"/>
+12 12 -1.566278,3.931135      3 1 0         # <element id="45" type="Transceiver" position="-1.566278,3.931135,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="1" amount="0" lookupTag=""/>
+13 12 -8,-7                   3 2 1         # <element id="46" type="Transceiver" position="-8,-7,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="2" amount="1" lookupTag=""/>
+14 9 4.339745,-7              3 10 1        # <element id="17" type="SignalBlockHexagon" position="4.339745,-7,0" scale="1,1,1" rotation="0,0,0" blockGroup="Wave" flip="True" radius="10"/>
+15 9 -4.32051,8               3 10 1        # <element id="33" type="SignalBlockHexagon" position="-4.32051,8,0" scale="1,1,1" rotation="0,0,0" blockGroup="Wave" flip="True" radius="10"/>
+16 9 13,8                     3 10 1        # <element id="34" type="SignalBlockHexagon" position="13,8,0" scale="1,1,1" rotation="0,0,0" blockGroup="Wave" flip="True" radius="10"/>
+17 9 -12.98077,-7             3 10 1        # <element id="35" type="SignalBlockHexagon" position="-12.98077,-7,0" scale="1,1,1" rotation="0,0,0" blockGroup="Wave" flip="True" radius="10"/>
+18 1 0,0                                    # <element id="40" type="ObjectiveCrossedWires" position="0,0,0" scale="1,1,1" rotation="0,0,0" oid="55"/>
+19 3 0,0                      9             # <element id="44" type="ObjectiveTargetValue" position="0,0,0" scale="1,1,1" rotation="0,0,0" informationTarget="39" oid="54"/>

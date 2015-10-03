@@ -1,0 +1,1027 @@
+<!-- satellite_level3 -->
+<level version="1.1" sessionId="232" cameraZ="-25" >
+	<element id="1" type="Transceiver" position="-0.7164497,-5.905628,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="1" amount="0" lookupTag="" />
+	<element id="2" type="Transceiver" position="-4.611818,-2.077143,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="2" amount="0" lookupTag="" />
+	<element id="3" type="Transceiver" position="3.388182,-2.077143,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="2" amount="1" lookupTag="" />
+	<element id="4" type="Transceiver" position="3.388182,3.562986,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="2" amount="0" lookupTag="" />
+	<element id="5" type="Transceiver" position="-4.611818,3.562986,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="2" amount="1" lookupTag="" />
+	<element id="6" type="Transceiver" position="7.388182,-2.077143,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="2" amount="0" lookupTag="" />
+	<element id="7" type="ObjectiveTargetValue" position="0,0,0" scale="1,1,1" rotation="0,0,0" informationTarget="9" oid="32" />
+	<element id="8" type="Transceiver" position="-0.6118183,5.544109,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="2" amount="0" lookupTag="" />
+	<element id="9" type="Transceiver" position="-0.6118183,-2.077143,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="2" amount="0" lookupTag="" />
+</level>
+<!-- cell_level6 -->
+<level version="1.1" sessionId="135" cameraZ="-38" >
+	<element id="2" type="CellTransmitter" position="0,-6.12,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" />
+	<element id="9" type="CellTransmitter" position="10.43,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" />
+	<element id="10" type="CellTransmitter" position="-10.43,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" />
+	<element id="11" type="CellTransmitter" position="0,6.12,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" />
+	<element id="12" type="Transceiver" position="4.31,6.04,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="1" amount="0" lookupTag="" />
+	<element id="13" type="Transceiver" position="-10.41,3.67,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="1" amount="0" lookupTag="" />
+	<element id="14" type="Transceiver" position="10.5,-3.91,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="1" amount="0" lookupTag="" />
+	<element id="15" type="Transceiver" position="6.67,0.1,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="2" amount="1" lookupTag="" />
+	<element id="16" type="SignalBlockHexagon" position="-10.305,0,0" scale="1,1,1" rotation="0,0,0" blockGroup="Wave" flip="False" radius="6.87" />
+	<element id="17" type="SignalBlockHexagon" position="10.305,0,0" scale="1,1,1" rotation="0,0,0" blockGroup="Wave" flip="False" radius="6.87" />
+	<element id="18" type="SignalBlockHexagon" position="0,5.949595,0" scale="1,1,1" rotation="0,0,0" blockGroup="Wave" flip="False" radius="6.87" />
+	<element id="19" type="Transceiver" position="-4.38,-6.12,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="1" amount="0" lookupTag="" />
+	<element id="20" type="Transceiver" position="-6.67,0.1,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="2" amount="1" lookupTag="" />
+	<element id="21" type="Transceiver" position="-0.04,-1.85,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="4" amount="1" lookupTag="" />
+	<element id="22" type="Transceiver" position="-0.04,1.96,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="2" amount="1" lookupTag="" />
+	<element id="23" type="SignalBlockHexagon" position="0,-5.949595,0" scale="1,1,1" rotation="0,0,0" blockGroup="Wave" flip="False" radius="6.87" />
+	<element id="24" type="ObjectiveTargetValue" position="0,0,0" scale="1,1,1" rotation="0,0,0" informationTarget="20" oid="7" />
+</level>
+<!-- broadcast_level13 -->
+<level version="1.1" signalLimit="3" sessionId="275" cameraZ="-30" smallMeters="False" >
+	<element id="1" type="RadialTransmitter" position="10,-4,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" minRadius="8.2" meterAngle="135" targetAmount="5" extraRadius="0" transmitterGroup="Exchange" />
+	<element id="2" type="Transceiver" position="5,-7,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="1" lookupTag="" amount="0" transmitterGroup="Exchange" />
+	<element id="3" type="Receiver" position="6,7,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="3" />
+	<element id="4" type="ObjectiveSignalCount" position="0,0,0" scale="1,1,1" rotation="0,0,0" signalTarget="5" oid="60" />
+	<element id="5" type="Receiver" position="-10,2,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="4" />
+	<element id="6" type="Transceiver" position="-5,-7,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="2" lookupTag="" amount="1" transmitterGroup="Exchange" />
+	<element id="7" type="Transceiver" position="10,2,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="4" lookupTag="" amount="0" transmitterGroup="Exchange" />
+	<element id="8" type="Transceiver" position="0,-0.5825157,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="3" lookupTag="" amount="1" transmitterGroup="Exchange" />
+	<element id="9" type="RadialTransmitter" position="-10,-4,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" minRadius="8.2" meterAngle="45" targetAmount="5" extraRadius="0" transmitterGroup="Exchange" />
+	<element id="10" type="RadialTransmitter" position="0,6,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" minRadius="8.2" meterAngle="-90" targetAmount="5" extraRadius="0" transmitterGroup="Exchange" />
+	<element id="11" type="Transceiver" position="-6,7,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="2" lookupTag="" amount="0" transmitterGroup="Exchange" />
+</level>
+<!-- satellite_level9_swapper -->
+<level version="1.1" signalLimit="5" sessionId="258" cameraZ="-25" smallMeters="False" >
+	<element id="3" type="Transmitter" position="5,-3,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" amount="1" angleOffset="0" />
+	<element id="5" type="SignalBlock" position="0,0,0" scale="1,1,1" rotation="0,0,0" blockGroup="Exchange" sy="0" ex="20" sx="-20" ey="0" />
+	<element id="6" type="Receiver" position="5,3,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="1" />
+	<element id="7" type="Receiver" position="-5,3,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="1" />
+	<element id="9" type="Transmitter" position="-5,-3,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" amount="1" angleOffset="0" />
+	<element id="10" type="SwapperTransmitter" position="0,5.98,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="2" swapGroup2="Wave" swapGroup1="Exchange" amount="0" transmitterGroup="Cable" />
+	<element id="11" type="SwapperTransmitter" position="0,-5.98,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="2" swapGroup2="Wave" swapGroup1="Exchange" amount="0" transmitterGroup="Cable" />
+</level>
+<!-- computer_level12 -->
+<level version="1.1" sessionId="355" cameraZ="-25" >
+	<element id="1" type="Transceiver" position="0,-5,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" target="2" amount="1" lookupTag="" />
+	<element id="2" type="Receiver" position="0,-9.536743E-07,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" target="1" />
+	<element id="3" type="Transceiver" position="8.113436,1.816852,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" target="4" amount="0" lookupTag="" />
+	<element id="4" type="Transceiver" position="-6.007282,1.816852,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" target="4" amount="0" lookupTag="" />
+	<element id="5" type="Transceiver" position="0,5,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" target="2" amount="0" lookupTag="" />
+	<element id="6" type="Transceiver" position="-5.9355,-4.980247,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" target="2" amount="1" lookupTag="" />
+	<element id="7" type="Transceiver" position="4.188351,3.300726,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" target="1" amount="0" lookupTag="" />
+	<element id="8" type="ObjectiveTargetValue" position="0,0,0" scale="1,1,1" rotation="0,0,0" informationTarget="3" oid="80" />
+	<element id="9" type="ObjectiveCrossedWires" position="0,0,0" scale="1,1,1" rotation="0,0,0" oid="81" />
+</level>
+<!-- computer_level3 -->
+<level version="1.1" signalLimit="4" sessionId="181" cameraZ="-20" smallMeters="False" >
+	<element id="1" type="Transceiver" position="-4,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" transmitterType="Many" target="2" lookupTag="t4" amount="0" signalType="Cable" transmitterGroup="Fibre" />
+	<element id="2" type="Transceiver" position="4,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" transmitterType="Many" target="2" lookupTag="t2" amount="0" signalType="Cable" transmitterGroup="Fibre" />
+	<element id="3" type="Transceiver" position="0,4,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" transmitterType="Many" target="2" lookupTag="t3" amount="0" signalType="Cable" transmitterGroup="Fibre" />
+	<element id="4" type="Transceiver" position="0,-4,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" transmitterType="Many" target="2" lookupTag="t1" amount="1" signalType="Cable" transmitterGroup="Fibre" />
+</level>
+<!-- satellite_level2 -->
+<level version="1.1" signalLimit="4" sessionId="213" cameraZ="-20" smallMeters="False" >
+	<element id="1" type="Transmitter" position="6.247139,1.430511E-06,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" amount="1" angleOffset="0" signalType="Cable" transmitterType="Many" />
+	<element id="2" type="Receiver" position="-5.437882,-4.058517,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="1" />
+	<element id="3" type="Transceiver" position="-2.148627,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" transmitterType="Many" target="1" amount="0" signalType="Cable" transmitterGroup="Wave" />
+	<element id="4" type="Receiver" position="4.138096,3.740201,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="2" />
+	<element id="5" type="Transmitter" position="-3.938951,3.793254,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" amount="1" angleOffset="0" signalType="Cable" transmitterType="Many" />
+	<element id="6" type="Transmitter" position="-0.03958392,-3.978938,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" amount="1" angleOffset="0" signalType="Cable" transmitterType="Many" />
+</level>
+<!-- broadcast_level5 -->
+<level version="1.1" signalLimit="5" sessionId="211" cameraZ="-26" smallMeters="False" >
+	<element id="1" type="RadialTransmitter" position="5,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" minRadius="7" meterAngle="45" targetAmount="5" extraRadius="0" transmitterGroup="Exchange" />
+	<element id="2" type="Transceiver" position="5,4.933314,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" transmitterType="Many" target="1" amount="1" signalType="Cable" transmitterGroup="Exchange" />
+	<element id="3" type="RadialTransmitter" position="-5,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" minRadius="7" meterAngle="45" targetAmount="5" extraRadius="0" transmitterGroup="Exchange" />
+	<element id="4" type="Receiver" position="-9.994077,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="2" />
+	<element id="5" type="Receiver" position="9.994079,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="2" />
+	<element id="6" type="ObjectiveCrossedWires" position="0,0,0" scale="1,1,1" rotation="0,0,0" oid="29" />
+	<element id="7" type="Transceiver" position="0,-7,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" transmitterType="Many" target="1" amount="1" signalType="Cable" transmitterGroup="Exchange" />
+	<element id="8" type="Transceiver" position="5,-5,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" transmitterType="Many" target="2" amount="0" signalType="Cable" transmitterGroup="Exchange" />
+	<element id="9" type="ObjectiveTargetValue" position="0,0,0" scale="1,1,1" rotation="0,0,0" informationTarget="10" oid="28" />
+	<element id="10" type="Transceiver" position="-5,5,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" transmitterType="Many" target="2" amount="0" signalType="Cable" transmitterGroup="Exchange" />
+</level>
+<!-- computer_level5 -->
+<level version="1.1" signalLimit="10" sessionId="148" cameraZ="-26" smallMeters="False" >
+	<element id="0" type="Transceiver" position="-3,5.784916,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" transmitterType="Many" target="2" lookupTag="" amount="1" signalType="Cable" transmitterGroup="Fibre" />
+	<element id="1" type="Transceiver" position="-8,-5.215084,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" transmitterType="Many" target="1" lookupTag="" amount="1" signalType="Cable" transmitterGroup="Fibre" />
+	<element id="2" type="Transceiver" position="-3,-1.215084,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" transmitterType="Many" target="4" lookupTag="" amount="0" signalType="Cable" transmitterGroup="Fibre" />
+	<element id="4" type="Transceiver" position="4,-5.215084,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" transmitterType="Many" target="2" lookupTag="" amount="0" signalType="Cable" transmitterGroup="Fibre" />
+	<element id="5" type="Transceiver" position="8,-1.215084,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" transmitterType="Many" target="2" lookupTag="" amount="1" signalType="Cable" transmitterGroup="Fibre" />
+	<element id="6" type="ObjectiveTargetValue" position="0,0,0" scale="1,1,1" rotation="0,0,0" informationTarget="4" oid="43" />
+	<element id="7" type="ObjectiveSignalCount" position="0,0,0" scale="1,1,1" rotation="0,0,0" signalTarget="5" oid="44" />
+</level>
+<!-- computer_level2b -->
+<level version="1.1" signalLimit="5" sessionId="199" cameraZ="-20" smallMeters="False" >
+	<element id="1" type="Transmitter" position="5,3,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" amount="2" angleOffset="0" signalType="Cable" transmitterType="Many" />
+	<element id="2" type="Receiver" position="3,-2,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" target="2" />
+	<element id="3" type="Receiver" position="7,-2,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" target="1" />
+	<element id="4" type="Receiver" position="-3,-2,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" target="1" />
+	<element id="5" type="Transceiver" position="0,3,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" transmitterType="Many" target="1" amount="0" signalType="Cable" transmitterGroup="Fibre" />
+	<element id="6" type="Transmitter" position="-5,3,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" amount="3" angleOffset="0" signalType="Cable" transmitterType="Many" />
+	<element id="7" type="Receiver" position="-7,-2,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" target="1" />
+</level>
+<!-- satellite_level5_swapper -->
+<level version="1.1" signalLimit="7" sessionId="251" cameraZ="-25" smallMeters="False" >
+	<element id="3" type="Transceiver" position="3.905226,4.276841,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="1" lookupTag="" amount="0" transmitterGroup="Wave" />
+	<element id="4" type="Transceiver" position="-8.093439,0.003732443,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="2" lookupTag="" amount="0" transmitterGroup="Wave" />
+	<element id="6" type="Transceiver" position="0,-5.401327,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="3" lookupTag="" amount="2" transmitterGroup="Exchange" />
+	<element id="7" type="ObjectiveTargetValue" position="0,0,0" scale="1,1,1" rotation="0,0,0" informationTarget="3" oid="33" />
+	<element id="9" type="SwapperTransmitter" position="8.022942,-0.06203365,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="2" swapGroup2="Wave" swapGroup1="Exchange" amount="0" transmitterGroup="Cable" />
+	<element id="10" type="SwapperTransmitter" position="-3.143004,4.197568,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="3" swapGroup2="Wave" swapGroup1="Exchange" amount="0" transmitterGroup="Cable" />
+</level>
+<!-- broadcast_level7 -->
+<level version="1.1" signalLimit="6" sessionId="203" cameraZ="-30" smallMeters="False" >
+	<element id="1" type="RadialTransmitter" position="7,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" minRadius="6.5" targetAmount="5" extraRadius="0" transmitterGroup="Exchange" />
+	<element id="2" type="Transmitter" position="0,-8,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" amount="1" angleOffset="0" signalType="Cable" transmitterType="Many" />
+	<element id="3" type="Transceiver" position="3.705871,-4,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" transmitterType="Many" target="3" amount="1" signalType="Cable" transmitterGroup="Exchange" />
+	<element id="5" type="ObjectiveCrossedWires" position="0,0,0" scale="1,1,1" rotation="0,0,0" oid="20" />
+	<element id="6" type="Transceiver" position="11.67707,-0.02956533,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" transmitterType="Many" target="1" amount="0" signalType="Cable" transmitterGroup="Exchange" />
+	<element id="7" type="Transceiver" position="0,8,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" transmitterType="Many" target="3" amount="1" signalType="Cable" transmitterGroup="Exchange" />
+	<element id="8" type="RadialTransmitter" position="-7,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" minRadius="6.5" targetAmount="5" extraRadius="0" transmitterGroup="Exchange" />
+	<element id="9" type="Receiver" position="3.705871,4,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="4" />
+	<element id="10" type="Transceiver" position="-3.676458,4,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" transmitterType="Many" target="2" amount="0" signalType="Cable" transmitterGroup="Exchange" />
+	<element id="11" type="Receiver" position="-3.735283,-4,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="2" />
+	<element id="12" type="ObjectiveTargetValue" position="0,0,0" scale="1,1,1" rotation="0,0,0" informationTarget="7" oid="19" />
+</level>
+<!-- broadcast_level6 -->
+<level version="1.1" signalLimit="9" sessionId="201" cameraZ="-30" smallMeters="False" >
+	<element id="2" type="Transmitter" position="0,-8.5,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" amount="1" angleOffset="0" signalType="Cable" transmitterType="Many" />
+	<element id="3" type="Transceiver" position="10,4,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" transmitterType="Many" target="1" amount="0" signalType="Cable" transmitterGroup="Exchange" />
+	<element id="4" type="Receiver" position="4,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="4" />
+	<element id="5" type="Transceiver" position="-4,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" transmitterType="Many" target="4" amount="0" signalType="Cable" transmitterGroup="Exchange" />
+	<element id="6" type="Receiver" position="-10,-4,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="3" />
+	<element id="7" type="RadialTransmitter" position="8,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" minRadius="5.5" targetAmount="99" extraRadius="0" transmitterGroup="Exchange" />
+	<element id="8" type="RadialTransmitter" position="0,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" minRadius="6.5" targetAmount="99" extraRadius="0" transmitterGroup="Exchange" />
+	<element id="9" type="Transceiver" position="4,8,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" transmitterType="Many" target="1" amount="0" signalType="Cable" transmitterGroup="Exchange" />
+	<element id="10" type="Transmitter" position="-4,8,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" amount="2" angleOffset="0" signalType="Cable" transmitterType="Many" />
+	<element id="11" type="RadialTransmitter" position="-8,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" minRadius="5.5" targetAmount="99" extraRadius="0" transmitterGroup="Exchange" />
+	<element id="12" type="Transceiver" position="10,-4,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" transmitterType="Many" target="1" amount="0" signalType="Cable" transmitterGroup="Exchange" />
+	<element id="13" type="ObjectiveCrossedWires" position="0,0,0" scale="1,1,1" rotation="0,0,0" oid="15" />
+	<element id="14" type="ObjectiveSignalCount" position="0,0,0" scale="1,1,1" rotation="0,0,0" signalTarget="6" oid="16" />
+</level>
+<!-- advanced_level2 -->
+<level version="1.1" sessionId="184" cameraZ="-26" >
+	<element id="1" type="SignalBooster" position="0,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" />
+	<element id="2" type="Transceiver" position="5.704909,-4.584171,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="3" amount="1" lookupTag="" />
+	<element id="3" type="Transceiver" position="5.704909,4.278553,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="3" amount="1" lookupTag="" />
+	<element id="4" type="Transceiver" position="-6,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="2" amount="0" lookupTag="" />
+	<element id="5" type="Transceiver" position="5.674349,-4.768372E-06,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="4" amount="0" lookupTag="" />
+	<element id="6" type="ObjectiveTargetValue" position="0,0,0" scale="1,1,1" rotation="0,0,0" informationTarget="4" oid="71" />
+</level>
+<!-- cell_level9_swapper -->
+<level version="1.1" sessionId="262" cameraZ="-38" >
+	<element id="9" type="CellTransmitter" position="10.43,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" />
+	<element id="10" type="CellTransmitter" position="-10.43,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" />
+	<element id="11" type="CellTransmitter" position="0,6.12,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" />
+	<element id="16" type="SignalBlockHexagon" position="-10.305,0,0" scale="1,1,1" rotation="0,0,0" blockGroup="Wave" flip="False" radius="6.87" />
+	<element id="17" type="SignalBlockHexagon" position="10.305,0,0" scale="1,1,1" rotation="0,0,0" blockGroup="Wave" flip="False" radius="6.87" />
+	<element id="18" type="SignalBlockHexagon" position="0,5.949595,0" scale="1,1,1" rotation="0,0,0" blockGroup="Wave" flip="False" radius="6.87" />
+	<element id="20" type="Transceiver" position="3.595043,-9.905751,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="1" amount="1" lookupTag="" />
+	<element id="24" type="Transceiver" position="-3.861328,-9.905751,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="1" amount="1" lookupTag="" />
+	<element id="25" type="Transceiver" position="0,-5.75,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="2" amount="0" lookupTag="" />
+	<element id="26" type="ObjectiveTargetValue" position="0,0,0" scale="1,1,1" rotation="0,0,0" informationTarget="25" oid="4" />
+	<element id="28" type="SwapperTransmitter" position="6.508216,0.0314424,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="1" swapGroup1="Exchange" amount="0" swapGroup2="Wave" />
+	<element id="29" type="SwapperTransmitter" position="-6.633996,0.0314424,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="1" swapGroup1="Exchange" amount="0" swapGroup2="Wave" />
+	<element id="30" type="SwapperTransmitter" position="0,2.641022,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="2" swapGroup1="Exchange" amount="0" swapGroup2="Wave" />
+</level>
+<!-- telephone_level7a -->
+<level version="1.1" sessionId="352" cameraZ="-20" >
+	<element id="1" type="Transmitter" position="4,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" amount="1" angleOffset="0" />
+	<element id="2" type="Transceiver" position="4,4,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="1" amount="0" lookupTag="" />
+	<element id="3" type="Transceiver" position="0,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="2" amount="0" lookupTag="" />
+	<element id="4" type="Receiver" position="-4,-4,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="1" />
+	<element id="5" type="Transmitter" position="-4,4,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" amount="1" angleOffset="0" />
+	<element id="6" type="Receiver" position="4,-4,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="1" />
+</level>
+<!-- telephone_level7 -->
+<level version="1.1" signalLimit="9" sessionId="88" cameraZ="-20" >
+	<element id="0" type="Transmitter" position="-3.338975,3.145419,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" amount="1" angleOffset="0" signalType="Cable" transmitterType="Many" />
+	<element id="2" type="Transceiver" position="-0.02419543,3.814697E-06,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" transmitterType="Many" target="3" amount="0" signalType="Cable" transmitterGroup="Cable" />
+	<element id="3" type="Transceiver" position="0.02419651,-5.177839,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" transmitterType="Many" target="2" amount="0" signalType="Cable" transmitterGroup="Cable" />
+	<element id="5" type="Receiver" position="0.1451735,5.831121,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="1" />
+	<element id="6" type="Transmitter" position="3.02445,3.218007,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" amount="1" angleOffset="0" signalType="Cable" transmitterType="Many" />
+	<element id="7" type="Receiver" position="-3.459961,-2.758292,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="1" />
+	<element id="8" type="Receiver" position="-6.266642,-0.0241971,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="1" />
+	<element id="9" type="Transmitter" position="5.492394,-0.02419555,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" amount="1" angleOffset="0" signalType="Cable" transmitterType="Many" />
+</level>
+<!-- telephone_level4 -->
+<level version="1.1" signalLimit="5" sessionId="146" cameraZ="-20" smallMeters="False" >
+	<element id="1" type="Transceiver" position="-2,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" transmitterType="Many" target="1" amount="0" signalType="Cable" transmitterGroup="Cable" />
+	<element id="2" type="Transceiver" position="2,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" transmitterType="Many" target="2" amount="0" signalType="Cable" transmitterGroup="Cable" />
+	<element id="3" type="Transmitter" position="0,-4,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" amount="1" angleOffset="0" signalType="Cable" transmitterType="Many" />
+	<element id="4" type="Receiver" position="6,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="1" />
+	<element id="5" type="Receiver" position="-6,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="1" />
+	<element id="6" type="Transmitter" position="0,4,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" amount="1" angleOffset="0" signalType="Cable" transmitterType="Many" />
+</level>
+<!-- satellite_level14_swapper -->
+<level version="1.1" signalLimit="3" sessionId="255" cameraZ="-26" smallMeters="False" >
+	<element id="3" type="SignalBlock" position="0,0,0" scale="1,1,1" rotation="0,0,0" blockGroup="Exchange" sy="6" ex="0" sx="0" ey="10" />
+	<element id="8" type="Transceiver" position="-7,-3,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="1" lookupTag="" amount="1" transmitterGroup="Wave" />
+	<element id="10" type="Transceiver" position="6,3,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="3" lookupTag="" amount="1" transmitterGroup="Exchange" />
+	<element id="11" type="Transceiver" position="0,5,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="2" lookupTag="" amount="0" transmitterGroup="Exchange" />
+	<element id="12" type="SignalBlock" position="0,0,0" scale="1,1,1" rotation="0,0,0" blockGroup="Exchange" sy="-10" ex="0" sx="0" ey="4" />
+	<element id="13" type="ObjectiveSignalCount" position="0,0,0" scale="1,1,1" rotation="0,0,0" signalTarget="7" oid="38" />
+	<element id="14" type="ObjectiveTargetValue" position="0,0,0" scale="1,1,1" rotation="0,0,0" informationTarget="10" oid="39" />
+	<element id="15" type="SwapperTransmitter" position="10.00799,-4.768372E-07,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="1" swapGroup2="Wave" swapGroup1="Exchange" amount="0" transmitterGroup="Cable" />
+	<element id="16" type="SwapperTransmitter" position="6.017203,-2.998264,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="4" swapGroup2="Wave" swapGroup1="Exchange" amount="0" transmitterGroup="Cable" />
+	<element id="17" type="SwapperTransmitter" position="-7.03041,2.998264,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="2" swapGroup2="Wave" swapGroup1="Exchange" amount="0" transmitterGroup="Cable" />
+</level>
+<!-- satellite_level1 -->
+<level version="1.1" signalLimit="4" sessionId="101" cameraZ="-16" smallMeters="False" >
+	<element id="1" type="Transmitter" position="-4,1.7,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" amount="1" angleOffset="0" signalType="Cable" transmitterType="Many" />
+	<element id="4" type="Receiver" position="3.924691,-3.415901,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="1" />
+	<element id="5" type="Transmitter" position="4,1.7,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" amount="1" angleOffset="0" signalType="Cable" transmitterType="Many" />
+	<element id="6" type="Receiver" position="-4.073239,-3.415901,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="1" />
+</level>
+<!-- satellite_level15 -->
+<level version="1.1" signalLimit="3" sessionId="241" cameraZ="-26" smallMeters="False" >
+	<element id="1" type="SignalBlock" position="0,0,0" scale="1,1,1" rotation="0,0,0" blockGroup="Exchange" sy="0" ex="1" sx="20" ey="2" />
+	<element id="2" type="Transceiver" position="4,-2,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" transmitterType="Many" target="3" lookupTag="" amount="0" signalType="Cable" transmitterGroup="Exchange" />
+	<element id="3" type="Transceiver" position="4,5,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" transmitterType="Many" target="2" lookupTag="" amount="0" signalType="Cable" transmitterGroup="Exchange" />
+	<element id="4" type="ObjectiveCrossedWires" position="0,0,0" scale="1,1,1" rotation="0,0,0" oid="41" />
+	<element id="5" type="Transceiver" position="-4,-2,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" transmitterType="Many" target="2" lookupTag="" amount="1" signalType="Cable" transmitterGroup="Exchange" />
+	<element id="6" type="Transceiver" position="0,2,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" transmitterType="Many" target="4" lookupTag="" amount="0" signalType="Cable" transmitterGroup="Exchange" />
+	<element id="7" type="SignalBlock" position="0,0,0" scale="1,1,1" rotation="0,0,0" blockGroup="Exchange" sy="0" ex="-1" sx="-20" ey="2" />
+	<element id="8" type="ObjectiveTargetValue" position="0,0,0" scale="1,1,1" rotation="0,0,0" informationTarget="10" oid="40" />
+	<element id="9" type="Transceiver" position="0,-6,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" transmitterType="Many" target="1" lookupTag="" amount="0" signalType="Cable" transmitterGroup="Exchange" />
+	<element id="10" type="Transceiver" position="-4,5,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" transmitterType="Many" target="3" lookupTag="" amount="1" signalType="Cable" transmitterGroup="Exchange" />
+</level>
+<!-- Rob_level-3 -->
+<level version="1.1" sessionId="351" cameraZ="-30" >
+	<element id="2" type="CellTransmitter" position="8,8,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" />
+	<element id="3" type="CellTransmitter" position="0,-3,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" />
+	<element id="4" type="SignalBlockCircle" position="13.9,6.67,0" scale="1,1,1" rotation="0,0,0" blockGroup="Exchange" radius="9" />
+	<element id="8" type="SwapperTransmitter" position="6,-8,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" target="2" swapGroup1="Exchange" amount="0" swapGroup2="Fibre" />
+	<element id="10" type="RadialTransmitter" position="6,-3,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" minRadius="7" meterAngle="45" />
+	<element id="11" type="Transmitter" position="0,-8,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" amount="1" angleOffset="0" />
+	<element id="18" type="SwapperTransmitter" position="-6,-8,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" target="3" swapGroup1="Exchange" amount="0" swapGroup2="Fibre" />
+	<element id="19" type="RadialTransmitter" position="-6,-3,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" minRadius="7" meterAngle="45" />
+	<element id="21" type="CellTransmitter" position="-8,8,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" />
+	<element id="22" type="SwapperTransmitter" position="0,3,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="5" swapGroup1="Exchange" amount="0" swapGroup2="Fibre" />
+	<element id="23" type="Receiver" position="3,8,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="5" />
+	<element id="25" type="SignalBlockCircle" position="-13.86,6.67,0" scale="1,1,1" rotation="0,0,0" blockGroup="Exchange" radius="9" />
+	<element id="26" type="Transceiver" position="9.97,0.95,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="3" amount="0" lookupTag="" />
+	<element id="27" type="Transceiver" position="-9.99,0.95,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="3" amount="0" lookupTag="" />
+	<element id="28" type="Transceiver" position="-2.970278,7.998528,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="1" amount="0" lookupTag="" />
+	<element id="29" type="ObjectiveTargetValue" position="0,0,0" scale="1,1,1" rotation="0,0,0" informationTarget="27" oid="74" />
+	<element id="30" type="ObjectiveTargetValue" position="0,0,0" scale="1,1,1" rotation="0,0,0" informationTarget="28" oid="75" />
+</level>
+<!-- satellite_level4_swapper -->
+<level version="1.1" signalLimit="3" sessionId="256" cameraZ="-20" smallMeters="False" >
+	<element id="1" type="Transmitter" position="-6,4,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" amount="1" angleOffset="0" />
+	<element id="4" type="Receiver" position="6,-4,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="1" />
+	<element id="5" type="Transmitter" position="6,4,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" amount="1" angleOffset="0" />
+	<element id="6" type="Receiver" position="-6,-4,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="1" />
+	<element id="8" type="SwapperTransmitter" position="0,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="1" swapGroup2="Wave" swapGroup1="Exchange" amount="0" transmitterGroup="Cable" />
+</level>
+<!-- cell_level11 -->
+<level version="1.1" signalLimit="3" sessionId="243" cameraZ="-30" smallMeters="False" >
+	<element id="1" type="SignalBlockHexagon" position="7.909151,-6.528152,0" scale="1,1,1" rotation="0,0,0" blockGroup="Wave" flip="True" radius="9" />
+	<element id="3" type="CellTransmitter" position="7.841751,-6.249509,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" transmitterGroup="Wave" />
+	<element id="4" type="Transceiver" position="0.1194372,-5.851457,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" transmitterType="Many" target="2" lookupTag="" amount="0" signalType="Cable" transmitterGroup="Exchange" />
+	<element id="5" type="CellTransmitter" position="-7.801941,-6.249509,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" transmitterGroup="Wave" />
+	<element id="6" type="CellTransmitter" position="0,7.045635,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" transmitterGroup="Wave" />
+	<element id="7" type="SignalBlockHexagon" position="0.067379,7.005826,0" scale="1,1,1" rotation="0,0,0" blockGroup="Wave" flip="True" radius="9" />
+	<element id="8" type="SignalBlockHexagon" position="-7.722329,-6.528152,0" scale="1,1,1" rotation="0,0,0" blockGroup="Wave" flip="True" radius="9" />
+	<element id="9" type="Transceiver" position="-5.015513,5.294173,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" transmitterType="Many" target="2" lookupTag="" amount="0" signalType="Cable" transmitterGroup="Exchange" />
+	<element id="10" type="Transceiver" position="5.254391,5.453401,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" transmitterType="Many" target="4" lookupTag="" amount="0" signalType="Cable" transmitterGroup="Exchange" />
+	<element id="11" type="Transceiver" position="7.961186,-1.91068,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" transmitterType="Many" target="1" lookupTag="" amount="0" signalType="Cable" transmitterGroup="Exchange" />
+	<element id="12" type="Transceiver" position="-7.801941,-1.91068,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" transmitterType="Many" target="2" lookupTag="" amount="0" signalType="Cable" transmitterGroup="Exchange" />
+	<element id="13" type="Transceiver" position="0,0.6766984,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" transmitterType="Many" target="3" lookupTag="" amount="1" signalType="Cable" transmitterGroup="Wave" />
+</level>
+<!-- advanced_level1 -->
+<level version="1.1" signalLimit="3" sessionId="139" cameraZ="-15" smallMeters="False" >
+	<element id="1" type="Transmitter" position="0,2.65,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" amount="1" angleOffset="0" signalType="Cable" transmitterType="Many" />
+	<element id="2" type="SignalBooster" position="0,-1.34,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" transmitterType="Many" signalType="Cable" transmitterGroup="Exchange" />
+	<element id="3" type="Receiver" position="4.39,-1.32,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="1" />
+	<element id="4" type="Receiver" position="-4.39,-1.32,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="1" />
+</level>
+<!-- broadcast_level8 -->
+<level version="1.1" signalLimit="6" sessionId="203" cameraZ="-30" smallMeters="False" >
+	<element id="1" type="RadialTransmitter" position="-2.44127,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" minRadius="10" meterAngle="45" targetAmount="5" extraRadius="0" transmitterGroup="Exchange" />
+	<element id="2" type="Transceiver" position="-5.44127,5,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" transmitterType="Many" target="4" amount="0" signalType="Cable" transmitterGroup="Exchange" />
+	<element id="3" type="Transceiver" position="0.5587296,-5,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" transmitterType="Many" target="2" amount="0" signalType="Cable" transmitterGroup="Exchange" />
+	<element id="4" type="Receiver" position="0.5587296,5,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="4" />
+	<element id="5" type="ObjectiveSignalCount" position="-2.44127,0,0" scale="1,1,1" rotation="0,0,0" signalTarget="4" oid="21" />
+	<element id="6" type="ObjectiveTargetValue" position="-2.44127,0,0" scale="1,1,1" rotation="0,0,0" informationTarget="3" oid="22" />
+	<element id="7" type="Transceiver" position="9.558727,5,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" transmitterType="Many" target="1" amount="0" signalType="Cable" transmitterGroup="Exchange" />
+	<element id="8" type="Transceiver" position="4.558729,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" transmitterType="Many" target="1" amount="1" signalType="Cable" transmitterGroup="Exchange" />
+	<element id="9" type="Transceiver" position="-9.441273,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" transmitterType="Many" target="2" amount="1" signalType="Cable" transmitterGroup="Exchange" />
+	<element id="10" type="Transceiver" position="-5.44127,-5,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" transmitterType="Many" target="2" amount="0" signalType="Cable" transmitterGroup="Exchange" />
+</level>
+<!-- broadcast_level12 -->
+<level version="1.1" signalLimit="6" sessionId="203" cameraZ="-30" smallMeters="False" >
+	<element id="1" type="RadialTransmitter" position="-6,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" minRadius="7.5" meterAngle="45" targetAmount="5" extraRadius="0" transmitterGroup="Exchange" />
+	<element id="2" type="RadialTransmitter" position="6,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" minRadius="7.5" meterAngle="45" targetAmount="5" extraRadius="0" transmitterGroup="Exchange" />
+	<element id="3" type="Receiver" position="-8.912097,3.147179,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="3" />
+	<element id="4" type="Transceiver" position="2.94129,-3.176324,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" transmitterType="Many" target="2" amount="0" signalType="Cable" transmitterGroup="Exchange" />
+	<element id="5" type="Transceiver" position="-8.74,-3.323388,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" transmitterType="Many" target="1" amount="0" signalType="Cable" transmitterGroup="Exchange" />
+	<element id="6" type="Transceiver" position="10.52981,-0.029145,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" transmitterType="Many" target="2" amount="1" signalType="Cable" transmitterGroup="Exchange" />
+	<element id="7" type="Transceiver" position="0,-7,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" transmitterType="Many" target="2" amount="1" signalType="Cable" transmitterGroup="Exchange" />
+	<element id="8" type="Transceiver" position="-3,-3.303772,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" transmitterType="Many" target="1" amount="0" signalType="Cable" transmitterGroup="Exchange" />
+	<element id="10" type="Transceiver" position="0,7,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" transmitterType="Many" target="2" amount="1" signalType="Cable" transmitterGroup="Exchange" />
+</level>
+<!-- cell_level14_swapper -->
+<level version="1.1" sessionId="272" cameraZ="-30" >
+	<element id="1" type="SignalBlockHexagon" position="-7,8.22724,0" scale="1,1,1" rotation="0,0,0" blockGroup="Wave" flip="False" radius="9.5" />
+	<element id="2" type="SignalBlockCircle" position="4.641974,0,0" scale="1,1,1" rotation="0,0,0" blockGroup="Exchange" radius="3.03" />
+	<element id="3" type="CellTransmitter" position="-6.909369,-8.097598,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" />
+	<element id="4" type="Transceiver" position="7.229419,-8.008453,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="1" amount="0" lookupTag="" />
+	<element id="5" type="CellTransmitter" position="-6.909369,8.317651,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" />
+	<element id="6" type="Transceiver" position="-10.84414,-6.356893,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="3" amount="0" lookupTag="" />
+	<element id="7" type="Transceiver" position="-7.011294,-4.0198,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="2" amount="0" lookupTag="" />
+	<element id="8" type="Transceiver" position="-7.011294,3.583549,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="1" amount="0" lookupTag="" />
+	<element id="9" type="Transceiver" position="-10.84414,6.263421,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="1" amount="0" lookupTag="" />
+	<element id="10" type="Transceiver" position="11.40503,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="4" amount="2" lookupTag="" />
+	<element id="11" type="SignalBlockHexagon" position="-7,-8.22724,0" scale="1,1,1" rotation="0,0,0" blockGroup="Wave" flip="False" radius="9.5" />
+	<element id="12" type="SwapperTransmitter" position="-1.963163,-8.039598,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="2" swapGroup1="Exchange" amount="0" swapGroup2="Wave" />
+	<element id="13" type="SwapperTransmitter" position="-1.963163,8.070775,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="3" swapGroup1="Exchange" amount="0" swapGroup2="Wave" />
+	<element id="14" type="ObjectiveSignalCount" position="0,0,0" scale="1,1,1" rotation="0,0,0" signalTarget="11" oid="56" />
+	<element id="15" type="ObjectiveTargetValue" position="0,0,0" scale="1,1,1" rotation="0,0,0" informationTarget="9" oid="57" />
+</level>
+<!-- telephone_level3 -->
+<level version="1.1" signalLimit="4" sessionId="9" cameraZ="-18" smallMeters="False" >
+	<element id="0" type="Transceiver" position="0,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" transmitterType="Many" target="2" amount="0" signalType="Cable" transmitterGroup="Exchange" />
+	<element id="1" type="Transmitter" position="4,3,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" amount="1" angleOffset="0" signalType="Cable" transmitterType="Many" />
+	<element id="2" type="Receiver" position="4,-3,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="1" />
+	<element id="3" type="Receiver" position="-4,-3,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="1" />
+	<element id="4" type="Transmitter" position="-4,3,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" amount="1" angleOffset="0" signalType="Cable" transmitterType="Many" />
+</level>
+<!-- broadcast_level3 -->
+<level version="1.1" signalLimit="5" sessionId="202" cameraZ="-25" smallMeters="False" >
+	<element id="1" type="RadialTransmitter" position="2,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" minRadius="6.5" targetAmount="5" extraRadius="0" transmitterGroup="Exchange" />
+	<element id="3" type="Transceiver" position="7,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" transmitterType="Many" target="2" amount="1" signalType="Cable" transmitterGroup="Exchange" />
+	<element id="5" type="Transceiver" position="2,5,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" transmitterType="Many" target="1" amount="0" signalType="Cable" transmitterGroup="Exchange" />
+	<element id="6" type="ObjectiveSignalCount" position="0,0,0" scale="1,1,1" rotation="0,0,0" signalTarget="3" oid="17" />
+	<element id="7" type="ObjectiveTargetValue" position="0,0,0" scale="1,1,1" rotation="0,0,0" informationTarget="9" oid="18" />
+	<element id="8" type="Transceiver" position="2,-5,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" transmitterType="Many" target="2" amount="0" signalType="Cable" transmitterGroup="Exchange" />
+	<element id="9" type="Transceiver" position="-8,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" transmitterType="Many" target="2" amount="0" signalType="Cable" transmitterGroup="Exchange" />
+</level>
+<!-- telegraph_level3 -->
+<level version="1.1" signalLimit="4" sessionId="121" cameraZ="-16" smallMeters="False" >
+	<element id="0" type="Receiver" position="-4.346452,0.9158478,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="1" />
+	<element id="1" type="Transmitter" position="2.419363,0.9158478,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" amount="1" angleOffset="0" signalType="Cable" transmitterType="Many" />
+	<element id="2" type="Transmitter" position="-0.5876672,0.9158478,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" amount="1" angleOffset="0" signalType="Cable" transmitterType="Many" />
+	<element id="4" type="Receiver" position="3.922877,-2.391884,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="1" />
+	<element id="6" type="PlacedSignal" position="0,0,0" scale="1,1,1" rotation="0,0,0" from="2" to="4" />
+</level>
+<!-- intro_level1 -->
+<level version="1.1" signalLimit="1" sessionId="3" cameraZ="-16" >
+	<element id="0" type="Transmitter" position="0,3.007029,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" amount="1" angleOffset="-150" signalType="Cable" transmitterType="One" />
+	<element id="1" type="Receiver" position="0,-3.007029,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="1" />
+</level>
+<!-- computer_level10 -->
+<level version="1.1" signalLimit="8" sessionId="198" cameraZ="-26" smallMeters="False" >
+	<element id="1" type="Transceiver" position="8,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" transmitterType="Many" target="2" amount="0" signalType="Cable" transmitterGroup="Fibre" />
+	<element id="2" type="Receiver" position="-6,-6,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" target="1" />
+	<element id="3" type="Transceiver" position="0.03131104,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" transmitterType="Many" target="5" amount="0" signalType="Cable" transmitterGroup="Fibre" />
+	<element id="4" type="Transceiver" position="-8.208987,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" transmitterType="Many" target="2" amount="1" signalType="Cable" transmitterGroup="Fibre" />
+	<element id="5" type="Transceiver" position="-6,5,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" transmitterType="Many" target="2" amount="0" signalType="Cable" transmitterGroup="Fibre" />
+	<element id="6" type="Transceiver" position="6,-5,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" transmitterType="Many" target="2" amount="0" signalType="Cable" transmitterGroup="Fibre" />
+	<element id="7" type="Transceiver" position="6,5,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" transmitterType="Many" target="1" amount="1" signalType="Cable" transmitterGroup="Fibre" />
+	<element id="8" type="ObjectiveTargetValue" position="0,0,0" scale="1,1,1" rotation="0,0,0" informationTarget="6" oid="10" />
+	<element id="9" type="ObjectiveCrossedWires" position="0,0,0" scale="1,1,1" rotation="0,0,0" oid="11" />
+</level>
+<!-- satellite_level18 -->
+<level version="1.1" sessionId="367" cameraZ="-30" >
+	<element id="3" type="SwapperTransmitter" position="0,-3,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="1" swapGroup1="Exchange" amount="0" swapGroup2="Wave" />
+	<element id="5" type="SignalBlockCircle" position="7,0,0" scale="1,1,1" rotation="0,0,0" blockGroup="Wave" radius="1.5" />
+	<element id="6" type="Transceiver" position="-7,-6,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="4" amount="1" lookupTag="" />
+	<element id="7" type="SwapperTransmitter" position="-7,6,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="1" swapGroup1="Exchange" amount="0" swapGroup2="Wave" />
+	<element id="8" type="SwapperTransmitter" position="7,6,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="2" swapGroup1="Exchange" amount="0" swapGroup2="Wave" />
+	<element id="9" type="Transceiver" position="7,-6,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="4" amount="1" lookupTag="" />
+	<element id="10" type="SwapperTransmitter" position="0,3,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="2" swapGroup1="Exchange" amount="0" swapGroup2="Wave" />
+	<element id="11" type="SignalBlockCircle" position="-7,0,0" scale="1,1,1" rotation="0,0,0" blockGroup="Wave" radius="1.5" />
+	<element id="12" type="ObjectiveTargetValue" position="0,0,0" scale="1,1,1" rotation="0,0,0" informationTarget="6" oid="82" />
+</level>
+<!-- telephone_level6 -->
+<level version="1.1" signalLimit="7" sessionId="154" cameraZ="-20" smallMeters="False" >
+	<element id="1" type="Transmitter" position="7,4,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" amount="1" angleOffset="0" signalType="Cable" transmitterType="Many" />
+	<element id="2" type="Transceiver" position="4,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" transmitterType="Many" target="2" amount="0" signalType="Cable" transmitterGroup="Exchange" />
+	<element id="3" type="Receiver" position="7,-4,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="1" />
+	<element id="4" type="Receiver" position="-5,-4,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="1" />
+	<element id="5" type="Receiver" position="1,4,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="1" />
+	<element id="6" type="Transceiver" position="-2,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" transmitterType="Many" target="2" amount="0" signalType="Cable" transmitterGroup="Exchange" />
+	<element id="7" type="Transmitter" position="-7,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" amount="1" angleOffset="0" signalType="Cable" transmitterType="Many" />
+	<element id="8" type="Transmitter" position="1,-4,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" amount="1" angleOffset="0" signalType="Cable" transmitterType="Many" />
+	<element id="9" type="ObjectiveSignalCount" position="0,0,0" scale="1,1,1" rotation="0,0,0" signalTarget="6" oid="0" />
+</level>
+<!-- cell_level13_swapper -->
+<level version="1.1" sessionId="269" cameraZ="-33" >
+	<element id="1" type="CellTransmitter" position="-13,-7,0" scale="1,1,1" rotation="0,0,90" elementGroup="Wave" />
+	<element id="12" type="CellTransmitter" position="13,8,0" scale="1,1,1" rotation="0,0,90" elementGroup="Wave" />
+	<element id="17" type="SignalBlockHexagon" position="4.339745,-7,0" scale="1,1,1" rotation="0,0,0" blockGroup="Wave" flip="True" radius="10" />
+	<element id="29" type="Transceiver" position="9.440285,-6.743998,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="2" amount="1" lookupTag="" />
+	<element id="30" type="Transceiver" position="10,4,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="3" amount="0" lookupTag="" />
+	<element id="31" type="CellTransmitter" position="-4.601715,8,0" scale="1,1,1" rotation="0,0,90" elementGroup="Wave" />
+	<element id="32" type="CellTransmitter" position="4.398285,-7,0" scale="1,1,1" rotation="0,0,90" elementGroup="Wave" />
+	<element id="33" type="SignalBlockHexagon" position="-4.32051,8,0" scale="1,1,1" rotation="0,0,0" blockGroup="Wave" flip="True" radius="10" />
+	<element id="34" type="SignalBlockHexagon" position="13,8,0" scale="1,1,1" rotation="0,0,0" blockGroup="Wave" flip="True" radius="10" />
+	<element id="35" type="SignalBlockHexagon" position="-12.98077,-7,0" scale="1,1,1" rotation="0,0,0" blockGroup="Wave" flip="True" radius="10" />
+	<element id="36" type="SwapperTransmitter" position="2.223422,-3.15371,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="1" swapGroup1="Exchange" amount="0" swapGroup2="Wave" />
+	<element id="37" type="Receiver" position="6.719136,-3.022002,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="4" />
+	<element id="38" type="Transceiver" position="0,8,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="3" amount="3" lookupTag="" />
+	<element id="39" type="Transceiver" position="-10,-3,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="2" amount="0" lookupTag="" />
+	<element id="40" type="ObjectiveCrossedWires" position="0,0,0" scale="1,1,1" rotation="0,0,0" oid="55" />
+	<element id="41" type="SwapperTransmitter" position="8,8,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="3" swapGroup1="Exchange" amount="0" swapGroup2="Wave" />
+	<element id="43" type="SwapperTransmitter" position="-6.668571,3.899714,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="1" swapGroup1="Exchange" amount="0" swapGroup2="Wave" />
+	<element id="44" type="ObjectiveTargetValue" position="0,0,0" scale="1,1,1" rotation="0,0,0" informationTarget="39" oid="54" />
+	<element id="45" type="Transceiver" position="-1.566278,3.931135,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="1" amount="0" lookupTag="" />
+	<element id="46" type="Transceiver" position="-8,-7,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="2" amount="1" lookupTag="" />
+</level>
+<!-- Rob_level-1 -->
+<level version="1.1" sessionId="347" cameraZ="-35" >
+	<element id="7" type="Transceiver" position="0,-6,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="2" amount="0" lookupTag="" />
+	<element id="10" type="CellTransmitter" position="11.99,6,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" />
+	<element id="12" type="Transceiver" position="0,6,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="5" amount="0" lookupTag="" />
+	<element id="13" type="Transmitter" position="-12,6,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" amount="1" angleOffset="0" />
+	<element id="17" type="CellTransmitter" position="-12,-6,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" />
+	<element id="19" type="SwapperTransmitter" position="12,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="4" swapGroup1="Exchange" amount="0" swapGroup2="Wave" />
+	<element id="20" type="Transmitter" position="6,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" amount="1" angleOffset="0" />
+	<element id="23" type="SignalBooster" position="0,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" />
+	<element id="27" type="Receiver" position="6,6,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="1" />
+	<element id="28" type="Receiver" position="-6,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="1" />
+	<element id="30" type="SwapperTransmitter" position="-12,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="5" swapGroup1="Wave" amount="0" swapGroup2="Exchange" />
+	<element id="31" type="Transceiver" position="12.0569,-6.084441,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="2" amount="0" lookupTag="" />
+	<element id="32" type="SignalBlock" position="0,0,0" scale="1,1,1" rotation="0,0,0" blockGroup="Wave" sy="20" ex="-3" sx="-3" ey="-20" />
+	<element id="33" type="SignalBlockCircle" position="6.345737,-5.972457,0" scale="1,1,1" rotation="0,0,0" blockGroup="Exchange" radius="1" />
+	<element id="34" type="ObjectiveTargetValue" position="0,0,0" scale="1,1,1" rotation="0,0,0" informationTarget="7" oid="72" />
+	<element id="35" type="ObjectiveCrossedWires" position="0,0,0" scale="1,1,1" rotation="0,0,0" oid="73" />
+	<element id="36" type="SignalBlock" position="0,0,0" scale="1,1,1" rotation="0,0,0" blockGroup="Wave" sy="20" ex="3" sx="3" ey="-20" />
+</level>
+<!-- Rob_level-6 -->
+<level version="1.1" sessionId="334" cameraZ="-30" >
+	<element id="1" type="RadialTransmitter" position="0,1,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" minRadius="9" meterAngle="45" />
+	<element id="3" type="SwapperTransmitter" position="-12,1,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="3" swapGroup1="Exchange" amount="0" swapGroup2="Wave" />
+	<element id="5" type="SignalBlockHexagon" position="13,1,0" scale="1,1,1" rotation="0,0,0" blockGroup="Wave" flip="False" radius="10.5" />
+	<element id="10" type="Transceiver" position="4.5,1,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="5" amount="1" lookupTag="" />
+	<element id="11" type="Transceiver" position="-4.5,1,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="3" amount="1" lookupTag="" />
+	<element id="12" type="SwapperTransmitter" position="12,1,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="3" swapGroup1="Exchange" amount="0" swapGroup2="Wave" />
+	<element id="13" type="SwapperTransmitter" position="5,-8.5,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="2" swapGroup1="Exchange" amount="0" swapGroup2="Wave" />
+	<element id="16" type="SwapperTransmitter" position="-5,-8.5,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="3" swapGroup1="Exchange" amount="0" swapGroup2="Wave" />
+	<element id="17" type="CellTransmitter" position="-12,5,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" />
+	<element id="18" type="CellTransmitter" position="12,5,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" />
+	<element id="19" type="SignalBlockHexagon" position="-13,1,0" scale="1,1,1" rotation="0,0,0" blockGroup="Wave" flip="False" radius="10.5" />
+	<element id="20" type="SwapperTransmitter" position="6.24892,-2.583694,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="1" swapGroup1="Exchange" amount="0" swapGroup2="Wave" />
+	<element id="21" type="SwapperTransmitter" position="-6.386259,-2.583694,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="1" swapGroup1="Exchange" amount="0" swapGroup2="Wave" />
+	<element id="23" type="Transceiver" position="0,-6,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="5" amount="0" lookupTag="" />
+	<element id="24" type="Transceiver" position="0,6.466648,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="5" amount="0" lookupTag="" />
+	<element id="25" type="ObjectiveSignalCount" position="0,0,0" scale="1,1,1" rotation="0,0,0" signalTarget="12" oid="78" />
+	<element id="26" type="ObjectiveTargetValue" position="0,0,0" scale="1,1,1" rotation="0,0,0" informationTarget="23" oid="79" />
+</level>
+<!-- computer_level6 -->
+<level version="1.1" signalLimit="6" sessionId="205" cameraZ="-20" smallMeters="False" >
+	<element id="0" type="Transceiver" position="0,4,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" transmitterType="Many" target="2" amount="0" signalType="Cable" transmitterGroup="Fibre" />
+	<element id="1" type="Transceiver" position="5,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" transmitterType="Many" target="1" amount="1" signalType="Cable" transmitterGroup="Fibre" />
+	<element id="2" type="Transceiver" position="0,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" transmitterType="Many" target="3" amount="0" signalType="Cable" transmitterGroup="Fibre" />
+	<element id="4" type="Transceiver" position="-5,-4,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" transmitterType="Many" target="2" amount="1" signalType="Cable" transmitterGroup="Fibre" />
+	<element id="5" type="Transceiver" position="-5,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" transmitterType="Many" target="2" amount="0" signalType="Cable" transmitterGroup="Fibre" />
+	<element id="6" type="ObjectiveCrossedWires" position="0,0,0" scale="1,1,1" rotation="0,0,0" oid="23" />
+	<element id="7" type="ObjectiveTargetValue" position="0,0,0" scale="1,1,1" rotation="0,0,0" informationTarget="5" oid="24" />
+</level>
+<!-- computer_level8 -->
+<level version="1.1" signalLimit="8" sessionId="209" cameraZ="-30" smallMeters="False" >
+	<element id="0" type="Transceiver" position="-3,-8,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" transmitterType="Many" target="1" amount="0" signalType="Cable" transmitterGroup="Fibre" />
+	<element id="1" type="Transceiver" position="-9,-4,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" transmitterType="Many" target="1" amount="0" signalType="Cable" transmitterGroup="Fibre" />
+	<element id="2" type="Transceiver" position="-3,-0.538023,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" transmitterType="Many" target="2" amount="0" signalType="Cable" transmitterGroup="Fibre" />
+	<element id="3" type="Transceiver" position="3,7,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" transmitterType="Many" target="1" amount="0" signalType="Cable" transmitterGroup="Fibre" />
+	<element id="4" type="Transceiver" position="3,2,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" transmitterType="Many" target="2" amount="0" signalType="Cable" transmitterGroup="Fibre" />
+	<element id="5" type="Transceiver" position="8,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" transmitterType="Many" target="4" amount="1" signalType="Cable" transmitterGroup="Fibre" />
+	<element id="7" type="ObjectiveTargetValue" position="0,0,0" scale="1,1,1" rotation="0,0,0" informationTarget="0" oid="27" />
+	<element id="8" type="Transceiver" position="-9,7,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" transmitterType="Many" target="2" amount="2" signalType="Cable" transmitterGroup="Fibre" />
+	<element id="9" type="ObjectiveCrossedWires" position="0,0,0" scale="1,1,1" rotation="0,0,0" oid="31" />
+</level>
+<!-- cell_level9 -->
+<level version="1.1" signalLimit="7" sessionId="172" cameraZ="-38" smallMeters="True" >
+	<element id="9" type="CellTransmitter" position="10.43,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" transmitterGroup="Wave" />
+	<element id="10" type="CellTransmitter" position="-10.43,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" transmitterGroup="Wave" />
+	<element id="11" type="CellTransmitter" position="0,6.12,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" transmitterGroup="Wave" />
+	<element id="16" type="SignalBlockHexagon" position="-10.31054,1.716614E-05,0" scale="1,1,1" rotation="0,0,0" blockGroup="Wave" radius="6.87" />
+	<element id="17" type="SignalBlockHexagon" position="10.27966,1.716614E-05,0" scale="1,1,1" rotation="0,0,0" blockGroup="Wave" radius="6.87" />
+	<element id="18" type="SignalBlockHexagon" position="0,6.019621,0" scale="1,1,1" rotation="0,0,0" blockGroup="Wave" radius="6.87" />
+	<element id="20" type="Transceiver" position="3.595043,-9.905751,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" transmitterType="Many" target="1" amount="1" signalType="Cable" transmitterGroup="Exchange" />
+	<element id="21" type="Transceiver" position="6.611628,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" transmitterType="Many" target="1" amount="0" signalType="Cable" transmitterGroup="Exchange" />
+	<element id="22" type="Transceiver" position="-6.611594,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" transmitterType="Many" target="1" amount="0" signalType="Cable" transmitterGroup="Exchange" />
+	<element id="23" type="Transceiver" position="-0.01276159,2.633087,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" transmitterType="Many" target="2" amount="0" signalType="Cable" transmitterGroup="Wave" />
+	<element id="24" type="Transceiver" position="-3.861328,-9.905751,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" transmitterType="Many" target="1" amount="1" signalType="Cable" transmitterGroup="Exchange" />
+	<element id="25" type="Transceiver" position="0,-5.289909,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" transmitterType="Many" target="2" amount="0" signalType="Cable" transmitterGroup="Exchange" />
+	<element id="26" type="ObjectiveTargetValue" position="0,0,0" scale="1,1,1" rotation="0,0,0" informationTarget="25" oid="4" informationAvailable="2" />
+	<element id="27" type="ObjectiveSignalCount" position="0,0,0" scale="1,1,1" rotation="0,0,0" signalTarget="6" oid="5" />
+</level>
+<!-- Rob_level-5 -->
+<level version="1.1" sessionId="314" cameraZ="-26" >
+	<element id="1" type="Transceiver" position="-5,-6,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="4" amount="0" lookupTag="" />
+	<element id="2" type="Transceiver" position="-5,4,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="2" amount="0" lookupTag="" />
+	<element id="3" type="Transceiver" position="-10,-1,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="1" amount="1" lookupTag="" />
+	<element id="4" type="Transceiver" position="5,4,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" target="4" amount="0" lookupTag="" />
+	<element id="6" type="Transceiver" position="5,-6,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" target="2" amount="0" lookupTag="" />
+	<element id="7" type="SwapperTransmitter" position="0,4,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="5" swapGroup1="Wave" amount="0" swapGroup2="Fibre" />
+	<element id="8" type="Receiver" position="0,8,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="2" />
+	<element id="10" type="SignalBlockCircle" position="0,-6,0" scale="1,1,1" rotation="0,0,0" blockGroup="Fibre" radius="2" />
+	<element id="11" type="SignalBlockCircle" position="0,-6,0" scale="1,1,1" rotation="0,0,0" blockGroup="Wave" radius="1.3" />
+	<element id="13" type="SwapperTransmitter" position="0,-1,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="4" swapGroup1="Wave" amount="0" swapGroup2="Fibre" />
+	<element id="14" type="Transceiver" position="10,-1,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" target="2" amount="1" lookupTag="" />
+	<element id="15" type="SignalBlockCircle" position="5.09,-1,0" scale="1,1,1" rotation="0,0,0" blockGroup="Fibre" radius="2" />
+	<element id="16" type="SignalBlockCircle" position="-5.03,-1,0" scale="1,1,1" rotation="0,0,0" blockGroup="Wave" radius="2" />
+</level>
+<!-- broadcast_level14 -->
+<level version="1.1" sessionId="276" cameraZ="-30" >
+	<element id="1" type="RadialTransmitter" position="-1.5,-8,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" minRadius="10" meterAngle="45" />
+	<element id="2" type="Transceiver" position="-11.5,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="2" amount="1" lookupTag="" />
+	<element id="3" type="Receiver" position="12,-4,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="2" />
+	<element id="4" type="Receiver" position="12,4,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="2" />
+	<element id="5" type="ObjectiveCrossedWires" position="0,0,0" scale="1,1,1" rotation="0,0,0" oid="61" />
+	<element id="6" type="Transceiver" position="4,-4,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="2" amount="0" lookupTag="" />
+	<element id="7" type="Transceiver" position="8,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="2" amount="1" lookupTag="" />
+	<element id="8" type="Transceiver" position="-1.5,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="4" amount="0" lookupTag="" />
+	<element id="9" type="RadialTransmitter" position="-1.5,8,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" minRadius="10" meterAngle="45" />
+	<element id="10" type="ObjectiveSignalCount" position="0,0,0" scale="1,1,1" rotation="0,0,0" signalTarget="6" oid="62" />
+	<element id="11" type="Transceiver" position="4,4,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="1" amount="0" lookupTag="" />
+</level>
+<!-- broadcast_level15 -->
+<level version="1.1" signalLimit="3" sessionId="277" cameraZ="-30" smallMeters="False" >
+	<element id="1" type="RadialTransmitter" position="0,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" minRadius="9" meterAngle="45" targetAmount="5" extraRadius="0" transmitterGroup="Exchange" />
+	<element id="2" type="Transceiver" position="0.001241684,-5.673128,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="2" lookupTag="" amount="1" transmitterGroup="Exchange" />
+	<element id="3" type="Receiver" position="-10.00838,-5.648681,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="2" />
+	<element id="4" type="Transceiver" position="10.04632,-5.610772,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="2" lookupTag="" amount="0" transmitterGroup="Exchange" />
+	<element id="5" type="Transceiver" position="5.536196,-2.450726,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="2" lookupTag="" amount="1" transmitterGroup="Exchange" />
+	<element id="6" type="ObjectiveTargetValue" position="0,0,0" scale="1,1,1" rotation="0,0,0" informationTarget="9" oid="64" />
+	<element id="7" type="Transceiver" position="-5.192512,2.970496,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="3" lookupTag="" amount="1" transmitterGroup="Exchange" />
+	<element id="8" type="ObjectiveSignalCount" position="0,0,0" scale="1,1,1" rotation="0,0,0" signalTarget="6" oid="63" />
+	<element id="9" type="Transceiver" position="10.00964,6.003345,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="2" lookupTag="" amount="0" transmitterGroup="Exchange" />
+	<element id="10" type="Transceiver" position="-10.00713,5.70006,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="4" lookupTag="" amount="0" transmitterGroup="Exchange" />
+</level>
+<!-- satellite_level13_swapper -->
+<level version="1.1" signalLimit="3" sessionId="254" cameraZ="-26" smallMeters="False" >
+	<element id="2" type="SignalBlockCircle" position="0,0,0" scale="1,1,1" rotation="0,0,0" blockGroup="Wave" radius="4" />
+	<element id="4" type="Transceiver" position="0,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="4" lookupTag="" amount="0" transmitterGroup="Exchange" />
+	<element id="5" type="ObjectiveTargetValue" position="0,0,0" scale="1,1,1" rotation="0,0,0" informationTarget="6" oid="37" />
+	<element id="6" type="Transceiver" position="-8,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="2" lookupTag="" amount="1" transmitterGroup="Wave" />
+	<element id="7" type="Transceiver" position="8,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="2" lookupTag="" amount="1" transmitterGroup="Wave" />
+	<element id="9" type="ObjectiveCrossedWires" position="0,0,0" scale="1,1,1" rotation="0,0,0" oid="36" />
+	<element id="11" type="SwapperTransmitter" position="0.04135656,-6.968373,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="2" swapGroup2="Wave" swapGroup1="Exchange" amount="0" transmitterGroup="Cable" />
+	<element id="12" type="SwapperTransmitter" position="6.513469,5.004002,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="2" swapGroup2="Wave" swapGroup1="Exchange" amount="0" transmitterGroup="Cable" />
+	<element id="13" type="SwapperTransmitter" position="0,6.968381,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="4" swapGroup2="Wave" swapGroup1="Exchange" amount="0" transmitterGroup="Cable" />
+</level>
+<!-- satellite_level12_swapper -->
+<level version="1.1" signalLimit="6" sessionId="253" cameraZ="-25" smallMeters="False" >
+	<element id="1" type="Transceiver" position="8.404723,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="1" lookupTag="" amount="1" transmitterGroup="Wave" />
+	<element id="4" type="Transceiver" position="0,-5.09,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="1" lookupTag="" amount="0" transmitterGroup="Wave" />
+	<element id="5" type="Transceiver" position="-7.187883,-5.15037,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="2" lookupTag="" amount="1" transmitterGroup="Exchange" />
+	<element id="6" type="Transceiver" position="-7.244486,4.754189,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="1" lookupTag="" amount="0" transmitterGroup="Exchange" />
+	<element id="7" type="ObjectiveTargetValue" position="0,0,0" scale="1,1,1" rotation="0,0,0" informationTarget="6" oid="2" />
+	<element id="9" type="SwapperTransmitter" position="3.494532,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="1" swapGroup2="Wave" swapGroup1="Exchange" amount="0" transmitterGroup="Cable" />
+	<element id="10" type="SwapperTransmitter" position="-3.411817,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="2" swapGroup2="Wave" swapGroup1="Exchange" amount="0" transmitterGroup="Cable" />
+</level>
+<!-- cell_level5 -->
+<level version="1.1" sessionId="134" cameraZ="-38" >
+	<element id="2" type="CellTransmitter" position="0,-6.12,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" />
+	<element id="3" type="Transceiver" position="-2.94,-3.23,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="2" amount="0" lookupTag="" />
+	<element id="4" type="Transceiver" position="-0.86,-10.14,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="2" amount="0" lookupTag="" />
+	<element id="5" type="Transceiver" position="-12.4928,-3.542635,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="1" amount="0" lookupTag="" />
+	<element id="9" type="CellTransmitter" position="10.43,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" />
+	<element id="10" type="CellTransmitter" position="-10.43,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" />
+	<element id="11" type="CellTransmitter" position="0,6.12,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" />
+	<element id="12" type="Transceiver" position="-0.04,9.91,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="1" amount="0" lookupTag="" />
+	<element id="13" type="Transceiver" position="4,-5.38,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="1" amount="0" lookupTag="" />
+	<element id="14" type="Transceiver" position="8.73,-3.63,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="1" amount="1" lookupTag="" />
+	<element id="15" type="Transceiver" position="-0.04,1.96,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="1" amount="1" lookupTag="" />
+	<element id="16" type="SignalBlockHexagon" position="-10.305,0,0" scale="1,1,1" rotation="0,0,0" blockGroup="Wave" flip="False" radius="6.87" />
+	<element id="17" type="SignalBlockHexagon" position="10.305,0,0" scale="1,1,1" rotation="0,0,0" blockGroup="Wave" flip="False" radius="6.87" />
+	<element id="18" type="SignalBlockHexagon" position="0,5.949595,0" scale="1,1,1" rotation="0,0,0" blockGroup="Wave" flip="False" radius="6.87" />
+	<element id="19" type="SignalBlockHexagon" position="0,-5.949595,0" scale="1,1,1" rotation="0,0,0" blockGroup="Wave" flip="False" radius="6.87" />
+	<element id="20" type="ObjectiveTargetValue" position="0,0,0" scale="1,1,1" rotation="0,0,0" informationTarget="5" oid="53" />
+	<element id="21" type="Transceiver" position="-6.49,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="2" amount="1" lookupTag="" />
+</level>
+<!-- telegraph_level2 -->
+<level version="1.1" signalLimit="2" sessionId="4" cameraZ="-16" smallMeters="False" >
+	<element id="0" type="Transmitter" position="-3,3,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" amount="1" angleOffset="0" signalType="Cable" transmitterType="One" />
+	<element id="1" type="Transmitter" position="3,-3,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" amount="1" angleOffset="0" signalType="Cable" transmitterType="One" />
+	<element id="2" type="Receiver" position="-3,-3,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="1" />
+	<element id="3" type="Receiver" position="3,3,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="1" />
+</level>
+<!-- computer_level2 -->
+<level version="1.1" signalLimit="6" sessionId="113" cameraZ="-20" smallMeters="False" >
+	<element id="2" type="Receiver" position="5,4,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" target="1" />
+	<element id="3" type="Receiver" position="-5,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" target="1" />
+	<element id="4" type="Receiver" position="-5,4,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" target="2" />
+	<element id="5" type="Transceiver" position="5,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" transmitterType="Many" target="2" amount="0" signalType="Cable" transmitterGroup="Fibre" />
+	<element id="6" type="Transmitter" position="0,-4,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" amount="4" angleOffset="0" signalType="Cable" transmitterType="Many" />
+	<element id="7" type="Transceiver" position="0,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" transmitterType="Many" target="4" amount="0" signalType="Cable" transmitterGroup="Fibre" />
+</level>
+<!-- satellite_level7_swapper -->
+<level version="1.1" signalLimit="3" sessionId="257" cameraZ="-20" smallMeters="False" >
+	<element id="1" type="SignalBlock" position="0,0,0" scale="1,1,1" rotation="0,0,0" blockGroup="Exchange" sy="0" ex="10" sx="-10" ey="0" />
+	<element id="2" type="Transmitter" position="-4,2,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" amount="1" angleOffset="0" />
+	<element id="3" type="Transceiver" position="-4,-2,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="1" lookupTag="" amount="0" transmitterGroup="Exchange" />
+	<element id="6" type="SwapperTransmitter" position="3.931867,-1.986852,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="1" swapGroup2="Wave" swapGroup1="Exchange" amount="0" transmitterGroup="Cable" />
+	<element id="7" type="SwapperTransmitter" position="3.931867,1.986848,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="1" swapGroup2="Wave" swapGroup1="Exchange" amount="0" transmitterGroup="Cable" />
+</level>
+<!-- cell_level11_swapper -->
+<level version="1.1" signalLimit="3" sessionId="264" cameraZ="-30" smallMeters="False" >
+	<element id="1" type="SignalBlockHexagon" position="7.909151,-6.528152,0" scale="1,1,1" rotation="0,0,0" blockGroup="Wave" flip="True" radius="9" />
+	<element id="3" type="CellTransmitter" position="7.841751,-6.249509,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" transmitterGroup="Wave" />
+	<element id="4" type="Transceiver" position="0.1194372,-5.851457,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="2" lookupTag="" amount="0" transmitterGroup="Exchange" />
+	<element id="5" type="CellTransmitter" position="-7.801941,-6.249509,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" transmitterGroup="Wave" />
+	<element id="6" type="CellTransmitter" position="0,7.045635,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" transmitterGroup="Wave" />
+	<element id="7" type="SignalBlockHexagon" position="0.067379,7.005826,0" scale="1,1,1" rotation="0,0,0" blockGroup="Wave" flip="True" radius="9" />
+	<element id="8" type="SignalBlockHexagon" position="-7.722329,-6.528152,0" scale="1,1,1" rotation="0,0,0" blockGroup="Wave" flip="True" radius="9" />
+	<element id="9" type="Transceiver" position="-5.015513,5.294173,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="2" lookupTag="" amount="0" transmitterGroup="Exchange" />
+	<element id="10" type="Transceiver" position="5.254391,5.453401,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="4" lookupTag="" amount="1" transmitterGroup="Exchange" />
+	<element id="14" type="SwapperTransmitter" position="7.954507,-1.949324,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="1" swapGroup2="Wave" swapGroup1="Exchange" amount="0" transmitterGroup="Cable" />
+	<element id="15" type="SwapperTransmitter" position="-1.430511E-06,0.5659338,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="3" swapGroup2="Wave" swapGroup1="Exchange" amount="0" transmitterGroup="Cable" />
+	<element id="16" type="SwapperTransmitter" position="-7.797302,-1.949324,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="2" swapGroup2="Wave" swapGroup1="Exchange" amount="0" transmitterGroup="Cable" />
+	<element id="17" type="ObjectiveCrossedWires" position="0,0,0" scale="1,1,1" rotation="0,0,0" oid="50" />
+	<element id="18" type="ObjectiveTargetValue" position="0,0,0" scale="1,1,1" rotation="0,0,0" informationTarget="9" oid="49" />
+</level>
+<!-- computer_level1 -->
+<level version="1.1" signalLimit="6" sessionId="179" cameraZ="-20" smallMeters="False" >
+	<element id="1" type="Transmitter" position="0,3.5,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" amount="4" angleOffset="0" signalType="Cable" transmitterType="Many" />
+	<element id="3" type="Transceiver" position="0,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" transmitterType="Many" target="2" amount="0" signalType="Cable" transmitterGroup="Fibre" />
+	<element id="4" type="Receiver" position="-4,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" target="2" />
+	<element id="5" type="Transceiver" position="4,-3.5,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" transmitterType="Many" target="1" amount="0" signalType="Cable" transmitterGroup="Fibre" />
+	<element id="6" type="Transceiver" position="-4,-3.5,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" transmitterType="Many" target="1" amount="0" signalType="Cable" transmitterGroup="Fibre" />
+	<element id="7" type="Receiver" position="0,-3.5,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" target="2" />
+</level>
+<!-- cell_level10 -->
+<level version="1.1" signalLimit="8" sessionId="242" cameraZ="-30" smallMeters="True" >
+	<element id="1" type="CellTransmitter" position="-3,5,0" scale="1,1,1" rotation="0,0,90" elementGroup="Wave" transmitterGroup="Wave" />
+	<element id="12" type="CellTransmitter" position="3,-5,0" scale="1,1,1" rotation="0,0,90" elementGroup="Wave" transmitterGroup="Wave" />
+	<element id="15" type="SignalBlockHexagon" position="3.046652,-5.213893,0" scale="1,1,1" rotation="0,0,90" blockGroup="Wave" radius="7" />
+	<element id="17" type="SignalBlockHexagon" position="-3.103057,5.194192,0" scale="1,1,1" rotation="0,0,90" blockGroup="Wave" radius="7" />
+	<element id="18" type="Transceiver" position="-3,1,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" transmitterType="Many" target="2" lookupTag="" amount="1" signalType="Cable" transmitterGroup="Exchange" />
+	<element id="19" type="Receiver" position="-6.3189,-3.327954,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="1" />
+	<element id="20" type="Transceiver" position="3,-1,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" transmitterType="Many" target="2" lookupTag="" amount="0" signalType="Cable" transmitterGroup="Exchange" />
+	<element id="21" type="Transceiver" position="1,7,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" transmitterType="Many" target="2" lookupTag="" amount="1" signalType="Cable" transmitterGroup="Wave" />
+	<element id="22" type="Transceiver" position="-1,-7,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" transmitterType="Many" target="1" lookupTag="" amount="0" signalType="Cable" transmitterGroup="Exchange" />
+	<element id="23" type="Transceiver" position="7,-7,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" transmitterType="Many" target="2" lookupTag="" amount="1" signalType="Cable" transmitterGroup="Wave" />
+	<element id="24" type="Transceiver" position="-7,7,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" transmitterType="Many" target="2" lookupTag="" amount="0" signalType="Cable" transmitterGroup="Wave" />
+	<element id="25" type="ObjectiveTargetValue" position="0,0,0" scale="1,1,1" rotation="0,0,0" informationTarget="22" oid="42" />
+</level>
+<!-- telephone_level5 -->
+<level version="1.1" signalLimit="6" sessionId="82" cameraZ="-20" smallMeters="False" >
+	<element id="0" type="Transmitter" position="-5.371415,2.927659,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" amount="1" angleOffset="0" signalType="Cable" transmitterType="Many" />
+	<element id="1" type="Transmitter" position="5.129458,2.927659,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" amount="1" angleOffset="0" signalType="Cable" transmitterType="Many" />
+	<element id="2" type="Transceiver" position="0.004866719,0.04840004,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" transmitterType="Many" target="3" amount="0" signalType="Cable" transmitterGroup="Exchange" />
+	<element id="3" type="Transmitter" position="0.02420282,-5.177842,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" amount="1" angleOffset="0" signalType="Cable" transmitterType="Many" />
+	<element id="4" type="Receiver" position="5.008474,-2.371165,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="1" />
+	<element id="5" type="Receiver" position="-4.98428,-2.83088,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="1" />
+	<element id="6" type="Receiver" position="0,5.032666,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="1" />
+</level>
+<!-- telephone_level2 -->
+<level version="1.1" signalLimit="4" sessionId="146" cameraZ="-20" >
+	<element id="1" type="Transceiver" position="-2,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" transmitterType="Many" target="1" amount="0" signalType="Cable" transmitterGroup="Cable" />
+	<element id="2" type="Transceiver" position="6,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" transmitterType="Many" target="1" amount="0" signalType="Cable" transmitterGroup="Cable" />
+	<element id="3" type="Transmitter" position="-6,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" amount="1" angleOffset="0" signalType="Cable" transmitterType="Many" />
+	<element id="4" type="Receiver" position="0,-4,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="1" />
+	<element id="5" type="Receiver" position="0,4,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="1" />
+	<element id="6" type="Transmitter" position="2,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" amount="1" angleOffset="0" signalType="Cable" transmitterType="Many" />
+</level>
+<!-- cell_level8 -->
+<level version="1.1" sessionId="171" cameraZ="-38" >
+	<element id="2" type="CellTransmitter" position="0,-6.12,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" />
+	<element id="9" type="CellTransmitter" position="10.43,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" />
+	<element id="10" type="CellTransmitter" position="-10.43,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" />
+	<element id="11" type="CellTransmitter" position="0,6.12,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" />
+	<element id="16" type="SignalBlockHexagon" position="-10.305,0,0" scale="1,1,1" rotation="0,0,0" blockGroup="Wave" flip="False" radius="6.87" />
+	<element id="17" type="SignalBlockHexagon" position="10.305,0,0" scale="1,1,1" rotation="0,0,0" blockGroup="Wave" flip="False" radius="6.87" />
+	<element id="18" type="SignalBlockHexagon" position="0,5.949595,0" scale="1,1,1" rotation="0,0,0" blockGroup="Wave" flip="False" radius="6.87" />
+	<element id="19" type="SignalBlockHexagon" position="0,-5.949595,0" scale="1,1,1" rotation="0,0,0" blockGroup="Wave" flip="False" radius="6.87" />
+	<element id="20" type="Transceiver" position="1.66,-9.24,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="1" amount="1" lookupTag="" />
+	<element id="21" type="Transceiver" position="15,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="1" amount="0" lookupTag="" />
+	<element id="22" type="Transceiver" position="-15,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="1" amount="1" lookupTag="" />
+	<element id="23" type="Transceiver" position="-2.01,9.69,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="1" amount="0" lookupTag="" />
+</level>
+<!-- Rob_level-2 -->
+<level version="1.1" sessionId="348" cameraZ="-30" >
+	<element id="1" type="Transceiver" position="6,-8,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="2" amount="0" lookupTag="" />
+	<element id="2" type="SignalBooster" position="0,-8,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" />
+	<element id="4" type="Transceiver" position="-6,-8,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="3" amount="0" lookupTag="" />
+	<element id="5" type="Transceiver" position="0,8,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="5" amount="1" lookupTag="" />
+	<element id="7" type="Receiver" position="6,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="2" />
+	<element id="8" type="RadialTransmitter" position="-10.23,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" minRadius="11.5" meterAngle="45" />
+	<element id="11" type="Receiver" position="0,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="5" />
+	<element id="12" type="SignalBlockCircle" position="-0.04,-4.49,0" scale="1,1,1" rotation="0,0,0" blockGroup="Exchange" radius="1" />
+	<element id="13" type="SignalBlockCircle" position="-6,3.44,0" scale="1,1,1" rotation="0,0,0" blockGroup="Exchange" radius="1.2" />
+	<element id="14" type="Receiver" position="-6,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="3" />
+	<element id="15" type="Transceiver" position="-6,8,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="2" amount="0" lookupTag="" />
+	<element id="16" type="RadialTransmitter" position="10.2,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" minRadius="11.5" meterAngle="45" />
+	<element id="17" type="SignalBlockCircle" position="6,3.46,0" scale="1,1,1" rotation="0,0,0" blockGroup="Exchange" radius="1.2" />
+	<element id="18" type="SignalBlockCircle" position="-6,0,0" scale="1,1,1" rotation="0,0,0" blockGroup="Exchange" radius="2" />
+	<element id="19" type="SignalBlockCircle" position="6,0,0" scale="1,1,1" rotation="0,0,0" blockGroup="Exchange" radius="2" />
+	<element id="20" type="Transceiver" position="6,8,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="1" amount="0" lookupTag="" />
+</level>
+<!-- broadcast_level1 -->
+<level version="1.1" signalLimit="5" sessionId="95" cameraZ="-22" smallMeters="False" >
+	<element id="0" type="Transmitter" position="0,-4.75,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" amount="1" angleOffset="0" signalType="Cable" transmitterType="Many" />
+	<element id="1" type="Receiver" position="-5.084721,-1.886879,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="1" />
+	<element id="4" type="Receiver" position="4.853518,-1.707906,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="1" />
+	<element id="5" type="Receiver" position="-4.908463,3.214625,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="1" />
+	<element id="6" type="Receiver" position="0,5.672027,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="1" />
+	<element id="7" type="Receiver" position="4.810443,3.266654,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="1" />
+	<element id="8" type="RadialTransmitter" position="0,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" minRadius="7.5" meterAngle="45" targetAmount="5" extraRadius="0" transmitterGroup="Exchange" />
+</level>
+<!-- broadcast_level2b -->
+<level version="1.1" signalLimit="3" sessionId="100" cameraZ="-25" smallMeters="False" >
+	<element id="0" type="RadialTransmitter" position="-3.605592,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" minRadius="5" meterAngle="45" targetAmount="5" extraRadius="0" transmitterGroup="Exchange" />
+	<element id="1" type="Transmitter" position="0.01744556,-3.093243,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" amount="1" angleOffset="0" signalType="Cable" transmitterType="Many" />
+	<element id="2" type="Receiver" position="-3.681193,3.652038,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="2" />
+	<element id="3" type="RadialTransmitter" position="3.648125,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" minRadius="5" meterAngle="45" targetAmount="5" extraRadius="0" transmitterGroup="Exchange" />
+	<element id="4" type="Transceiver" position="3.632865,3.783736,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" transmitterType="Many" target="2" amount="0" signalType="Cable" transmitterGroup="Exchange" />
+	<element id="5" type="Transceiver" position="6.95927,0.0283277,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" transmitterType="Many" target="1" amount="0" signalType="Cable" transmitterGroup="Exchange" />
+	<element id="6" type="Receiver" position="-7.04341,0.1378224,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="2" />
+</level>
+<!-- cell_level7 -->
+<level version="1.1" signalLimit="8" sessionId="166" cameraZ="-30" smallMeters="True" >
+	<element id="1" type="CellTransmitter" position="-2.386914,4.183168,0" scale="1,1,1" rotation="0,0,90" elementGroup="Wave" transmitterGroup="Wave" />
+	<element id="12" type="CellTransmitter" position="2.45689,-4.118618,0" scale="1,1,1" rotation="0,0,90" elementGroup="Wave" transmitterGroup="Wave" />
+	<element id="15" type="SignalBlockHexagon" position="2.45689,-4.118618,0" scale="1,1,1" rotation="0,0,90" blockGroup="Wave" radius="5.55" />
+	<element id="17" type="SignalBlockHexagon" position="-2.386914,4.183168,0" scale="1,1,1" rotation="0,0,90" blockGroup="Wave" radius="5.55" />
+	<element id="19" type="Transceiver" position="11.64623,1.183826,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" transmitterType="Many" target="1" amount="0" signalType="Cable" transmitterGroup="Exchange" />
+	<element id="20" type="SignalBlockCircle" position="0,0,0" scale="1,1,1" rotation="0,0,0" blockGroup="Exchange" radius="1.06" />
+	<element id="21" type="Transceiver" position="0.2559478,5.791126,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" transmitterType="Many" target="1" amount="0" signalType="Cable" transmitterGroup="Wave" />
+	<element id="22" type="Transceiver" position="-0.5119352,-5.919088,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" transmitterType="Many" target="1" amount="0" signalType="Cable" transmitterGroup="Exchange" />
+	<element id="23" type="Transceiver" position="-5.343204,2.335652,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" transmitterType="Many" target="1" amount="0" signalType="Cable" transmitterGroup="Wave" />
+	<element id="24" type="Transceiver" position="-11.51828,-1.343788,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" transmitterType="Many" target="1" amount="1" signalType="Cable" transmitterGroup="Exchange" />
+	<element id="25" type="Transceiver" position="5.279189,-2.463623,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" transmitterType="Many" target="1" amount="0" signalType="Cable" transmitterGroup="Exchange" />
+</level>
+<!-- Rob_level-7 -->
+<level version="1.1" sessionId="344" cameraZ="-26" >
+	<element id="1" type="Transceiver" position="-5,-5,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="4" amount="0" lookupTag="" />
+	<element id="2" type="Transceiver" position="5,5,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="3" amount="0" lookupTag="" />
+	<element id="4" type="Transceiver" position="-5,5,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" target="5" amount="0" lookupTag="" />
+	<element id="6" type="Transceiver" position="5,-5,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" target="2" amount="0" lookupTag="" />
+	<element id="13" type="SwapperTransmitter" position="0,-5,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="4" swapGroup1="Exchange" amount="0" swapGroup2="Fibre" />
+	<element id="14" type="Transceiver" position="5,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" target="2" amount="1" lookupTag="" />
+	<element id="15" type="RadialTransmitter" position="0,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" minRadius="8.5" meterAngle="45" />
+	<element id="16" type="Receiver" position="-5,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" target="2" />
+	<element id="17" type="Receiver" position="10,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="2" />
+	<element id="18" type="SwapperTransmitter" position="0,5,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="5" swapGroup1="Exchange" amount="0" swapGroup2="Fibre" />
+	<element id="19" type="Receiver" position="-10,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="4" />
+	<element id="20" type="ObjectiveCrossedWires" position="0,0,0" scale="1,1,1" rotation="0,0,0" oid="76" />
+</level>
+<!-- broadcast_level4 -->
+<level version="1.1" signalLimit="5" sessionId="151" cameraZ="-25" smallMeters="False" >
+	<element id="1" type="RadialTransmitter" position="-2,-2,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" minRadius="5.5" meterAngle="45" targetAmount="5" extraRadius="0" transmitterGroup="Exchange" />
+	<element id="4" type="Transceiver" position="-8,3,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" transmitterType="Many" target="1" amount="0" signalType="Cable" transmitterGroup="Exchange" />
+	<element id="5" type="Transceiver" position="2,-2,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" transmitterType="Many" target="2" amount="0" signalType="Cable" transmitterGroup="Exchange" />
+	<element id="9" type="Transceiver" position="8,-2,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" transmitterType="Many" target="1" amount="0" signalType="Cable" transmitterGroup="Exchange" />
+	<element id="10" type="Transceiver" position="-2,6,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" transmitterType="Many" target="2" amount="1" signalType="Cable" transmitterGroup="Exchange" />
+	<element id="12" type="Receiver" position="-6,-2,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="2" />
+	<element id="13" type="ObjectiveCrossedWires" position="0,0,0" scale="1,1,1" rotation="0,0,0" oid="13" />
+	<element id="14" type="ObjectiveTargetValue" position="0,0,0" scale="1,1,1" rotation="0,0,0" informationTarget="9" oid="14" />
+</level>
+<!-- computer_level11 -->
+<level version="1.1" signalLimit="3" sessionId="274" cameraZ="-26" smallMeters="False" >
+	<element id="1" type="Transceiver" position="5,5,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" target="4" lookupTag="" amount="0" transmitterGroup="Fibre" />
+	<element id="2" type="Transceiver" position="-5,-5,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" target="3" lookupTag="" amount="0" transmitterGroup="Fibre" />
+	<element id="3" type="Transceiver" position="0,-5,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" target="2" lookupTag="" amount="0" transmitterGroup="Fibre" />
+	<element id="4" type="Transceiver" position="-5,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" target="2" lookupTag="" amount="1" transmitterGroup="Fibre" />
+	<element id="5" type="Transceiver" position="0,5,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" target="1" lookupTag="" amount="0" transmitterGroup="Fibre" />
+	<element id="6" type="ObjectiveCrossedWires" position="0,0,0" scale="1,1,1" rotation="0,0,0" oid="59" />
+	<element id="7" type="ObjectiveTargetValue" position="0,0,0" scale="1,1,1" rotation="0,0,0" informationTarget="1" oid="58" />
+	<element id="8" type="Transceiver" position="5,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" target="1" lookupTag="" amount="0" transmitterGroup="Fibre" />
+</level>
+<!-- satellite_level17 -->
+<level version="1.1" sessionId="358" cameraZ="-23" >
+	<element id="0" type="Transmitter" position="-3.338975,3.145419,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" amount="1" angleOffset="0" />
+	<element id="5" type="Receiver" position="0.1451735,5.831121,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="1" />
+	<element id="7" type="Receiver" position="-3.459961,-2.758292,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="1" />
+	<element id="8" type="Receiver" position="-6.266642,-0.0241971,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="1" />
+	<element id="10" type="SwapperTransmitter" position="0,-5.169168,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="2" swapGroup1="Exchange" amount="0" swapGroup2="Wave" />
+	<element id="11" type="SwapperTransmitter" position="0,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="3" swapGroup1="Exchange" amount="0" swapGroup2="Wave" />
+	<element id="12" type="Transceiver" position="3.02445,3.218007,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="2" amount="1" lookupTag="" />
+	<element id="13" type="Transceiver" position="5.492394,-0.02419555,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="2" amount="1" lookupTag="" />
+</level>
+<!-- satellite_level16_swapper -->
+<level version="1.1" signalLimit="3" sessionId="261" cameraZ="-30" smallMeters="False" >
+	<element id="2" type="SwapperTransmitter" position="-6,-4,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="2" swapGroup2="Wave" swapGroup1="Exchange" amount="0" transmitterGroup="Cable" />
+	<element id="4" type="Transceiver" position="10,0.03733444,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="2" lookupTag="" amount="1" transmitterGroup="Wave" />
+	<element id="5" type="Transceiver" position="7,-4,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="3" lookupTag="" amount="0" transmitterGroup="Wave" />
+	<element id="6" type="Transceiver" position="7,4,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="2" lookupTag="" amount="1" transmitterGroup="Wave" />
+	<element id="7" type="Transceiver" position="-3,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="4" lookupTag="" amount="1" transmitterGroup="Exchange" />
+	<element id="8" type="SignalBlockCircle" position="-5.225545,-0.009719849,0" scale="1,1,1" rotation="0,0,0" blockGroup="Exchange" radius="7.5" />
+	<element id="9" type="SwapperTransmitter" position="-6,4,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="3" swapGroup2="Wave" swapGroup1="Exchange" amount="0" transmitterGroup="Cable" />
+	<element id="11" type="ObjectiveSignalCount" position="0,0,0" scale="1,1,1" rotation="0,0,0" signalTarget="7" oid="47" />
+	<element id="13" type="ObjectiveCrossedWires" position="0,0,0" scale="1,1,1" rotation="0,0,0" oid="46" />
+</level>
+<!-- computer_level9 -->
+<level version="1.1" signalLimit="10" sessionId="117" cameraZ="-30" smallMeters="False" >
+	<element id="0" type="Transceiver" position="9.97212,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" transmitterType="Many" target="1" amount="0" signalType="Cable" transmitterGroup="Fibre" />
+	<element id="1" type="Transceiver" position="6.277325,6.081698,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" transmitterType="Many" target="1" amount="0" signalType="Cable" transmitterGroup="Fibre" />
+	<element id="2" type="Transceiver" position="-10.03865,6.67572E-06,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" transmitterType="Many" target="1" amount="0" signalType="Cable" transmitterGroup="Fibre" />
+	<element id="3" type="Transmitter" position="-5.62451,-6.992458,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" amount="1" angleOffset="0" signalType="Cable" transmitterType="Many" />
+	<element id="4" type="Transceiver" position="-2.452856,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" transmitterType="Many" target="1" amount="0" signalType="Cable" transmitterGroup="Fibre" />
+	<element id="5" type="Transceiver" position="2.615227,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" transmitterType="Many" target="3" amount="0" signalType="Cable" transmitterGroup="Fibre" />
+	<element id="6" type="Transceiver" position="-5.85338,6.081698,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" transmitterType="Many" target="2" amount="0" signalType="Cable" transmitterGroup="Fibre" />
+	<element id="7" type="Transceiver" position="6.277325,-6.801066,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" transmitterType="Many" target="1" amount="0" signalType="Cable" transmitterGroup="Fibre" />
+	<element id="8" type="ObjectiveSignalCount" position="0,0,0" scale="1,1,1" rotation="0,0,0" signalTarget="9" oid="1" />
+	<element id="9" type="ObjectiveTargetValue" position="0,0,0" scale="1,1,1" rotation="0,0,0" informationTarget="2" oid="3" />
+</level>
+<!-- computer_level7 -->
+<level version="1.1" signalLimit="6" sessionId="208" cameraZ="-26" smallMeters="False" >
+	<element id="0" type="Transceiver" position="6.059712,2,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" transmitterType="Many" target="2" amount="0" signalType="Cable" transmitterGroup="Fibre" />
+	<element id="1" type="Transceiver" position="0,6,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" transmitterType="Many" target="1" amount="1" signalType="Cable" transmitterGroup="Fibre" />
+	<element id="4" type="Transceiver" position="-6.211609,2,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" transmitterType="Many" target="2" amount="1" signalType="Cable" transmitterGroup="Fibre" />
+	<element id="5" type="Transceiver" position="0,-6,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" transmitterType="Many" target="2" amount="1" signalType="Cable" transmitterGroup="Fibre" />
+	<element id="7" type="ObjectiveTargetValue" position="0,0,0" scale="1,1,1" rotation="0,0,0" informationTarget="0" oid="26" />
+	<element id="8" type="Receiver" position="0,-1,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" target="2" />
+	<element id="9" type="ObjectiveSignalCount" position="0,0,0" scale="1,1,1" rotation="0,0,0" signalTarget="4" oid="25" />
+</level>
+<!-- Rob_level-8 -->
+<level version="1.1" sessionId="330" cameraZ="-38" >
+	<element id="10" type="CellTransmitter" position="0,-8.01,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" />
+	<element id="11" type="SwapperTransmitter" position="-14.67,5.49,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="5" swapGroup1="Fibre" amount="0" swapGroup2="Exchange" />
+	<element id="12" type="Transceiver" position="6,-8,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="4" amount="0" lookupTag="" />
+	<element id="13" type="Transmitter" position="0,-0.77,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" amount="1" angleOffset="0" />
+	<element id="16" type="CellTransmitter" position="0,8,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" />
+	<element id="21" type="Transceiver" position="-6,-8,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="2" amount="0" lookupTag="" />
+	<element id="23" type="SwapperTransmitter" position="14.5,5.22,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="5" swapGroup1="Exchange" amount="0" swapGroup2="Fibre" />
+	<element id="24" type="Transceiver" position="10,2,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="4" amount="0" lookupTag="" />
+	<element id="26" type="Transceiver" position="-10,2,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="4" amount="0" lookupTag="" />
+	<element id="28" type="SignalBlockCircle" position="5.61,5.41,0" scale="1,1,1" rotation="0,0,0" blockGroup="Wave" radius="1" />
+	<element id="32" type="Transceiver" position="0,11.41,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="4" amount="1" lookupTag="" />
+	<element id="34" type="SignalBlockCircle" position="8,-3,0" scale="1,1,1" rotation="0,0,0" blockGroup="Wave" radius="1" />
+	<element id="37" type="SignalBlockCircle" position="-8,-3,0" scale="1,1,1" rotation="0,0,0" blockGroup="Wave" radius="1" />
+	<element id="38" type="SignalBlockCircle" position="-5.21,5.41,0" scale="1,1,1" rotation="0,0,0" blockGroup="Wave" radius="1" />
+	<element id="39" type="SwapperTransmitter" position="6.9,-11.76,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="2" swapGroup1="Exchange" amount="0" swapGroup2="Wave" />
+	<element id="40" type="SignalBlockHexagon" position="0,-22.4,0" scale="1,1,1" rotation="0,0,0" blockGroup="Wave" flip="True" radius="16" />
+	<element id="41" type="SwapperTransmitter" position="-7.15,-12,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="3" swapGroup1="Exchange" amount="0" swapGroup2="Wave" />
+</level>
+<!-- Rob_level-4 -->
+<level version="1.1" sessionId="333" cameraZ="-30" >
+	<element id="1" type="RadialTransmitter" position="0,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" minRadius="10" meterAngle="45" />
+	<element id="2" type="SignalBooster" position="6,6,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" />
+	<element id="3" type="SwapperTransmitter" position="0,-8,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="1" swapGroup1="Exchange" amount="0" swapGroup2="Wave" />
+	<element id="4" type="SwapperTransmitter" position="0,8,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="2" swapGroup1="Exchange" amount="0" swapGroup2="Wave" />
+	<element id="8" type="SwapperTransmitter" position="6,-6,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="5" swapGroup1="Exchange" amount="0" swapGroup2="Wave" />
+	<element id="9" type="Transceiver" position="-6,6,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="2" amount="1" lookupTag="" />
+	<element id="10" type="Receiver" position="11.76,-0.01,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="3" />
+	<element id="11" type="SwapperTransmitter" position="-8.03,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="2" swapGroup1="Exchange" amount="0" swapGroup2="Wave" />
+	<element id="12" type="Receiver" position="-11.87,0.09,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="3" />
+	<element id="13" type="SwapperTransmitter" position="8,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="3" swapGroup1="Exchange" amount="0" swapGroup2="Wave" />
+	<element id="14" type="SwapperTransmitter" position="-6,-6,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="3" swapGroup1="Exchange" amount="0" swapGroup2="Wave" />
+	<element id="17" type="SignalBlockCircle" position="-2.34,-2.63,0" scale="1,1,1" rotation="0,0,0" blockGroup="Exchange" radius="1.3" />
+	<element id="18" type="SignalBlockCircle" position="2.75,2.39,0" scale="1,1,1" rotation="0,0,0" blockGroup="Exchange" radius="1.3" />
+	<element id="19" type="ObjectiveTargetValue" position="0,0,0" scale="1,1,1" rotation="0,0,0" informationTarget="13" oid="77" />
+</level>
+<!-- broadcast_level2a -->
+<level version="1.1" sessionId="96" cameraZ="-25" >
+	<element id="0" type="Transmitter" position="-0.01998758,-3.237265,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" amount="2" angleOffset="0" />
+	<element id="5" type="Receiver" position="-0.01035309,2.474899,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="2" />
+	<element id="8" type="RadialTransmitter" position="-4,2.330669,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" minRadius="5.25" meterAngle="45" />
+	<element id="9" type="Receiver" position="7.611857,2.474899,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="1" />
+	<element id="10" type="Receiver" position="-7.575254,2.474899,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="1" />
+	<element id="11" type="Transceiver" position="-4,-5.667683,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="1" amount="0" lookupTag="" />
+	<element id="12" type="Transceiver" position="4,-5.667683,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="1" amount="0" lookupTag="" />
+	<element id="13" type="RadialTransmitter" position="4,2.330669,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" minRadius="5.25" meterAngle="45" />
+</level>
+<!-- cell_level10_swapper -->
+<level version="1.1" sessionId="263" cameraZ="-30" >
+	<element id="1" type="CellTransmitter" position="-3,5,0" scale="1,1,1" rotation="0,0,90" elementGroup="Wave" />
+	<element id="12" type="CellTransmitter" position="3,-5,0" scale="1,1,1" rotation="0,0,90" elementGroup="Wave" />
+	<element id="15" type="SignalBlockHexagon" position="3.03109,-5.25,0" scale="1,1,1" rotation="0,0,0" blockGroup="Wave" flip="True" radius="7" />
+	<element id="17" type="SignalBlockHexagon" position="-3.03109,5.25,0" scale="1,1,1" rotation="0,0,0" blockGroup="Wave" flip="True" radius="7" />
+	<element id="18" type="Transceiver" position="-3,1,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="2" amount="1" lookupTag="" />
+	<element id="19" type="Receiver" position="-6.3189,-3.327954,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="1" />
+	<element id="22" type="Transceiver" position="-1,-7,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="1" amount="0" lookupTag="" />
+	<element id="23" type="Transceiver" position="7,-7,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="2" amount="1" lookupTag="" />
+	<element id="24" type="Transceiver" position="-7,7,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="2" amount="0" lookupTag="" />
+	<element id="25" type="ObjectiveTargetValue" position="0,0,0" scale="1,1,1" rotation="0,0,0" informationTarget="26" oid="42" />
+	<element id="26" type="SwapperTransmitter" position="2.98687,-0.9746618,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="2" swapGroup1="Exchange" amount="0" swapGroup2="Wave" />
+	<element id="27" type="SwapperTransmitter" position="1.006104,7.011283,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="2" swapGroup1="Exchange" amount="0" swapGroup2="Wave" />
+	<element id="28" type="ObjectiveCrossedWires" position="0,0,0" scale="1,1,1" rotation="0,0,0" oid="48" />
+</level>
+<!-- cell_level12_swapper -->
+<level version="1.1" sessionId="266" cameraZ="-30" >
+	<element id="1" type="SignalBlockHexagon" position="6.49519,0,0" scale="1,1,1" rotation="0,0,0" blockGroup="Wave" flip="True" radius="7.5" />
+	<element id="2" type="CellTransmitter" position="6.5,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" />
+	<element id="3" type="Transceiver" position="-2.788685,2.426698,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="3" amount="1" lookupTag="" />
+	<element id="4" type="Transceiver" position="10.38721,-2.532843,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="2" amount="0" lookupTag="" />
+	<element id="5" type="SwapperTransmitter" position="3.095695,-2.532844,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="2" swapGroup1="Exchange" amount="0" swapGroup2="Wave" />
+	<element id="6" type="SwapperTransmitter" position="-10.2337,2.404923,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="2" swapGroup1="Exchange" amount="0" swapGroup2="Wave" />
+	<element id="7" type="Transceiver" position="-1,-7.25,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="2" amount="0" lookupTag="" />
+	<element id="8" type="Transceiver" position="6.52399,3.632966,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="1" amount="0" lookupTag="" />
+	<element id="9" type="Transceiver" position="1,7.25,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="1" amount="0" lookupTag="" />
+	<element id="10" type="CellTransmitter" position="-6.5,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" />
+	<element id="11" type="SignalBlockHexagon" position="-6.49519,0,0" scale="1,1,1" rotation="0,0,0" blockGroup="Wave" flip="True" radius="7.5" />
+	<element id="12" type="ObjectiveTargetValue" position="0,0,0" scale="1,1,1" rotation="0,0,0" informationTarget="4" oid="51" />
+	<element id="13" type="Transceiver" position="-6.52399,-3.636775,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="3" amount="1" lookupTag="" />
+</level>
+<!-- cell_level7_swapper -->
+<level version="1.1" sessionId="267" cameraZ="-30" >
+	<element id="1" type="CellTransmitter" position="-2.386914,4.183168,0" scale="1,1,1" rotation="0,0,90" elementGroup="Wave" />
+	<element id="12" type="CellTransmitter" position="2.45689,-4.118618,0" scale="1,1,1" rotation="0,0,90" elementGroup="Wave" />
+	<element id="15" type="SignalBlockHexagon" position="2.40322,-4.1625,0" scale="1,1,1" rotation="0,0,0" blockGroup="Wave" flip="True" radius="5.55" />
+	<element id="17" type="SignalBlockHexagon" position="-2.40322,4.1625,0" scale="1,1,1" rotation="0,0,0" blockGroup="Wave" flip="True" radius="5.55" />
+	<element id="19" type="Transceiver" position="6.074303,3.36036,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="1" amount="0" lookupTag="" />
+	<element id="24" type="Transceiver" position="-6.272833,-3.041485,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="2" amount="1" lookupTag="" />
+	<element id="26" type="SwapperTransmitter" position="5.264764,-2.520705,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="2" swapGroup1="Exchange" amount="0" swapGroup2="Wave" />
+	<element id="27" type="SwapperTransmitter" position="-0.5743368,-5.966733,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="1" swapGroup1="Exchange" amount="0" swapGroup2="Wave" />
+	<element id="28" type="SwapperTransmitter" position="0.2233553,5.807194,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="2" swapGroup1="Exchange" amount="0" swapGroup2="Wave" />
+	<element id="29" type="SwapperTransmitter" position="-5.360485,2.361166,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="1" swapGroup1="Exchange" amount="0" swapGroup2="Wave" />
+	<element id="30" type="SignalBlockCircle" position="2.47956,1.362013,0" scale="1,1,1" rotation="0,0,0" blockGroup="Exchange" radius="1" />
+	<element id="33" type="ObjectiveTargetValue" position="0,0,0" scale="1,1,1" rotation="0,0,0" informationTarget="19" oid="52" />
+	<element id="34" type="SignalBlockCircle" position="-2.514484,-1.466781,0" scale="1,1,1" rotation="0,0,0" blockGroup="Exchange" radius="1" />
+</level>
+<!-- telephone_level1 -->
+<level version="1.1" signalLimit="2" sessionId="8" cameraZ="-16" smallMeters="False" >
+	<element id="0" type="Transmitter" position="3,3,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" amount="1" angleOffset="0" signalType="Cable" transmitterType="Many" />
+	<element id="1" type="Transceiver" position="0,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" transmitterType="Many" target="1" amount="0" signalType="Cable" transmitterGroup="Exchange" />
+	<element id="2" type="Receiver" position="3,-3,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="1" />
+</level>
+<!-- computer_level4 -->
+<level version="1.1" signalLimit="4" sessionId="115" cameraZ="-20" smallMeters="False" >
+	<element id="0" type="Transceiver" position="-3,3,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" transmitterType="Many" target="1" lookupTag="" amount="0" signalType="Cable" transmitterGroup="Fibre" />
+	<element id="1" type="Transceiver" position="3,3,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" transmitterType="Many" target="2" lookupTag="" amount="1" signalType="Cable" transmitterGroup="Fibre" />
+	<element id="3" type="Transceiver" position="3,-3,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" transmitterType="Many" target="1" lookupTag="" amount="0" signalType="Cable" transmitterGroup="Fibre" />
+	<element id="4" type="Transceiver" position="-3,-3,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" transmitterType="Many" target="2" lookupTag="" amount="1" signalType="Cable" transmitterGroup="Fibre" />
+	<element id="5" type="ObjectiveTargetValue" position="0,0,0" scale="1,1,1" rotation="0,0,0" informationTarget="3" oid="30" />
+	<element id="6" type="ObjectiveCrossedWires" position="0,0,0" scale="1,1,1" rotation="0,0,0" oid="45" />
+</level>
+<!-- telegraph_level1 -->
+<level version="1.1" signalLimit="3" sessionId="175" cameraZ="-16" smallMeters="False" >
+	<element id="1" type="Transmitter" position="-4.5,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" amount="1" angleOffset="0" signalType="Cable" transmitterType="Many" />
+	<element id="2" type="Receiver" position="4.5,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="1" />
+</level>
+<!-- advanced_level5 -->
+<level version="1.1" sessionId="288" cameraZ="-30" >
+	<element id="1" type="SignalBooster" position="5,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" />
+	<element id="2" type="Transceiver" position="-5,-4.031357,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" target="2" amount="1" lookupTag="" />
+	<element id="3" type="SwapperTransmitter" position="-10,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="2" swapGroup1="Fibre" amount="0" swapGroup2="Wave" />
+	<element id="4" type="Transceiver" position="10,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="2" amount="0" lookupTag="" />
+	<element id="5" type="Transceiver" position="5,-4.031357,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" target="4" amount="0" lookupTag="" />
+	<element id="6" type="SignalBooster" position="-5,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" />
+	<element id="8" type="SwapperTransmitter" position="0,-8,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="2" swapGroup1="Exchange" amount="0" swapGroup2="Wave" />
+	<element id="9" type="Transceiver" position="0,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="2" amount="0" lookupTag="" />
+	<element id="10" type="SignalBlockCircle" position="0,4.420987,0" scale="1,1,1" rotation="0,0,0" blockGroup="Wave" radius="1" />
+	<element id="11" type="SwapperTransmitter" position="0,8,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="2" swapGroup1="Exchange" amount="0" swapGroup2="Fibre" />
+	<element id="12" type="Transceiver" position="-5,4.403912,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="3" amount="1" lookupTag="" />
+	<element id="13" type="SwapperTransmitter" position="5,4.403912,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="3" swapGroup1="Fibre" amount="0" swapGroup2="Wave" />
+	<element id="14" type="ObjectiveTargetValue" position="0,0,0" scale="1,1,1" rotation="0,0,0" informationTarget="8" oid="67" />
+	<element id="15" type="ObjectiveTargetValue" position="0,0,0" scale="1,1,1" rotation="0,0,0" informationTarget="13" oid="68" />
+	<element id="16" type="SignalBlockCircle" position="0,-4.0236,0" scale="1,1,1" rotation="0,0,0" blockGroup="Fibre" radius="1" />
+</level>
+<!-- advanced_level6 -->
+<level version="1.1" sessionId="321" cameraZ="-30" >
+	<element id="2" type="SwapperTransmitter" position="-5,-8,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="3" swapGroup1="Exchange" amount="0" swapGroup2="Fibre" />
+	<element id="3" type="Transceiver" position="5,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="2" amount="0" lookupTag="" />
+	<element id="5" type="SignalBlockCircle" position="0,4,0" scale="1,1,1" rotation="0,0,0" blockGroup="Exchange" radius="0.88" />
+	<element id="6" type="Receiver" position="10,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="1" />
+	<element id="7" type="Receiver" position="-9.943797,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" target="1" />
+	<element id="8" type="Transceiver" position="5,8,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="3" amount="0" lookupTag="" />
+	<element id="9" type="Transceiver" position="0,8,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="3" amount="1" lookupTag="" />
+	<element id="10" type="Transceiver" position="5,-8,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" target="2" amount="1" lookupTag="" />
+	<element id="11" type="Transceiver" position="0,-8,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" target="1" amount="1" lookupTag="" />
+	<element id="12" type="SwapperTransmitter" position="-5,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="4" swapGroup1="Exchange" amount="0" swapGroup2="Fibre" />
+	<element id="13" type="RadialTransmitter" position="0,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" minRadius="6.5" targetAmount="5" meterAngle="45" />
+	<element id="14" type="ObjectiveCrossedWires" position="0,0,0" scale="1,1,1" rotation="0,0,0" oid="69" />
+	<element id="15" type="ObjectiveTargetValue" position="0,0,0" scale="1,1,1" rotation="0,0,0" informationTarget="2" oid="70" />
+</level>
+<!-- advanced_level3 -->
+<level version="1.1" sessionId="193" cameraZ="-25" >
+	<element id="1" type="SignalBooster" position="0.04938173,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" />
+	<element id="3" type="SignalBlockCircle" position="5.087877,0,0" scale="1,1,1" rotation="0,0,0" blockGroup="Exchange" radius="1" />
+	<element id="4" type="Receiver" position="5.161957,-4.124626,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="3" />
+	<element id="5" type="ObjectiveSignalCount" position="0,0,0" scale="1,1,1" rotation="0,0,0" signalTarget="9" oid="8" />
+	<element id="6" type="ObjectiveTargetValue" position="0,0,0" scale="1,1,1" rotation="0,0,0" informationTarget="7" oid="9" />
+	<element id="7" type="Transceiver" position="-4.890275,-4.099936,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="1" amount="0" lookupTag="" />
+	<element id="8" type="Transceiver" position="-4.890275,3.655359,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="4" amount="0" lookupTag="" />
+	<element id="9" type="Transceiver" position="0.02470016,-6.470968,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="3" amount="1" lookupTag="" />
+	<element id="10" type="Transceiver" position="-0.04939651,6.446275,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="2" amount="1" lookupTag="" />
+	<element id="11" type="Transceiver" position="5.161956,3.655359,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="2" amount="0" lookupTag="" />
+	<element id="12" type="SignalBlockCircle" position="-4.816179,0,0" scale="1,1,1" rotation="0,0,0" blockGroup="Exchange" radius="1" />
+</level>
+<!-- cell_level1 -->
+<level version="1.1" signalLimit="2" sessionId="137" cameraZ="-16" >
+	<element id="1" type="SignalBlock" position="0,0,0" scale="1,1,1" rotation="0,0,0" blockGroup="Wave" sy="0" ex="10" sx="-10" ey="0" />
+	<element id="2" type="CellTransmitter" position="-2.003767,2.327124,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" transmitterGroup="Wave" />
+	<element id="3" type="CellTransmitter" position="2.03,-2.528269,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" transmitterGroup="Wave" />
+	<element id="7" type="Transmitter" position="2.099187,2.312109,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" amount="1" angleOffset="0" signalType="Cable" transmitterType="Many" />
+	<element id="8" type="Receiver" position="-2.041934,-2.624087,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="1" />
+</level>
+<!-- cell_level4 -->
+<level version="1.1" sessionId="132" cameraZ="-30" >
+	<element id="0" type="CellTransmitter" position="-4.81097,-3.670686,0" scale="1,1,1" rotation="0,0,90" elementGroup="Wave" />
+	<element id="1" type="CellTransmitter" position="0.03267658,4.631101,0" scale="1,1,1" rotation="0,0,90" elementGroup="Wave" />
+	<element id="8" type="Transceiver" position="4.869406,-7.388628,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="1" amount="0" lookupTag="" />
+	<element id="10" type="Transceiver" position="3.176999,6.389647,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="1" amount="0" lookupTag="" />
+	<element id="11" type="Transceiver" position="-7.891843,-1.886977,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="3" amount="3" lookupTag="" />
+	<element id="12" type="CellTransmitter" position="4.87648,-3.670685,0" scale="1,1,1" rotation="0,0,90" elementGroup="Wave" />
+	<element id="13" type="Transceiver" position="-3.012707,6.49162,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="1" amount="0" lookupTag="" />
+	<element id="15" type="SignalBlockHexagon" position="4.76314,-3.825,0" scale="1,1,1" rotation="0,0,0" blockGroup="Wave" flip="True" radius="5.55" />
+	<element id="16" type="SignalBlockHexagon" position="-4.76314,-3.825,0" scale="1,1,1" rotation="0,0,0" blockGroup="Wave" flip="True" radius="5.55" />
+	<element id="17" type="SignalBlockHexagon" position="0,4.5,0" scale="1,1,1" rotation="0,0,0" blockGroup="Wave" flip="True" radius="5.55" />
+	<element id="18" type="Receiver" position="-7.906469,-5.389239,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="2" />
+</level>
+<!-- advanced_level4 -->
+<level version="1.1" sessionId="364" cameraZ="-30" >
+	<element id="1" type="RadialTransmitter" position="-5,3.5,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" minRadius="7" meterAngle="30" />
+	<element id="3" type="SignalBooster" position="-5,-6.5,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" />
+	<element id="4" type="Transceiver" position="-5,7.5,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="1" amount="0" lookupTag="" />
+	<element id="5" type="SignalBlockCircle" position="5,-2.624035,0" scale="1,1,1" rotation="0,0,0" blockGroup="Exchange" radius="1.25" />
+	<element id="7" type="Transceiver" position="5,-6.5,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="3" amount="1" lookupTag="" />
+	<element id="8" type="Receiver" position="10,-1,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="2" />
+	<element id="9" type="Receiver" position="-10,3.5,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="3" />
+	<element id="10" type="SignalBlockCircle" position="-5,0.04660034,0" scale="1,1,1" rotation="0,0,0" blockGroup="Exchange" radius="1.25" />
+	<element id="11" type="Transceiver" position="0,3.5,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="2" amount="0" lookupTag="" />
+	<element id="12" type="Transceiver" position="0,-4.613525,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="4" amount="0" lookupTag="" />
+	<element id="13" type="Transceiver" position="5,3.5,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="4" amount="0" lookupTag="" />
+	<element id="14" type="ObjectiveTargetValue" position="0,0,0" scale="1,1,1" rotation="0,0,0" informationTarget="11" oid="66" />
+	<element id="16" type="ObjectiveSignalCount" position="0,0,0" scale="1,1,1" rotation="0,0,0" signalTarget="8" oid="65" />
+</level>

@@ -1,0 +1,9 @@
+<!-- advanced_level2 -->
+<level version="1.1" sessionId="184" cameraZ="-26" >
+	<element id="1" type="SignalBooster" position="0,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" />
+	<element id="2" type="Transceiver" position="5.704909,-4.584171,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="3" amount="1" lookupTag="" />
+	<element id="3" type="Transceiver" position="5.704909,4.278553,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="3" amount="1" lookupTag="" />
+	<element id="4" type="Transceiver" position="-6,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="2" amount="0" lookupTag="" />
+	<element id="5" type="Transceiver" position="5.674349,-4.768372E-06,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="4" amount="0" lookupTag="" />
+	<element id="6" type="ObjectiveTargetValue" position="0,0,0" scale="1,1,1" rotation="0,0,0" informationTarget="4" oid="71" />
+</level>

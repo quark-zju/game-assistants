@@ -1,0 +1,19 @@
+<!-- Rob_level-2 -->
+<level version="1.1" sessionId="348" cameraZ="-30" >
+	<element id="1" type="Transceiver" position="6,-8,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="2" amount="0" lookupTag="" />
+	<element id="2" type="SignalBooster" position="0,-8,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" />
+	<element id="4" type="Transceiver" position="-6,-8,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="3" amount="0" lookupTag="" />
+	<element id="5" type="Transceiver" position="0,8,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="5" amount="1" lookupTag="" />
+	<element id="7" type="Receiver" position="6,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="2" />
+	<element id="8" type="RadialTransmitter" position="-10.23,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" minRadius="11.5" meterAngle="45" />
+	<element id="11" type="Receiver" position="0,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="5" />
+	<element id="12" type="SignalBlockCircle" position="-0.04,-4.49,0" scale="1,1,1" rotation="0,0,0" blockGroup="Exchange" radius="1" />
+	<element id="13" type="SignalBlockCircle" position="-6,3.44,0" scale="1,1,1" rotation="0,0,0" blockGroup="Exchange" radius="1.2" />
+	<element id="14" type="Receiver" position="-6,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="3" />
+	<element id="15" type="Transceiver" position="-6,8,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="2" amount="0" lookupTag="" />
+	<element id="16" type="RadialTransmitter" position="10.2,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" minRadius="11.5" meterAngle="45" />
+	<element id="17" type="SignalBlockCircle" position="6,3.46,0" scale="1,1,1" rotation="0,0,0" blockGroup="Exchange" radius="1.2" />
+	<element id="18" type="SignalBlockCircle" position="-6,0,0" scale="1,1,1" rotation="0,0,0" blockGroup="Exchange" radius="2" />
+	<element id="19" type="SignalBlockCircle" position="6,0,0" scale="1,1,1" rotation="0,0,0" blockGroup="Exchange" radius="2" />
+	<element id="20" type="Transceiver" position="6,8,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="1" amount="0" lookupTag="" />
+</level>

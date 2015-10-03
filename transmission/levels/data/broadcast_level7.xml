@@ -1,0 +1,14 @@
+<!-- broadcast_level7 -->
+<level version="1.1" signalLimit="6" sessionId="203" cameraZ="-30" smallMeters="False" >
+	<element id="1" type="RadialTransmitter" position="7,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" minRadius="6.5" targetAmount="5" extraRadius="0" transmitterGroup="Exchange" />
+	<element id="2" type="Transmitter" position="0,-8,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" amount="1" angleOffset="0" signalType="Cable" transmitterType="Many" />
+	<element id="3" type="Transceiver" position="3.705871,-4,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" transmitterType="Many" target="3" amount="1" signalType="Cable" transmitterGroup="Exchange" />
+	<element id="5" type="ObjectiveCrossedWires" position="0,0,0" scale="1,1,1" rotation="0,0,0" oid="20" />
+	<element id="6" type="Transceiver" position="11.67707,-0.02956533,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" transmitterType="Many" target="1" amount="0" signalType="Cable" transmitterGroup="Exchange" />
+	<element id="7" type="Transceiver" position="0,8,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" transmitterType="Many" target="3" amount="1" signalType="Cable" transmitterGroup="Exchange" />
+	<element id="8" type="RadialTransmitter" position="-7,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" minRadius="6.5" targetAmount="5" extraRadius="0" transmitterGroup="Exchange" />
+	<element id="9" type="Receiver" position="3.705871,4,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="4" />
+	<element id="10" type="Transceiver" position="-3.676458,4,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" transmitterType="Many" target="2" amount="0" signalType="Cable" transmitterGroup="Exchange" />
+	<element id="11" type="Receiver" position="-3.735283,-4,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="2" />
+	<element id="12" type="ObjectiveTargetValue" position="0,0,0" scale="1,1,1" rotation="0,0,0" informationTarget="7" oid="19" />
+</level>

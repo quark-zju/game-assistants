@@ -1,0 +1,4 @@
+0 13 -4,1.7                   3 1           # <element id="1" type="Transmitter" position="-4,1.7,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" amount="1" angleOffset="0" signalType="Cable" transmitterType="Many"/>
+1 6 3.924691,-3.415901        3 1           # <element id="4" type="Receiver" position="3.924691,-3.415901,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="1"/>
+2 13 4,1.7                    1 1           # <element id="5" type="Transmitter" position="4,1.7,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" amount="1" angleOffset="0" signalType="Cable" transmitterType="Many"/>
+3 6 -4.073239,-3.415901       1 1           # <element id="6" type="Receiver" position="-4.073239,-3.415901,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="1"/>

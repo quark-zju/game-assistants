@@ -1,0 +1,12 @@
+<!-- telephone_level6 -->
+<level version="1.1" signalLimit="7" sessionId="154" cameraZ="-20" smallMeters="False" >
+	<element id="1" type="Transmitter" position="7,4,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" amount="1" angleOffset="0" signalType="Cable" transmitterType="Many" />
+	<element id="2" type="Transceiver" position="4,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" transmitterType="Many" target="2" amount="0" signalType="Cable" transmitterGroup="Exchange" />
+	<element id="3" type="Receiver" position="7,-4,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="1" />
+	<element id="4" type="Receiver" position="-5,-4,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="1" />
+	<element id="5" type="Receiver" position="1,4,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="1" />
+	<element id="6" type="Transceiver" position="-2,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" transmitterType="Many" target="2" amount="0" signalType="Cable" transmitterGroup="Exchange" />
+	<element id="7" type="Transmitter" position="-7,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" amount="1" angleOffset="0" signalType="Cable" transmitterType="Many" />
+	<element id="8" type="Transmitter" position="1,-4,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" amount="1" angleOffset="0" signalType="Cable" transmitterType="Many" />
+	<element id="9" type="ObjectiveSignalCount" position="0,0,0" scale="1,1,1" rotation="0,0,0" signalTarget="6" oid="0" />
+</level>

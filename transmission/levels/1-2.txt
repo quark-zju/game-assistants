@@ -1,0 +1,4 @@
+0 13 -3,3                     0 1           # <element id="0" type="Transmitter" position="-3,3,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" amount="1" angleOffset="0" signalType="Cable" transmitterType="One"/>
+1 13 3,-3                     0 1           # <element id="1" type="Transmitter" position="3,-3,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" amount="1" angleOffset="0" signalType="Cable" transmitterType="One"/>
+2 6 -3,-3                     0 1           # <element id="2" type="Receiver" position="-3,-3,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="1"/>
+3 6 3,3                       0 1           # <element id="3" type="Receiver" position="3,3,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="1"/>

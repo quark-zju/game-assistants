@@ -1,0 +1,7 @@
+<!-- advanced_level1 -->
+<level version="1.1" signalLimit="3" sessionId="139" cameraZ="-15" smallMeters="False" >
+	<element id="1" type="Transmitter" position="0,2.65,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" amount="1" angleOffset="0" signalType="Cable" transmitterType="Many" />
+	<element id="2" type="SignalBooster" position="0,-1.34,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" transmitterType="Many" signalType="Cable" transmitterGroup="Exchange" />
+	<element id="3" type="Receiver" position="4.39,-1.32,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="1" />
+	<element id="4" type="Receiver" position="-4.39,-1.32,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="1" />
+</level>

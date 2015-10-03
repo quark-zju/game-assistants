@@ -1,0 +1,16 @@
+<!-- Rob_level-5 -->
+<level version="1.1" sessionId="314" cameraZ="-26" >
+	<element id="1" type="Transceiver" position="-5,-6,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="4" amount="0" lookupTag="" />
+	<element id="2" type="Transceiver" position="-5,4,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="2" amount="0" lookupTag="" />
+	<element id="3" type="Transceiver" position="-10,-1,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="1" amount="1" lookupTag="" />
+	<element id="4" type="Transceiver" position="5,4,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" target="4" amount="0" lookupTag="" />
+	<element id="6" type="Transceiver" position="5,-6,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" target="2" amount="0" lookupTag="" />
+	<element id="7" type="SwapperTransmitter" position="0,4,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="5" swapGroup1="Wave" amount="0" swapGroup2="Fibre" />
+	<element id="8" type="Receiver" position="0,8,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="2" />
+	<element id="10" type="SignalBlockCircle" position="0,-6,0" scale="1,1,1" rotation="0,0,0" blockGroup="Fibre" radius="2" />
+	<element id="11" type="SignalBlockCircle" position="0,-6,0" scale="1,1,1" rotation="0,0,0" blockGroup="Wave" radius="1.3" />
+	<element id="13" type="SwapperTransmitter" position="0,-1,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="4" swapGroup1="Wave" amount="0" swapGroup2="Fibre" />
+	<element id="14" type="Transceiver" position="10,-1,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" target="2" amount="1" lookupTag="" />
+	<element id="15" type="SignalBlockCircle" position="5.09,-1,0" scale="1,1,1" rotation="0,0,0" blockGroup="Fibre" radius="2" />
+	<element id="16" type="SignalBlockCircle" position="-5.03,-1,0" scale="1,1,1" rotation="0,0,0" blockGroup="Wave" radius="2" />
+</level>

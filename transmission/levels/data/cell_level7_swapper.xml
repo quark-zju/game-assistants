@@ -1,0 +1,16 @@
+<!-- cell_level7_swapper -->
+<level version="1.1" sessionId="267" cameraZ="-30" >
+	<element id="1" type="CellTransmitter" position="-2.386914,4.183168,0" scale="1,1,1" rotation="0,0,90" elementGroup="Wave" />
+	<element id="12" type="CellTransmitter" position="2.45689,-4.118618,0" scale="1,1,1" rotation="0,0,90" elementGroup="Wave" />
+	<element id="15" type="SignalBlockHexagon" position="2.40322,-4.1625,0" scale="1,1,1" rotation="0,0,0" blockGroup="Wave" flip="True" radius="5.55" />
+	<element id="17" type="SignalBlockHexagon" position="-2.40322,4.1625,0" scale="1,1,1" rotation="0,0,0" blockGroup="Wave" flip="True" radius="5.55" />
+	<element id="19" type="Transceiver" position="6.074303,3.36036,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="1" amount="0" lookupTag="" />
+	<element id="24" type="Transceiver" position="-6.272833,-3.041485,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="2" amount="1" lookupTag="" />
+	<element id="26" type="SwapperTransmitter" position="5.264764,-2.520705,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="2" swapGroup1="Exchange" amount="0" swapGroup2="Wave" />
+	<element id="27" type="SwapperTransmitter" position="-0.5743368,-5.966733,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="1" swapGroup1="Exchange" amount="0" swapGroup2="Wave" />
+	<element id="28" type="SwapperTransmitter" position="0.2233553,5.807194,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="2" swapGroup1="Exchange" amount="0" swapGroup2="Wave" />
+	<element id="29" type="SwapperTransmitter" position="-5.360485,2.361166,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="1" swapGroup1="Exchange" amount="0" swapGroup2="Wave" />
+	<element id="30" type="SignalBlockCircle" position="2.47956,1.362013,0" scale="1,1,1" rotation="0,0,0" blockGroup="Exchange" radius="1" />
+	<element id="33" type="ObjectiveTargetValue" position="0,0,0" scale="1,1,1" rotation="0,0,0" informationTarget="19" oid="52" />
+	<element id="34" type="SignalBlockCircle" position="-2.514484,-1.466781,0" scale="1,1,1" rotation="0,0,0" blockGroup="Exchange" radius="1" />
+</level>

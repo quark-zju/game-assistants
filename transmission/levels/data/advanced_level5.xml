@@ -1,0 +1,18 @@
+<!-- advanced_level5 -->
+<level version="1.1" sessionId="288" cameraZ="-30" >
+	<element id="1" type="SignalBooster" position="5,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" />
+	<element id="2" type="Transceiver" position="-5,-4.031357,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" target="2" amount="1" lookupTag="" />
+	<element id="3" type="SwapperTransmitter" position="-10,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="2" swapGroup1="Fibre" amount="0" swapGroup2="Wave" />
+	<element id="4" type="Transceiver" position="10,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="2" amount="0" lookupTag="" />
+	<element id="5" type="Transceiver" position="5,-4.031357,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" target="4" amount="0" lookupTag="" />
+	<element id="6" type="SignalBooster" position="-5,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" />
+	<element id="8" type="SwapperTransmitter" position="0,-8,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="2" swapGroup1="Exchange" amount="0" swapGroup2="Wave" />
+	<element id="9" type="Transceiver" position="0,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="2" amount="0" lookupTag="" />
+	<element id="10" type="SignalBlockCircle" position="0,4.420987,0" scale="1,1,1" rotation="0,0,0" blockGroup="Wave" radius="1" />
+	<element id="11" type="SwapperTransmitter" position="0,8,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="2" swapGroup1="Exchange" amount="0" swapGroup2="Fibre" />
+	<element id="12" type="Transceiver" position="-5,4.403912,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="3" amount="1" lookupTag="" />
+	<element id="13" type="SwapperTransmitter" position="5,4.403912,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="3" swapGroup1="Fibre" amount="0" swapGroup2="Wave" />
+	<element id="14" type="ObjectiveTargetValue" position="0,0,0" scale="1,1,1" rotation="0,0,0" informationTarget="8" oid="67" />
+	<element id="15" type="ObjectiveTargetValue" position="0,0,0" scale="1,1,1" rotation="0,0,0" informationTarget="13" oid="68" />
+	<element id="16" type="SignalBlockCircle" position="0,-4.0236,0" scale="1,1,1" rotation="0,0,0" blockGroup="Fibre" radius="1" />
+</level>

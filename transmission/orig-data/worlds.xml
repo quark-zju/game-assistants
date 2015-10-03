@@ -1,0 +1,236 @@
+<levels>
+	<world id="0" name="Intro" starsToUnlock="0" shape="" icon="" buttonColor="255,255,255" bgcolor1="55,0,83" bgcolor2="0,81,163" bgcolorDark1="16,11,21" bgcolorDark2="42,57,78" >
+		<level id="0" name="1" x="0" y="0" resource="intro_level1" tutorialResource="PrefabTutorialSignalsCreate" helpGroup="COMPONENTS" helpPage="-1" next="" >
+		</level>
+	</world>
+	<world id="1" name="TELEGRAPH" starsToUnlock="0" shape="Telegraph" icon="IconTelegraph" buttonColor="174,255,1" bgcolor1="9,130,0" bgcolor2="174,255,1" bgcolorDark1="5,65,0" bgcolorDark2="87,127,0" >
+		<level id="1" name="1-1" x="59.38315" y="12.16406" resource="telegraph_level1" tutorialResource="PrefabTutorialInformation" helpGroup="COMPONENTS" helpPage="0" next="2" >
+		</level>
+		<level id="2" name="1-2" x="271.0593" y="-30.1574" resource="telegraph_level2" tutorialResource="PrefabTutorialFillAll" helpGroup="COMPONENTS" helpPage="-1" next="3" >
+		</level>
+		<level id="3" name="1-3" x="466.9321" y="-1.996459" resource="telegraph_level3" tutorialResource="PrefabTutorialSignalsRemove" helpGroup="COMPONENTS" helpPage="2" next="" >
+		</level>
+	</world>
+	<world id="2" name="TELEPHONE" starsToUnlock="3" shape="Telephone" icon="IconTelephone" buttonColor="255,161,78" bgcolor1="186,0,74" bgcolor2="255,161,78" bgcolorDark1="93,0,37" bgcolorDark2="127,80,39" >
+		<level id="4" name="2-1" x="57.23713" y="0" resource="telephone_level1" tutorialResource="PrefabTutorialTransceiver" helpGroup="COMPONENTS" helpPage="5" next="5,6" >
+		</level>
+		<level id="5" name="2-2" x="211.5053" y="-178.0641" resource="telephone_level2" tutorialResource="" helpGroup="COMPONENTS" helpPage="-1" next="" >
+		</level>
+		<level id="6" name="2-3" x="272.8945" y="20.71852" resource="telephone_level3" tutorialResource="PrefabTutorialPacketMeter" helpGroup="COMPONENTS" helpPage="-1" next="56" >
+		</level>
+		<level id="7" name="2-5" x="666.3916" y="8.093372" resource="telephone_level6" tutorialResource="" helpGroup="COMPONENTS" helpPage="-1" next="57" >
+		</level>
+		<level id="56" name="2-4" x="467.1265" y="-60.35408" resource="telephone_level4" tutorialResource="" helpGroup="COMPONENTS" helpPage="-1" next="7" >
+		</level>
+		<level id="57" name="2-6" x="881.3786" y="-20.1593" resource="telephone_level7a" tutorialResource="" helpGroup="COMPONENTS" helpPage="-1" next="" >
+		</level>
+	</world>
+	<world id="3" name="COMPUTER" starsToUnlock="7" shape="Computer" icon="IconComputer" buttonColor="198,64,255" bgcolor1="51,68,193" bgcolor2="198,64,255" bgcolorDark1="25,34,96" bgcolorDark2="99,32,127" >
+		<level id="9" name="3-1" x="54.98445" y="-0.3151364" resource="computer_level1" tutorialResource="PrefabTutorialInformation2" helpGroup="COMPONENTS" helpPage="-1" next="10,11" >
+		</level>
+		<level id="10" name="3-2" x="146.8887" y="-159.2847" resource="computer_level2" tutorialResource="" helpGroup="COMPONENTS" helpPage="-1" next="67" >
+		</level>
+		<level id="11" name="3-3" x="260.2475" y="38.09645" resource="computer_level3" tutorialResource="PrefabTutorialLoop" helpGroup="COMPONENTS" helpPage="6" next="12" >
+		</level>
+		<level id="12" name="3-4" x="459.8539" y="-18.27882" resource="computer_level4" tutorialResource="PrefabTutorialBonus" helpGroup="COMPONENTS" helpPage="6" next="15,14" >
+			<objective id="30" type="Target" copy="Leave information on the target" />
+			<objective id="45" type="CrossedWires" copy="Don't cross the signals" />
+		</level>
+		<level id="13" name="3-10" x="1100.798" y="153.2258" resource="computer_level5" tutorialResource="" helpGroup="COMPONENTS" helpPage="-1" next="" >
+			<objective id="44" type="Signals" copy="Use only 5 signals" />
+			<objective id="43" type="Target" copy="Leave information on the target" />
+		</level>
+		<level id="14" name="3-6" x="551.679" y="-175.0154" resource="computer_level6" tutorialResource="" helpGroup="COMPONENTS" helpPage="-1" next="" >
+			<objective id="23" type="CrossedWires" copy="Don't cross the signals" />
+			<objective id="24" type="Target" copy="Leave information on the target" />
+		</level>
+		<level id="15" name="3-5" x="657.2621" y="-13.10221" resource="computer_level7" tutorialResource="" helpGroup="COMPONENTS" helpPage="-1" next="58,16" >
+			<objective id="25" type="Signals" copy="Use only 4 signals" />
+			<objective id="26" type="Target" copy="Leave information on the target" />
+		</level>
+		<level id="16" name="3-8" x="852.993" y="-132.9673" resource="computer_level8" tutorialResource="" helpGroup="COMPONENTS" helpPage="-1" next="75" >
+			<objective id="27" type="Target" copy="Leave information on the target" />
+			<objective id="31" type="CrossedWires" copy="Don't cross the signals" />
+		</level>
+		<level id="58" name="3-9" x="877.7194" y="63.18984" resource="computer_level9" tutorialResource="" helpGroup="COMPONENTS" helpPage="-1" next="13,75,90" >
+			<objective id="1" type="Signals" copy="Use only 9 signals" />
+			<objective id="3" type="Target" copy="Leave information on the target" />
+		</level>
+		<level id="59" name="3-12" x="1293.072" y="22.01562" resource="computer_level10" tutorialResource="" helpGroup="COMPONENTS" helpPage="-1" next="" >
+			<objective id="10" type="Target" copy="Leave information on the target" />
+			<objective id="11" type="CrossedWires" copy="Don't cross the signals" />
+		</level>
+		<level id="75" name="3-11" x="1088.493" y="-28.32613" resource="computer_level11" tutorialResource="" helpGroup="COMPONENTS" helpPage="-1" next="59" >
+			<objective id="58" type="Target" copy="Leave information on the target" />
+			<objective id="59" type="CrossedWires" copy="Don't cross the signals" />
+		</level>
+		<level id="90" name="3-7" x="670.4955" y="151.3408" resource="computer_level12" tutorialResource="" helpGroup="COMPONENTS" helpPage="-1" next="" >
+			<objective id="80" type="Target" copy="Leave information on the target" />
+			<objective id="81" type="CrossedWires" copy="Don't cross the signals" />
+		</level>
+	</world>
+	<world id="4" name="BROADCAST" starsToUnlock="20" shape="Broadcast" icon="IconBroadcast" buttonColor="0,248,187" bgcolor1="0,97,137" bgcolor2="0,248,187" bgcolorDark1="0,48,68" bgcolorDark2="0,124,93" >
+		<level id="18" name="4-1" x="58.79022" y="23.88547" resource="broadcast_level1" tutorialResource="PrefabTutorialBroadcast" helpGroup="COMPONENTS" helpPage="7" next="19" >
+		</level>
+		<level id="19" name="4-2" x="261.7569" y="-16.97472" resource="broadcast_level2a" tutorialResource="" helpGroup="COMPONENTS" helpPage="-1" next="20,52" >
+		</level>
+		<level id="52" name="4-3" x="398.3653" y="-175.7168" resource="broadcast_level2b" tutorialResource="" helpGroup="COMPONENTS" helpPage="-1" next="" >
+		</level>
+		<level id="20" name="4-4" x="468.9569" y="30.47586" resource="broadcast_level3" tutorialResource="PrefabTutorialBroadcastLoop" helpGroup="COMPONENTS" helpPage="-1" next="21" >
+			<objective id="17" type="Signals" copy="Use only 3 signals" />
+			<objective id="18" type="Target" copy="Leave information on the target" />
+		</level>
+		<level id="21" name="4-5" x="686.2476" y="1.213474" resource="broadcast_level4" tutorialResource="" helpGroup="COMPONENTS" helpPage="-1" next="22,61" >
+			<objective id="14" type="Target" copy="Leave information on the target" />
+			<objective id="13" type="CrossedWires" copy="Don't cross the signals" />
+		</level>
+		<level id="22" name="4-8" x="891.8359" y="12.7057" resource="broadcast_level5" tutorialResource="" helpGroup="COMPONENTS" helpPage="-1" next="60,77" >
+			<objective id="28" type="Target" copy="Leave information on the target" />
+			<objective id="29" type="CrossedWires" copy="Don't cross the signals" />
+		</level>
+		<level id="60" name="4-11" x="1086.79" y="-55.80774" resource="broadcast_level6" tutorialResource="" helpGroup="COMPONENTS" helpPage="-1" next="76" >
+			<objective id="16" type="Signals" copy="Use only 6 signals" />
+			<objective id="15" type="CrossedWires" copy="Don't cross the signals" />
+		</level>
+		<level id="61" name="4-6" x="761.6464" y="-159.6887" resource="broadcast_level8" tutorialResource="" helpGroup="COMPONENTS" helpPage="0" next="78" >
+			<objective id="21" type="Signals" copy="Use only 4 signals" />
+			<objective id="22" type="Target" copy="Leave information on the target" />
+		</level>
+		<level id="62" name="4-10" x="1276.921" y="144.8653" resource="broadcast_level7" tutorialResource="" helpGroup="COMPONENTS" helpPage="0" next="" >
+			<objective id="19" type="Target" copy="Leave information on the target" />
+			<objective id="20" type="CrossedWires" copy="Don't cross the signals" />
+		</level>
+		<level id="76" name="4-12" x="1293.569" y="-15.39013" resource="broadcast_level13" tutorialResource="" helpGroup="COMPONENTS" helpPage="-1" next="" >
+			<objective id="60" type="Signals" copy="Use only 5 signals" />
+		</level>
+		<level id="77" name="4-9" x="1070.233" y="137.7693" resource="broadcast_level14" tutorialResource="" helpGroup="COMPONENTS" helpPage="-1" next="62" >
+			<objective id="62" type="Signals" copy="Use only 6 signals" />
+			<objective id="61" type="CrossedWires" copy="Don't cross the signals" />
+		</level>
+		<level id="78" name="4-7" x="933.7017" y="-178.4513" resource="broadcast_level15" tutorialResource="" helpGroup="COMPONENTS" helpPage="-1" next="" >
+			<objective id="63" type="Signals" copy="Use only 6 signals" />
+			<objective id="64" type="Target" copy="Leave information on the target" />
+		</level>
+	</world>
+	<world id="5" name="SATELLITE" starsToUnlock="35" shape="Satellite" icon="IconSatellite" buttonColor="57,196,255" bgcolor1="40,0,215" bgcolor2="57,196,255" bgcolorDark1="20,0,107" bgcolorDark2="28,98,127" >
+		<level id="23" name="5-1" x="57.84352" y="10.9761" resource="satellite_level1" tutorialResource="PrefabTutorialColour" helpGroup="COMPONENTS" helpPage="8" next="24,25" >
+		</level>
+		<level id="24" name="5-2" x="199.8562" y="-114.4124" resource="satellite_level2" tutorialResource="" helpGroup="COMPONENTS" helpPage="-1" next="" >
+		</level>
+		<level id="25" name="5-3" x="290.928" y="62.10802" resource="satellite_level4_swapper" tutorialResource="PrefabTutorialSwapper" helpGroup="COMPONENTS" helpPage="9" next="91,26" >
+		</level>
+		<level id="26" name="5-5" x="528.1263" y="-11.20347" resource="satellite_level5_swapper" tutorialResource="" helpGroup="COMPONENTS" helpPage="-1" next="54,30" >
+			<objective id="33" type="Target" copy="Leave information on the target" />
+		</level>
+		<level id="30" name="5-7" x="770.6155" y="35.12897" resource="satellite_level9_swapper" tutorialResource="PrefabTutorialSignalBlock" helpGroup="COMPONENTS" helpPage="10" next="65,92" >
+		</level>
+		<level id="31" name="5-12" x="1171.971" y="-105.2" resource="satellite_level16_swapper" tutorialResource="" helpGroup="COMPONENTS" helpPage="-1" next="" >
+			<objective id="46" type="CrossedWires" copy="Don't cross the signals" />
+			<objective id="47" type="Signals" copy="Use only 7 signals" />
+		</level>
+		<level id="54" name="5-6" x="668.338" y="-138.8772" resource="satellite_level12_swapper" tutorialResource="" helpGroup="COMPONENTS" helpPage="-1" next="" >
+			<objective id="2" type="Target" copy="Leave information on the target" />
+		</level>
+		<level id="55" name="5-9" x="1063.998" y="121.4707" resource="satellite_level13_swapper" tutorialResource="" helpGroup="COMPONENTS" helpPage="-1" next="" >
+			<objective id="37" type="Target" copy="Leave information on the target" />
+			<objective id="36" type="CrossedWires" copy="Don't cross the signals" />
+		</level>
+		<level id="65" name="5-10" x="975.6567" y="-51.92074" resource="satellite_level14_swapper" tutorialResource="" helpGroup="COMPONENTS" helpPage="-1" next="66,31" >
+			<objective id="38" type="Signals" copy="Use only 7 signals" />
+			<objective id="39" type="Target" copy="Leave information on the target" />
+		</level>
+		<level id="66" name="5-11" x="1233.064" y="58.3597" resource="satellite_level15" tutorialResource="" helpGroup="COMPONENTS" helpPage="0" next="" >
+			<objective id="40" type="Target" copy="Leave information on the target" />
+			<objective id="41" type="CrossedWires" copy="Don't cross the signals" />
+		</level>
+		<level id="91" name="5-4" x="474.1535" y="162.194" resource="satellite_level17" tutorialResource="" helpGroup="COMPONENTS" helpPage="-1" next="" >
+		</level>
+		<level id="92" name="5-8" x="910.2137" y="155.3559" resource="satellite_level18" tutorialResource="" helpGroup="COMPONENTS" helpPage="-1" next="55" >
+			<objective id="82" type="Target" copy="Leave information on the target" />
+		</level>
+	</world>
+	<world id="6" name="CELLULAR" starsToUnlock="50" shape="Cellular" icon="IconCellular" buttonColor="244,90,235" bgcolor1="145,0,58" bgcolor2="244,90,235" bgcolorDark1="72,0,29" bgcolorDark2="122,45,117" >
+		<level id="32" name="6-1" x="57.01055" y="0" resource="cell_level1" tutorialResource="PrefabTutorialCell" helpGroup="COMPONENTS" helpPage="11" next="34" >
+		</level>
+		<level id="34" name="6-2" x="260.3525" y="36.52024" resource="cell_level8" tutorialResource="" helpGroup="COMPONENTS" helpPage="-1" next="35" >
+		</level>
+		<level id="35" name="6-3" x="470.958" y="-19.11248" resource="cell_level4" tutorialResource="" helpGroup="COMPONENTS" helpPage="-1" next="63,36" >
+		</level>
+		<level id="36" name="6-6" x="704.2634" y="36.53073" resource="cell_level9_swapper" tutorialResource="" helpGroup="COMPONENTS" helpPage="-1" next="71" >
+			<objective id="4" type="Target" copy="Leave information on the target" />
+		</level>
+		<level id="63" name="6-4" x="651.6591" y="-139.6776" resource="cell_level6" tutorialResource="" helpGroup="COMPONENTS" helpPage="-1" next="72" >
+			<objective id="7" type="Target" copy="Leave information on the target" />
+		</level>
+		<level id="68" name="6-10" x="1090.177" y="-104.6583" resource="cell_level10_swapper" tutorialResource="" helpGroup="COMPONENTS" helpPage="-1" next="73" >
+			<objective id="42" type="Target" copy="Leave information on the target" />
+			<objective id="48" type="CrossedWires" copy="Don't cross the signals" />
+		</level>
+		<level id="69" name="6-9" x="1302.912" y="106.661" resource="cell_level11_swapper" tutorialResource="" helpGroup="COMPONENTS" helpPage="-1" next="74" >
+			<objective id="50" type="CrossedWires" copy="Don't cross the signals" />
+			<objective id="49" type="Target" copy="Leave information on the target" />
+		</level>
+		<level id="70" name="6-8" x="1095.052" y="107.0519" resource="cell_level12_swapper" tutorialResource="" helpGroup="COMPONENTS" helpPage="-1" next="69" >
+			<objective id="51" type="Target" copy="Leave information on the target" />
+		</level>
+		<level id="71" name="6-7" x="906.6194" y="-0.5173116" resource="cell_level7_swapper" tutorialResource="" helpGroup="COMPONENTS" helpPage="0" next="70,68" >
+			<objective id="52" type="Target" copy="Leave information on the target" />
+		</level>
+		<level id="72" name="6-5" x="830.28" y="-160.6157" resource="cell_level5" tutorialResource="" helpGroup="COMPONENTS" helpPage="-1" next="" >
+			<objective id="53" type="Target" copy="Leave information on the target" />
+		</level>
+		<level id="73" name="6-11" x="1306.71" y="-105.7202" resource="cell_level13_swapper" tutorialResource="" helpGroup="COMPONENTS" helpPage="-1" next="74" >
+			<objective id="55" type="CrossedWires" copy="Don't cross the signals" />
+			<objective id="54" type="Target" copy="Leave information on the target" />
+		</level>
+		<level id="74" name="6-12" x="1486.843" y="-10.48382" resource="cell_level14_swapper" tutorialResource="" helpGroup="COMPONENTS" helpPage="-1" next="" >
+			<objective id="56" type="Signals" copy="Use only 11 signals" />
+			<objective id="57" type="Target" copy="Leave information on the target" />
+		</level>
+	</world>
+	<world id="7" name="ADVANCED" starsToUnlock="70" shape="" icon="IconAdvanced" buttonColor="255,252,0" bgcolor1="51,68,193" bgcolor2="198,64,255" bgcolorDark1="20,0,107" bgcolorDark2="28,98,127" >
+		<level id="37" name="7-1" x="0" y="0" resource="advanced_level1" tutorialResource="PrefabTutorialRepeater1" helpGroup="COMPONENTS" helpPage="12" next="39" >
+		</level>
+		<level id="39" name="7-2" x="212.2543" y="22.92685" resource="advanced_level2" tutorialResource="PrefabTutorialRepeater2" helpGroup="COMPONENTS" helpPage="-1" next="64" >
+			<objective id="71" type="Target" copy="Leave information on the target" />
+		</level>
+		<level id="64" name="7-3" x="398.4338" y="-28.5757" resource="advanced_level3" tutorialResource="" helpGroup="COMPONENTS" helpPage="-1" next="85,88" >
+			<objective id="8" type="Signals" copy="Use only 9 signals" />
+			<objective id="9" type="Target" copy="Leave information on the target" />
+		</level>
+		<level id="79" name="7-8" x="782.1141" y="143.6451" resource="advanced_level4" tutorialResource="" helpGroup="COMPONENTS" helpPage="-1" next="89" >
+			<objective id="65" type="Signals" copy="Use only 8 signals" />
+			<objective id="66" type="Target" copy="Leave information on the target" />
+		</level>
+		<level id="80" name="7-5" x="784.6324" y="-193.7543" resource="advanced_level5" tutorialResource="" helpGroup="COMPONENTS" helpPage="-1" next="82" >
+			<objective id="67" type="Target" copy="Leave information on the lower target" />
+			<objective id="68" type="Target" copy="Leave information on the upper target" />
+		</level>
+		<level id="81" name="7-10" x="697.7693" y="-14.17489" resource="advanced_level6" tutorialResource="" helpGroup="COMPONENTS" helpPage="-1" next="84" >
+			<objective id="69" type="CrossedWires" copy="Don't cross the signals" />
+			<objective id="70" type="Target" copy="Leave information on the target" />
+		</level>
+		<level id="82" name="7-6" x="984.6675" y="-151.3122" resource="Rob_level-1" tutorialResource="" helpGroup="COMPONENTS" helpPage="-1" next="83" >
+			<objective id="73" type="CrossedWires" copy="Don't cross the signals" />
+			<objective id="72" type="Target" copy="Leave information on the target" />
+		</level>
+		<level id="83" name="7-12" x="1142.3" y="-53.71412" resource="Rob_level-3" tutorialResource="" helpGroup="COMPONENTS" helpPage="-1" next="86" >
+			<objective id="74" type="Target" copy="Leave information on the left target" />
+			<objective id="75" type="Target" copy="Leave information on the right target" />
+		</level>
+		<level id="84" name="7-11" x="888.4152" y="-10.7286" resource="Rob_level-4" tutorialResource="" helpGroup="COMPONENTS" helpPage="-1" next="89,82" >
+			<objective id="77" type="Target" copy="Leave information on the target" />
+		</level>
+		<level id="85" name="7-4" x="574.6021" y="-160.1676" resource="Rob_level-5" tutorialResource="" helpGroup="COMPONENTS" helpPage="0" next="81,80" >
+		</level>
+		<level id="86" name="7-13" x="1336.556" y="-17.01712" resource="Rob_level-6" tutorialResource="" helpGroup="COMPONENTS" helpPage="-1" next="" >
+			<objective id="78" type="Signals" copy="Use only 12 signals" />
+			<objective id="79" type="Target" copy="Leave information on the target" />
+		</level>
+		<level id="88" name="7-7" x="558.3914" y="111.5143" resource="Rob_level-2" tutorialResource="" helpGroup="COMPONENTS" helpPage="-1" next="81,79" >
+		</level>
+		<level id="89" name="7-9" x="1010.762" y="105.7088" resource="Rob_level-7" tutorialResource="" helpGroup="COMPONENTS" helpPage="-1" next="83" >
+			<objective id="76" type="CrossedWires" copy="Don't cross the signals" />
+		</level>
+	</world>
+</levels>

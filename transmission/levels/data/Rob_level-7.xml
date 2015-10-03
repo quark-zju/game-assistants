@@ -1,0 +1,15 @@
+<!-- Rob_level-7 -->
+<level version="1.1" sessionId="344" cameraZ="-26" >
+	<element id="1" type="Transceiver" position="-5,-5,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="4" amount="0" lookupTag="" />
+	<element id="2" type="Transceiver" position="5,5,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="3" amount="0" lookupTag="" />
+	<element id="4" type="Transceiver" position="-5,5,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" target="5" amount="0" lookupTag="" />
+	<element id="6" type="Transceiver" position="5,-5,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" target="2" amount="0" lookupTag="" />
+	<element id="13" type="SwapperTransmitter" position="0,-5,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="4" swapGroup1="Exchange" amount="0" swapGroup2="Fibre" />
+	<element id="14" type="Transceiver" position="5,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" target="2" amount="1" lookupTag="" />
+	<element id="15" type="RadialTransmitter" position="0,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" minRadius="8.5" meterAngle="45" />
+	<element id="16" type="Receiver" position="-5,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" target="2" />
+	<element id="17" type="Receiver" position="10,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="2" />
+	<element id="18" type="SwapperTransmitter" position="0,5,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="5" swapGroup1="Exchange" amount="0" swapGroup2="Fibre" />
+	<element id="19" type="Receiver" position="-10,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="4" />
+	<element id="20" type="ObjectiveCrossedWires" position="0,0,0" scale="1,1,1" rotation="0,0,0" oid="76" />
+</level>

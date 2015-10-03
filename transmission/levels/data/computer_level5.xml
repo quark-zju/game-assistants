@@ -1,0 +1,10 @@
+<!-- computer_level5 -->
+<level version="1.1" signalLimit="10" sessionId="148" cameraZ="-26" smallMeters="False" >
+	<element id="0" type="Transceiver" position="-3,5.784916,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" transmitterType="Many" target="2" lookupTag="" amount="1" signalType="Cable" transmitterGroup="Fibre" />
+	<element id="1" type="Transceiver" position="-8,-5.215084,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" transmitterType="Many" target="1" lookupTag="" amount="1" signalType="Cable" transmitterGroup="Fibre" />
+	<element id="2" type="Transceiver" position="-3,-1.215084,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" transmitterType="Many" target="4" lookupTag="" amount="0" signalType="Cable" transmitterGroup="Fibre" />
+	<element id="4" type="Transceiver" position="4,-5.215084,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" transmitterType="Many" target="2" lookupTag="" amount="0" signalType="Cable" transmitterGroup="Fibre" />
+	<element id="5" type="Transceiver" position="8,-1.215084,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" transmitterType="Many" target="2" lookupTag="" amount="1" signalType="Cable" transmitterGroup="Fibre" />
+	<element id="6" type="ObjectiveTargetValue" position="0,0,0" scale="1,1,1" rotation="0,0,0" informationTarget="4" oid="43" />
+	<element id="7" type="ObjectiveSignalCount" position="0,0,0" scale="1,1,1" rotation="0,0,0" signalTarget="5" oid="44" />
+</level>

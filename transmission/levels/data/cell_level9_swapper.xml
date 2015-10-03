@@ -1,0 +1,16 @@
+<!-- cell_level9_swapper -->
+<level version="1.1" sessionId="262" cameraZ="-38" >
+	<element id="9" type="CellTransmitter" position="10.43,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" />
+	<element id="10" type="CellTransmitter" position="-10.43,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" />
+	<element id="11" type="CellTransmitter" position="0,6.12,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" />
+	<element id="16" type="SignalBlockHexagon" position="-10.305,0,0" scale="1,1,1" rotation="0,0,0" blockGroup="Wave" flip="False" radius="6.87" />
+	<element id="17" type="SignalBlockHexagon" position="10.305,0,0" scale="1,1,1" rotation="0,0,0" blockGroup="Wave" flip="False" radius="6.87" />
+	<element id="18" type="SignalBlockHexagon" position="0,5.949595,0" scale="1,1,1" rotation="0,0,0" blockGroup="Wave" flip="False" radius="6.87" />
+	<element id="20" type="Transceiver" position="3.595043,-9.905751,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="1" amount="1" lookupTag="" />
+	<element id="24" type="Transceiver" position="-3.861328,-9.905751,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="1" amount="1" lookupTag="" />
+	<element id="25" type="Transceiver" position="0,-5.75,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="2" amount="0" lookupTag="" />
+	<element id="26" type="ObjectiveTargetValue" position="0,0,0" scale="1,1,1" rotation="0,0,0" informationTarget="25" oid="4" />
+	<element id="28" type="SwapperTransmitter" position="6.508216,0.0314424,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="1" swapGroup1="Exchange" amount="0" swapGroup2="Wave" />
+	<element id="29" type="SwapperTransmitter" position="-6.633996,0.0314424,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="1" swapGroup1="Exchange" amount="0" swapGroup2="Wave" />
+	<element id="30" type="SwapperTransmitter" position="0,2.641022,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="2" swapGroup1="Exchange" amount="0" swapGroup2="Wave" />
+</level>

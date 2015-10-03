@@ -1,0 +1,10 @@
+<!-- satellite_level9_swapper -->
+<level version="1.1" signalLimit="5" sessionId="258" cameraZ="-25" smallMeters="False" >
+	<element id="3" type="Transmitter" position="5,-3,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" amount="1" angleOffset="0" />
+	<element id="5" type="SignalBlock" position="0,0,0" scale="1,1,1" rotation="0,0,0" blockGroup="Exchange" sy="0" ex="20" sx="-20" ey="0" />
+	<element id="6" type="Receiver" position="5,3,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="1" />
+	<element id="7" type="Receiver" position="-5,3,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="1" />
+	<element id="9" type="Transmitter" position="-5,-3,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" amount="1" angleOffset="0" />
+	<element id="10" type="SwapperTransmitter" position="0,5.98,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="2" swapGroup2="Wave" swapGroup1="Exchange" amount="0" transmitterGroup="Cable" />
+	<element id="11" type="SwapperTransmitter" position="0,-5.98,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="2" swapGroup2="Wave" swapGroup1="Exchange" amount="0" transmitterGroup="Cable" />
+</level>

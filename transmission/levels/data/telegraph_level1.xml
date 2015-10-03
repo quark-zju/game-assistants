@@ -1,0 +1,5 @@
+<!-- telegraph_level1 -->
+<level version="1.1" signalLimit="3" sessionId="175" cameraZ="-16" smallMeters="False" >
+	<element id="1" type="Transmitter" position="-4.5,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" amount="1" angleOffset="0" signalType="Cable" transmitterType="Many" />
+	<element id="2" type="Receiver" position="4.5,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="1" />
+</level>

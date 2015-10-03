@@ -1,0 +1,11 @@
+<!-- telephone_level7 -->
+<level version="1.1" signalLimit="9" sessionId="88" cameraZ="-20" >
+	<element id="0" type="Transmitter" position="-3.338975,3.145419,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" amount="1" angleOffset="0" signalType="Cable" transmitterType="Many" />
+	<element id="2" type="Transceiver" position="-0.02419543,3.814697E-06,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" transmitterType="Many" target="3" amount="0" signalType="Cable" transmitterGroup="Cable" />
+	<element id="3" type="Transceiver" position="0.02419651,-5.177839,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" transmitterType="Many" target="2" amount="0" signalType="Cable" transmitterGroup="Cable" />
+	<element id="5" type="Receiver" position="0.1451735,5.831121,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="1" />
+	<element id="6" type="Transmitter" position="3.02445,3.218007,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" amount="1" angleOffset="0" signalType="Cable" transmitterType="Many" />
+	<element id="7" type="Receiver" position="-3.459961,-2.758292,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="1" />
+	<element id="8" type="Receiver" position="-6.266642,-0.0241971,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="1" />
+	<element id="9" type="Transmitter" position="5.492394,-0.02419555,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" amount="1" angleOffset="0" signalType="Cable" transmitterType="Many" />
+</level>

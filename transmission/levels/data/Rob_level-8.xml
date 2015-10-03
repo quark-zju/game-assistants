@@ -1,0 +1,20 @@
+<!-- Rob_level-8 -->
+<level version="1.1" sessionId="330" cameraZ="-38" >
+	<element id="10" type="CellTransmitter" position="0,-8.01,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" />
+	<element id="11" type="SwapperTransmitter" position="-14.67,5.49,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="5" swapGroup1="Fibre" amount="0" swapGroup2="Exchange" />
+	<element id="12" type="Transceiver" position="6,-8,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="4" amount="0" lookupTag="" />
+	<element id="13" type="Transmitter" position="0,-0.77,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" amount="1" angleOffset="0" />
+	<element id="16" type="CellTransmitter" position="0,8,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" />
+	<element id="21" type="Transceiver" position="-6,-8,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="2" amount="0" lookupTag="" />
+	<element id="23" type="SwapperTransmitter" position="14.5,5.22,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="5" swapGroup1="Exchange" amount="0" swapGroup2="Fibre" />
+	<element id="24" type="Transceiver" position="10,2,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="4" amount="0" lookupTag="" />
+	<element id="26" type="Transceiver" position="-10,2,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="4" amount="0" lookupTag="" />
+	<element id="28" type="SignalBlockCircle" position="5.61,5.41,0" scale="1,1,1" rotation="0,0,0" blockGroup="Wave" radius="1" />
+	<element id="32" type="Transceiver" position="0,11.41,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="4" amount="1" lookupTag="" />
+	<element id="34" type="SignalBlockCircle" position="8,-3,0" scale="1,1,1" rotation="0,0,0" blockGroup="Wave" radius="1" />
+	<element id="37" type="SignalBlockCircle" position="-8,-3,0" scale="1,1,1" rotation="0,0,0" blockGroup="Wave" radius="1" />
+	<element id="38" type="SignalBlockCircle" position="-5.21,5.41,0" scale="1,1,1" rotation="0,0,0" blockGroup="Wave" radius="1" />
+	<element id="39" type="SwapperTransmitter" position="6.9,-11.76,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="2" swapGroup1="Exchange" amount="0" swapGroup2="Wave" />
+	<element id="40" type="SignalBlockHexagon" position="0,-22.4,0" scale="1,1,1" rotation="0,0,0" blockGroup="Wave" flip="True" radius="16" />
+	<element id="41" type="SwapperTransmitter" position="-7.15,-12,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="3" swapGroup1="Exchange" amount="0" swapGroup2="Wave" />
+</level>

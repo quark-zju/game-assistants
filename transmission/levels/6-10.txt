@@ -1,0 +1,13 @@
+0 0 -3,5                      3             # <element id="1" type="CellTransmitter" position="-3,5,0" scale="1,1,1" rotation="0,0,90" elementGroup="Wave"/>
+1 0 3,-5                      3             # <element id="12" type="CellTransmitter" position="3,-5,0" scale="1,1,1" rotation="0,0,90" elementGroup="Wave"/>
+2 12 -3,1                     1 2 1         # <element id="18" type="Transceiver" position="-3,1,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="2" amount="1" lookupTag=""/>
+3 6 -6.3189,-3.327954         1 1           # <element id="19" type="Receiver" position="-6.3189,-3.327954,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="1"/>
+4 12 -1,-7                    1 1 0         # <element id="22" type="Transceiver" position="-1,-7,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="1" amount="0" lookupTag=""/>
+5 12 7,-7                     3 2 1         # <element id="23" type="Transceiver" position="7,-7,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="2" amount="1" lookupTag=""/>
+6 12 -7,7                     3 2 0         # <element id="24" type="Transceiver" position="-7,7,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="2" amount="0" lookupTag=""/>
+7 11 2.98687,-0.9746618       1 3 2 0       # <element id="26" type="SwapperTransmitter" position="2.98687,-0.9746618,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="2" swapGroup1="Exchange" amount="0" swapGroup2="Wave"/>
+8 11 1.006104,7.011283        1 3 2 0       # <element id="27" type="SwapperTransmitter" position="1.006104,7.011283,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="2" swapGroup1="Exchange" amount="0" swapGroup2="Wave"/>
+9 9 3.03109,-5.25             3 7 1         # <element id="15" type="SignalBlockHexagon" position="3.03109,-5.25,0" scale="1,1,1" rotation="0,0,0" blockGroup="Wave" flip="True" radius="7"/>
+10 9 -3.03109,5.25            3 7 1         # <element id="17" type="SignalBlockHexagon" position="-3.03109,5.25,0" scale="1,1,1" rotation="0,0,0" blockGroup="Wave" flip="True" radius="7"/>
+11 3 0,0                      7             # <element id="25" type="ObjectiveTargetValue" position="0,0,0" scale="1,1,1" rotation="0,0,0" informationTarget="26" oid="42"/>
+12 1 0,0                                    # <element id="28" type="ObjectiveCrossedWires" position="0,0,0" scale="1,1,1" rotation="0,0,0" oid="48"/>

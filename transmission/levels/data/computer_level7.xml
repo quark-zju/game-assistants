@@ -1,0 +1,10 @@
+<!-- computer_level7 -->
+<level version="1.1" signalLimit="6" sessionId="208" cameraZ="-26" smallMeters="False" >
+	<element id="0" type="Transceiver" position="6.059712,2,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" transmitterType="Many" target="2" amount="0" signalType="Cable" transmitterGroup="Fibre" />
+	<element id="1" type="Transceiver" position="0,6,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" transmitterType="Many" target="1" amount="1" signalType="Cable" transmitterGroup="Fibre" />
+	<element id="4" type="Transceiver" position="-6.211609,2,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" transmitterType="Many" target="2" amount="1" signalType="Cable" transmitterGroup="Fibre" />
+	<element id="5" type="Transceiver" position="0,-6,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" transmitterType="Many" target="2" amount="1" signalType="Cable" transmitterGroup="Fibre" />
+	<element id="7" type="ObjectiveTargetValue" position="0,0,0" scale="1,1,1" rotation="0,0,0" informationTarget="0" oid="26" />
+	<element id="8" type="Receiver" position="0,-1,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" target="2" />
+	<element id="9" type="ObjectiveSignalCount" position="0,0,0" scale="1,1,1" rotation="0,0,0" signalTarget="4" oid="25" />
+</level>

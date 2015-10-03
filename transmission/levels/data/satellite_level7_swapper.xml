@@ -1,0 +1,8 @@
+<!-- satellite_level7_swapper -->
+<level version="1.1" signalLimit="3" sessionId="257" cameraZ="-20" smallMeters="False" >
+	<element id="1" type="SignalBlock" position="0,0,0" scale="1,1,1" rotation="0,0,0" blockGroup="Exchange" sy="0" ex="10" sx="-10" ey="0" />
+	<element id="2" type="Transmitter" position="-4,2,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" amount="1" angleOffset="0" />
+	<element id="3" type="Transceiver" position="-4,-2,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="1" lookupTag="" amount="0" transmitterGroup="Exchange" />
+	<element id="6" type="SwapperTransmitter" position="3.931867,-1.986852,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="1" swapGroup2="Wave" swapGroup1="Exchange" amount="0" transmitterGroup="Cable" />
+	<element id="7" type="SwapperTransmitter" position="3.931867,1.986848,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="1" swapGroup2="Wave" swapGroup1="Exchange" amount="0" transmitterGroup="Cable" />
+</level>

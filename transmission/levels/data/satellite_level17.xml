@@ -1,0 +1,11 @@
+<!-- satellite_level17 -->
+<level version="1.1" sessionId="358" cameraZ="-23" >
+	<element id="0" type="Transmitter" position="-3.338975,3.145419,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" amount="1" angleOffset="0" />
+	<element id="5" type="Receiver" position="0.1451735,5.831121,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="1" />
+	<element id="7" type="Receiver" position="-3.459961,-2.758292,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="1" />
+	<element id="8" type="Receiver" position="-6.266642,-0.0241971,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="1" />
+	<element id="10" type="SwapperTransmitter" position="0,-5.169168,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="2" swapGroup1="Exchange" amount="0" swapGroup2="Wave" />
+	<element id="11" type="SwapperTransmitter" position="0,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="3" swapGroup1="Exchange" amount="0" swapGroup2="Wave" />
+	<element id="12" type="Transceiver" position="3.02445,3.218007,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="2" amount="1" lookupTag="" />
+	<element id="13" type="Transceiver" position="5.492394,-0.02419555,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="2" amount="1" lookupTag="" />
+</level>

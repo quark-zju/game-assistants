@@ -1,0 +1,9 @@
+<!-- telephone_level2 -->
+<level version="1.1" signalLimit="4" sessionId="146" cameraZ="-20" >
+	<element id="1" type="Transceiver" position="-2,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" transmitterType="Many" target="1" amount="0" signalType="Cable" transmitterGroup="Cable" />
+	<element id="2" type="Transceiver" position="6,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" transmitterType="Many" target="1" amount="0" signalType="Cable" transmitterGroup="Cable" />
+	<element id="3" type="Transmitter" position="-6,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" amount="1" angleOffset="0" signalType="Cable" transmitterType="Many" />
+	<element id="4" type="Receiver" position="0,-4,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="1" />
+	<element id="5" type="Receiver" position="0,4,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="1" />
+	<element id="6" type="Transmitter" position="2,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" amount="1" angleOffset="0" signalType="Cable" transmitterType="Many" />
+</level>

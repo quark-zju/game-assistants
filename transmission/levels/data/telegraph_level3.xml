@@ -1,0 +1,8 @@
+<!-- telegraph_level3 -->
+<level version="1.1" signalLimit="4" sessionId="121" cameraZ="-16" smallMeters="False" >
+	<element id="0" type="Receiver" position="-4.346452,0.9158478,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="1" />
+	<element id="1" type="Transmitter" position="2.419363,0.9158478,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" amount="1" angleOffset="0" signalType="Cable" transmitterType="Many" />
+	<element id="2" type="Transmitter" position="-0.5876672,0.9158478,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" amount="1" angleOffset="0" signalType="Cable" transmitterType="Many" />
+	<element id="4" type="Receiver" position="3.922877,-2.391884,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="1" />
+	<element id="6" type="PlacedSignal" position="0,0,0" scale="1,1,1" rotation="0,0,0" from="2" to="4" />
+</level>

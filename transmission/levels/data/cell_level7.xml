@@ -1,0 +1,14 @@
+<!-- cell_level7 -->
+<level version="1.1" signalLimit="8" sessionId="166" cameraZ="-30" smallMeters="True" >
+	<element id="1" type="CellTransmitter" position="-2.386914,4.183168,0" scale="1,1,1" rotation="0,0,90" elementGroup="Wave" transmitterGroup="Wave" />
+	<element id="12" type="CellTransmitter" position="2.45689,-4.118618,0" scale="1,1,1" rotation="0,0,90" elementGroup="Wave" transmitterGroup="Wave" />
+	<element id="15" type="SignalBlockHexagon" position="2.45689,-4.118618,0" scale="1,1,1" rotation="0,0,90" blockGroup="Wave" radius="5.55" />
+	<element id="17" type="SignalBlockHexagon" position="-2.386914,4.183168,0" scale="1,1,1" rotation="0,0,90" blockGroup="Wave" radius="5.55" />
+	<element id="19" type="Transceiver" position="11.64623,1.183826,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" transmitterType="Many" target="1" amount="0" signalType="Cable" transmitterGroup="Exchange" />
+	<element id="20" type="SignalBlockCircle" position="0,0,0" scale="1,1,1" rotation="0,0,0" blockGroup="Exchange" radius="1.06" />
+	<element id="21" type="Transceiver" position="0.2559478,5.791126,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" transmitterType="Many" target="1" amount="0" signalType="Cable" transmitterGroup="Wave" />
+	<element id="22" type="Transceiver" position="-0.5119352,-5.919088,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" transmitterType="Many" target="1" amount="0" signalType="Cable" transmitterGroup="Exchange" />
+	<element id="23" type="Transceiver" position="-5.343204,2.335652,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" transmitterType="Many" target="1" amount="0" signalType="Cable" transmitterGroup="Wave" />
+	<element id="24" type="Transceiver" position="-11.51828,-1.343788,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" transmitterType="Many" target="1" amount="1" signalType="Cable" transmitterGroup="Exchange" />
+	<element id="25" type="Transceiver" position="5.279189,-2.463623,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" transmitterType="Many" target="1" amount="0" signalType="Cable" transmitterGroup="Exchange" />
+</level>

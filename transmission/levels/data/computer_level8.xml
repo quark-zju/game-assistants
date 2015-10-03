@@ -1,0 +1,12 @@
+<!-- computer_level8 -->
+<level version="1.1" signalLimit="8" sessionId="209" cameraZ="-30" smallMeters="False" >
+	<element id="0" type="Transceiver" position="-3,-8,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" transmitterType="Many" target="1" amount="0" signalType="Cable" transmitterGroup="Fibre" />
+	<element id="1" type="Transceiver" position="-9,-4,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" transmitterType="Many" target="1" amount="0" signalType="Cable" transmitterGroup="Fibre" />
+	<element id="2" type="Transceiver" position="-3,-0.538023,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" transmitterType="Many" target="2" amount="0" signalType="Cable" transmitterGroup="Fibre" />
+	<element id="3" type="Transceiver" position="3,7,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" transmitterType="Many" target="1" amount="0" signalType="Cable" transmitterGroup="Fibre" />
+	<element id="4" type="Transceiver" position="3,2,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" transmitterType="Many" target="2" amount="0" signalType="Cable" transmitterGroup="Fibre" />
+	<element id="5" type="Transceiver" position="8,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" transmitterType="Many" target="4" amount="1" signalType="Cable" transmitterGroup="Fibre" />
+	<element id="7" type="ObjectiveTargetValue" position="0,0,0" scale="1,1,1" rotation="0,0,0" informationTarget="0" oid="27" />
+	<element id="8" type="Transceiver" position="-9,7,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" transmitterType="Many" target="2" amount="2" signalType="Cable" transmitterGroup="Fibre" />
+	<element id="9" type="ObjectiveCrossedWires" position="0,0,0" scale="1,1,1" rotation="0,0,0" oid="31" />
+</level>

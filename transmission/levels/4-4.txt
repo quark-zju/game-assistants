@@ -1,0 +1,7 @@
+0 5 2,0                       1 6.5         # <element id="1" type="RadialTransmitter" position="2,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" minRadius="6.5" targetAmount="5" extraRadius="0" transmitterGroup="Exchange"/>
+1 12 7,0                      1 2 1         # <element id="3" type="Transceiver" position="7,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" transmitterType="Many" target="2" amount="1" signalType="Cable" transmitterGroup="Exchange"/>
+2 12 2,5                      1 1 0         # <element id="5" type="Transceiver" position="2,5,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" transmitterType="Many" target="1" amount="0" signalType="Cable" transmitterGroup="Exchange"/>
+3 12 2,-5                     1 2 0         # <element id="8" type="Transceiver" position="2,-5,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" transmitterType="Many" target="2" amount="0" signalType="Cable" transmitterGroup="Exchange"/>
+4 12 -8,0                     1 2 0         # <element id="9" type="Transceiver" position="-8,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" transmitterType="Many" target="2" amount="0" signalType="Cable" transmitterGroup="Exchange"/>
+5 2 0,0                       3             # <element id="6" type="ObjectiveSignalCount" position="0,0,0" scale="1,1,1" rotation="0,0,0" signalTarget="3" oid="17"/>
+6 3 0,0                       4             # <element id="7" type="ObjectiveTargetValue" position="0,0,0" scale="1,1,1" rotation="0,0,0" informationTarget="9" oid="18"/>

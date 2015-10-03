@@ -1,0 +1,13 @@
+<!-- broadcast_level8 -->
+<level version="1.1" signalLimit="6" sessionId="203" cameraZ="-30" smallMeters="False" >
+	<element id="1" type="RadialTransmitter" position="-2.44127,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" minRadius="10" meterAngle="45" targetAmount="5" extraRadius="0" transmitterGroup="Exchange" />
+	<element id="2" type="Transceiver" position="-5.44127,5,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" transmitterType="Many" target="4" amount="0" signalType="Cable" transmitterGroup="Exchange" />
+	<element id="3" type="Transceiver" position="0.5587296,-5,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" transmitterType="Many" target="2" amount="0" signalType="Cable" transmitterGroup="Exchange" />
+	<element id="4" type="Receiver" position="0.5587296,5,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="4" />
+	<element id="5" type="ObjectiveSignalCount" position="-2.44127,0,0" scale="1,1,1" rotation="0,0,0" signalTarget="4" oid="21" />
+	<element id="6" type="ObjectiveTargetValue" position="-2.44127,0,0" scale="1,1,1" rotation="0,0,0" informationTarget="3" oid="22" />
+	<element id="7" type="Transceiver" position="9.558727,5,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" transmitterType="Many" target="1" amount="0" signalType="Cable" transmitterGroup="Exchange" />
+	<element id="8" type="Transceiver" position="4.558729,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" transmitterType="Many" target="1" amount="1" signalType="Cable" transmitterGroup="Exchange" />
+	<element id="9" type="Transceiver" position="-9.441273,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" transmitterType="Many" target="2" amount="1" signalType="Cable" transmitterGroup="Exchange" />
+	<element id="10" type="Transceiver" position="-5.44127,-5,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" transmitterType="Many" target="2" amount="0" signalType="Cable" transmitterGroup="Exchange" />
+</level>

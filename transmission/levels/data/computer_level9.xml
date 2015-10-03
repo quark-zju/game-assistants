@@ -1,0 +1,13 @@
+<!-- computer_level9 -->
+<level version="1.1" signalLimit="10" sessionId="117" cameraZ="-30" smallMeters="False" >
+	<element id="0" type="Transceiver" position="9.97212,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" transmitterType="Many" target="1" amount="0" signalType="Cable" transmitterGroup="Fibre" />
+	<element id="1" type="Transceiver" position="6.277325,6.081698,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" transmitterType="Many" target="1" amount="0" signalType="Cable" transmitterGroup="Fibre" />
+	<element id="2" type="Transceiver" position="-10.03865,6.67572E-06,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" transmitterType="Many" target="1" amount="0" signalType="Cable" transmitterGroup="Fibre" />
+	<element id="3" type="Transmitter" position="-5.62451,-6.992458,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" amount="1" angleOffset="0" signalType="Cable" transmitterType="Many" />
+	<element id="4" type="Transceiver" position="-2.452856,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" transmitterType="Many" target="1" amount="0" signalType="Cable" transmitterGroup="Fibre" />
+	<element id="5" type="Transceiver" position="2.615227,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" transmitterType="Many" target="3" amount="0" signalType="Cable" transmitterGroup="Fibre" />
+	<element id="6" type="Transceiver" position="-5.85338,6.081698,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" transmitterType="Many" target="2" amount="0" signalType="Cable" transmitterGroup="Fibre" />
+	<element id="7" type="Transceiver" position="6.277325,-6.801066,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" transmitterType="Many" target="1" amount="0" signalType="Cable" transmitterGroup="Fibre" />
+	<element id="8" type="ObjectiveSignalCount" position="0,0,0" scale="1,1,1" rotation="0,0,0" signalTarget="9" oid="1" />
+	<element id="9" type="ObjectiveTargetValue" position="0,0,0" scale="1,1,1" rotation="0,0,0" informationTarget="2" oid="3" />
+</level>

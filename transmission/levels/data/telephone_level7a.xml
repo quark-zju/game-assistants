@@ -1,0 +1,9 @@
+<!-- telephone_level7a -->
+<level version="1.1" sessionId="352" cameraZ="-20" >
+	<element id="1" type="Transmitter" position="4,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" amount="1" angleOffset="0" />
+	<element id="2" type="Transceiver" position="4,4,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="1" amount="0" lookupTag="" />
+	<element id="3" type="Transceiver" position="0,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="2" amount="0" lookupTag="" />
+	<element id="4" type="Receiver" position="-4,-4,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="1" />
+	<element id="5" type="Transmitter" position="-4,4,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" amount="1" angleOffset="0" />
+	<element id="6" type="Receiver" position="4,-4,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="1" />
+</level>

@@ -1,0 +1,14 @@
+<!-- broadcast_level13 -->
+<level version="1.1" signalLimit="3" sessionId="275" cameraZ="-30" smallMeters="False" >
+	<element id="1" type="RadialTransmitter" position="10,-4,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" minRadius="8.2" meterAngle="135" targetAmount="5" extraRadius="0" transmitterGroup="Exchange" />
+	<element id="2" type="Transceiver" position="5,-7,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="1" lookupTag="" amount="0" transmitterGroup="Exchange" />
+	<element id="3" type="Receiver" position="6,7,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="3" />
+	<element id="4" type="ObjectiveSignalCount" position="0,0,0" scale="1,1,1" rotation="0,0,0" signalTarget="5" oid="60" />
+	<element id="5" type="Receiver" position="-10,2,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="4" />
+	<element id="6" type="Transceiver" position="-5,-7,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="2" lookupTag="" amount="1" transmitterGroup="Exchange" />
+	<element id="7" type="Transceiver" position="10,2,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="4" lookupTag="" amount="0" transmitterGroup="Exchange" />
+	<element id="8" type="Transceiver" position="0,-0.5825157,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="3" lookupTag="" amount="1" transmitterGroup="Exchange" />
+	<element id="9" type="RadialTransmitter" position="-10,-4,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" minRadius="8.2" meterAngle="45" targetAmount="5" extraRadius="0" transmitterGroup="Exchange" />
+	<element id="10" type="RadialTransmitter" position="0,6,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" minRadius="8.2" meterAngle="-90" targetAmount="5" extraRadius="0" transmitterGroup="Exchange" />
+	<element id="11" type="Transceiver" position="-6,7,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="2" lookupTag="" amount="0" transmitterGroup="Exchange" />
+</level>

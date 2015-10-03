@@ -1,0 +1,7 @@
+<!-- computer_level3 -->
+<level version="1.1" signalLimit="4" sessionId="181" cameraZ="-20" smallMeters="False" >
+	<element id="1" type="Transceiver" position="-4,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" transmitterType="Many" target="2" lookupTag="t4" amount="0" signalType="Cable" transmitterGroup="Fibre" />
+	<element id="2" type="Transceiver" position="4,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" transmitterType="Many" target="2" lookupTag="t2" amount="0" signalType="Cable" transmitterGroup="Fibre" />
+	<element id="3" type="Transceiver" position="0,4,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" transmitterType="Many" target="2" lookupTag="t3" amount="0" signalType="Cable" transmitterGroup="Fibre" />
+	<element id="4" type="Transceiver" position="0,-4,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" transmitterType="Many" target="2" lookupTag="t1" amount="1" signalType="Cable" transmitterGroup="Fibre" />
+</level>

@@ -1,0 +1,8 @@
+0 13 -0.01998758,-3.237265    1 2           # <element id="0" type="Transmitter" position="-0.01998758,-3.237265,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" amount="2" angleOffset="0"/>
+1 6 -0.01035309,2.474899      1 2           # <element id="5" type="Receiver" position="-0.01035309,2.474899,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="2"/>
+2 5 -4,2.330669               1 5.25        # <element id="8" type="RadialTransmitter" position="-4,2.330669,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" minRadius="5.25" meterAngle="45"/>
+3 6 7.611857,2.474899         1 1           # <element id="9" type="Receiver" position="7.611857,2.474899,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="1"/>
+4 6 -7.575254,2.474899        1 1           # <element id="10" type="Receiver" position="-7.575254,2.474899,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="1"/>
+5 12 -4,-5.667683             1 1 0         # <element id="11" type="Transceiver" position="-4,-5.667683,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="1" amount="0" lookupTag=""/>
+6 12 4,-5.667683              1 1 0         # <element id="12" type="Transceiver" position="4,-5.667683,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="1" amount="0" lookupTag=""/>
+7 5 4,2.330669                1 5.25        # <element id="13" type="RadialTransmitter" position="4,2.330669,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" minRadius="5.25" meterAngle="45"/>

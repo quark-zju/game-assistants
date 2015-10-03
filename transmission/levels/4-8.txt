@@ -1,0 +1,10 @@
+0 5 5,0                       1 7           # <element id="1" type="RadialTransmitter" position="5,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" minRadius="7" meterAngle="45" targetAmount="5" extraRadius="0" transmitterGroup="Exchange"/>
+1 12 5,4.933314               1 1 1         # <element id="2" type="Transceiver" position="5,4.933314,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" transmitterType="Many" target="1" amount="1" signalType="Cable" transmitterGroup="Exchange"/>
+2 5 -5,0                      1 7           # <element id="3" type="RadialTransmitter" position="-5,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" minRadius="7" meterAngle="45" targetAmount="5" extraRadius="0" transmitterGroup="Exchange"/>
+3 6 -9.994077,0               1 2           # <element id="4" type="Receiver" position="-9.994077,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="2"/>
+4 6 9.994079,0                1 2           # <element id="5" type="Receiver" position="9.994079,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="2"/>
+5 12 0,-7                     1 1 1         # <element id="7" type="Transceiver" position="0,-7,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" transmitterType="Many" target="1" amount="1" signalType="Cable" transmitterGroup="Exchange"/>
+6 12 5,-5                     1 2 0         # <element id="8" type="Transceiver" position="5,-5,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" transmitterType="Many" target="2" amount="0" signalType="Cable" transmitterGroup="Exchange"/>
+7 12 -5,5                     1 2 0         # <element id="10" type="Transceiver" position="-5,5,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" transmitterType="Many" target="2" amount="0" signalType="Cable" transmitterGroup="Exchange"/>
+8 1 0,0                                     # <element id="6" type="ObjectiveCrossedWires" position="0,0,0" scale="1,1,1" rotation="0,0,0" oid="29"/>
+9 3 0,0                       7             # <element id="9" type="ObjectiveTargetValue" position="0,0,0" scale="1,1,1" rotation="0,0,0" informationTarget="10" oid="28"/>

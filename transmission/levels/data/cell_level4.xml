@@ -1,0 +1,14 @@
+<!-- cell_level4 -->
+<level version="1.1" sessionId="132" cameraZ="-30" >
+	<element id="0" type="CellTransmitter" position="-4.81097,-3.670686,0" scale="1,1,1" rotation="0,0,90" elementGroup="Wave" />
+	<element id="1" type="CellTransmitter" position="0.03267658,4.631101,0" scale="1,1,1" rotation="0,0,90" elementGroup="Wave" />
+	<element id="8" type="Transceiver" position="4.869406,-7.388628,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="1" amount="0" lookupTag="" />
+	<element id="10" type="Transceiver" position="3.176999,6.389647,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="1" amount="0" lookupTag="" />
+	<element id="11" type="Transceiver" position="-7.891843,-1.886977,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="3" amount="3" lookupTag="" />
+	<element id="12" type="CellTransmitter" position="4.87648,-3.670685,0" scale="1,1,1" rotation="0,0,90" elementGroup="Wave" />
+	<element id="13" type="Transceiver" position="-3.012707,6.49162,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="1" amount="0" lookupTag="" />
+	<element id="15" type="SignalBlockHexagon" position="4.76314,-3.825,0" scale="1,1,1" rotation="0,0,0" blockGroup="Wave" flip="True" radius="5.55" />
+	<element id="16" type="SignalBlockHexagon" position="-4.76314,-3.825,0" scale="1,1,1" rotation="0,0,0" blockGroup="Wave" flip="True" radius="5.55" />
+	<element id="17" type="SignalBlockHexagon" position="0,4.5,0" scale="1,1,1" rotation="0,0,0" blockGroup="Wave" flip="True" radius="5.55" />
+	<element id="18" type="Receiver" position="-7.906469,-5.389239,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="2" />
+</level>

@@ -1,0 +1,12 @@
+<!-- satellite_level3 -->
+<level version="1.1" sessionId="232" cameraZ="-25" >
+	<element id="1" type="Transceiver" position="-0.7164497,-5.905628,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="1" amount="0" lookupTag="" />
+	<element id="2" type="Transceiver" position="-4.611818,-2.077143,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="2" amount="0" lookupTag="" />
+	<element id="3" type="Transceiver" position="3.388182,-2.077143,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="2" amount="1" lookupTag="" />
+	<element id="4" type="Transceiver" position="3.388182,3.562986,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="2" amount="0" lookupTag="" />
+	<element id="5" type="Transceiver" position="-4.611818,3.562986,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="2" amount="1" lookupTag="" />
+	<element id="6" type="Transceiver" position="7.388182,-2.077143,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="2" amount="0" lookupTag="" />
+	<element id="7" type="ObjectiveTargetValue" position="0,0,0" scale="1,1,1" rotation="0,0,0" informationTarget="9" oid="32" />
+	<element id="8" type="Transceiver" position="-0.6118183,5.544109,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="2" amount="0" lookupTag="" />
+	<element id="9" type="Transceiver" position="-0.6118183,-2.077143,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="2" amount="0" lookupTag="" />
+</level>

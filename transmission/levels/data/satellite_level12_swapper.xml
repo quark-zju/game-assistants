@@ -1,0 +1,10 @@
+<!-- satellite_level12_swapper -->
+<level version="1.1" signalLimit="6" sessionId="253" cameraZ="-25" smallMeters="False" >
+	<element id="1" type="Transceiver" position="8.404723,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="1" lookupTag="" amount="1" transmitterGroup="Wave" />
+	<element id="4" type="Transceiver" position="0,-5.09,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="1" lookupTag="" amount="0" transmitterGroup="Wave" />
+	<element id="5" type="Transceiver" position="-7.187883,-5.15037,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="2" lookupTag="" amount="1" transmitterGroup="Exchange" />
+	<element id="6" type="Transceiver" position="-7.244486,4.754189,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="1" lookupTag="" amount="0" transmitterGroup="Exchange" />
+	<element id="7" type="ObjectiveTargetValue" position="0,0,0" scale="1,1,1" rotation="0,0,0" informationTarget="6" oid="2" />
+	<element id="9" type="SwapperTransmitter" position="3.494532,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="1" swapGroup2="Wave" swapGroup1="Exchange" amount="0" transmitterGroup="Cable" />
+	<element id="10" type="SwapperTransmitter" position="-3.411817,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="2" swapGroup2="Wave" swapGroup1="Exchange" amount="0" transmitterGroup="Cable" />
+</level>

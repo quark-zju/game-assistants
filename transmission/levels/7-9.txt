@@ -1,0 +1,12 @@
+0 12 -5,-5                    1 4 0         # <element id="1" type="Transceiver" position="-5,-5,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="4" amount="0" lookupTag=""/>
+1 12 5,5                      1 3 0         # <element id="2" type="Transceiver" position="5,5,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="3" amount="0" lookupTag=""/>
+2 12 -5,5                     2 5 0         # <element id="4" type="Transceiver" position="-5,5,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" target="5" amount="0" lookupTag=""/>
+3 12 5,-5                     2 2 0         # <element id="6" type="Transceiver" position="5,-5,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" target="2" amount="0" lookupTag=""/>
+4 11 0,-5                     1 2 4 0       # <element id="13" type="SwapperTransmitter" position="0,-5,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="4" swapGroup1="Exchange" amount="0" swapGroup2="Fibre"/>
+5 12 5,0                      2 2 1         # <element id="14" type="Transceiver" position="5,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" target="2" amount="1" lookupTag=""/>
+6 5 0,0                       1 8.5         # <element id="15" type="RadialTransmitter" position="0,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" minRadius="8.5" meterAngle="45"/>
+7 6 -5,0                      2 2           # <element id="16" type="Receiver" position="-5,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" target="2"/>
+8 6 10,0                      1 2           # <element id="17" type="Receiver" position="10,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="2"/>
+9 11 0,5                      1 2 5 0       # <element id="18" type="SwapperTransmitter" position="0,5,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="5" swapGroup1="Exchange" amount="0" swapGroup2="Fibre"/>
+10 6 -10,0                    1 4           # <element id="19" type="Receiver" position="-10,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="4"/>
+11 1 0,0                                    # <element id="20" type="ObjectiveCrossedWires" position="0,0,0" scale="1,1,1" rotation="0,0,0" oid="76"/>

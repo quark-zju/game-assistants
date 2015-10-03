@@ -1,0 +1,8 @@
+<!-- satellite_level4_swapper -->
+<level version="1.1" signalLimit="3" sessionId="256" cameraZ="-20" smallMeters="False" >
+	<element id="1" type="Transmitter" position="-6,4,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" amount="1" angleOffset="0" />
+	<element id="4" type="Receiver" position="6,-4,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="1" />
+	<element id="5" type="Transmitter" position="6,4,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" amount="1" angleOffset="0" />
+	<element id="6" type="Receiver" position="-6,-4,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="1" />
+	<element id="8" type="SwapperTransmitter" position="0,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="1" swapGroup2="Wave" swapGroup1="Exchange" amount="0" transmitterGroup="Cable" />
+</level>

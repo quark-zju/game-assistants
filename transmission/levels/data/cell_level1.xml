@@ -1,0 +1,8 @@
+<!-- cell_level1 -->
+<level version="1.1" signalLimit="2" sessionId="137" cameraZ="-16" >
+	<element id="1" type="SignalBlock" position="0,0,0" scale="1,1,1" rotation="0,0,0" blockGroup="Wave" sy="0" ex="10" sx="-10" ey="0" />
+	<element id="2" type="CellTransmitter" position="-2.003767,2.327124,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" transmitterGroup="Wave" />
+	<element id="3" type="CellTransmitter" position="2.03,-2.528269,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" transmitterGroup="Wave" />
+	<element id="7" type="Transmitter" position="2.099187,2.312109,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" amount="1" angleOffset="0" signalType="Cable" transmitterType="Many" />
+	<element id="8" type="Receiver" position="-2.041934,-2.624087,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="1" />
+</level>

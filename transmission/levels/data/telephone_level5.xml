@@ -1,0 +1,10 @@
+<!-- telephone_level5 -->
+<level version="1.1" signalLimit="6" sessionId="82" cameraZ="-20" smallMeters="False" >
+	<element id="0" type="Transmitter" position="-5.371415,2.927659,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" amount="1" angleOffset="0" signalType="Cable" transmitterType="Many" />
+	<element id="1" type="Transmitter" position="5.129458,2.927659,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" amount="1" angleOffset="0" signalType="Cable" transmitterType="Many" />
+	<element id="2" type="Transceiver" position="0.004866719,0.04840004,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" transmitterType="Many" target="3" amount="0" signalType="Cable" transmitterGroup="Exchange" />
+	<element id="3" type="Transmitter" position="0.02420282,-5.177842,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" amount="1" angleOffset="0" signalType="Cable" transmitterType="Many" />
+	<element id="4" type="Receiver" position="5.008474,-2.371165,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="1" />
+	<element id="5" type="Receiver" position="-4.98428,-2.83088,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="1" />
+	<element id="6" type="Receiver" position="0,5.032666,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="1" />
+</level>
