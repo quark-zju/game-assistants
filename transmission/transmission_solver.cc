@@ -15,7 +15,11 @@
 #define D(x) if (DEBUG_LEVEL >= x)
 
 namespace geometry {
+#ifdef EMSCRIPTEN
+  typedef float real;
+#else
   typedef double real;
+#endif
 
   enum Angle : int {
     ACUTE = -1,
@@ -593,7 +597,11 @@ namespace transmission {
       flip = extractBool(s, "flip");
       real pi = atan(1) * 4;
       for (int i = 1; i <= 6; ++i) {
+#ifdef EMSCRIPTEN
+        real a[2] = {sinf(pi * i / 3), cosf(pi * i / 3)};
+#else
         real a[2] = {sin(pi * i / 3), cos(pi * i / 3)};
+#endif
         real x = pos.x + radius * a[1 - flip];
         real y = pos.y + radius * a[flip];
         points.push_back(geometry::Point(x, y));
