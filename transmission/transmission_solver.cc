@@ -10,12 +10,6 @@
 #include <map>
 #include <set>
 
-extern "C" {
-void fatal(const char * msg) {
-  puts(msg);
-  exit(EXIT_FAILURE);
-}
-}
 
 #define DEBUG_LEVEL 0
 #define D(x) if (DEBUG_LEVEL >= x)
@@ -719,15 +713,18 @@ namespace transmission {
     std::vector<BlockElement*> blocks;
     std::map<int, int> idMap;
 
-    void clearAll() {
+    void cleanAll() {
+      for (auto& e : elements) { delete e; }
+      for (auto& e : blocks) { delete e; }
+      for (auto& e : objectives) { delete e; }
       idMap.clear();
       elements.clear();
       objectives.clear();
       blocks.clear();
     }
 
-    void readXML(const char * xml) {
-      clearAll();
+    bool readXML(const char * xml) {
+      cleanAll();
       const char * p1 = xml; 
       for (;;) {
         const char * p2 = strchr(p1 + 1, '\n'); 
@@ -746,11 +743,16 @@ namespace transmission {
           } else {
             int oldId = e->id;
             int newId = idMap.size();
+            if (idMap.count(oldId)) {
+              fprintf(stderr, "Error: element id conflicts.\n");
+              goto fail;
+            }
             e->id = newId;
             idMap[oldId] = newId;
             elements.push_back(e);
             if (elements.size() > MAX_ELEMENTS) {
-              fatal("element count limit exceeded.");
+              fprintf(stderr, "Error: element count limit exceeded.\n");
+              goto fail;
             }
           }
         }
@@ -761,7 +763,13 @@ namespace transmission {
       printf("idMap = {");
       for (auto& i: idMap) { printf("%d: %d, ", i.first, i.second);  }
       printf("};\n");
+      return true;
+fail:
+      cleanAll();
+      return false;
     }
+
+    ~Level() { cleanAll(); }
   };
 
   bool isWireAlwaysBlocked(int srcId, int dstId) {
@@ -845,21 +853,18 @@ namespace transmission {
     printf("];\n");
   }
 
-  void cleanLevel() {
+  bool createLevelFromXML(const char * xml) {
     if (currentLevel) {
-      for (auto& e : currentLevel->elements) { delete e; }
-      for (auto& e : currentLevel->blocks) { delete e; }
-      for (auto& e : currentLevel->objectives) { delete e; }
       delete currentLevel;
       currentLevel = nullptr;
     }
-  }
-
-  void createLevelFromXML(const char * xml) {
-    cleanLevel();
     currentLevel = new Level();
-    currentLevel->readXML(xml);
-    calculateConnectable();
+    if (currentLevel->readXML(xml)) {
+      calculateConnectable();
+      return true;
+    } else {
+      return false;
+    }
   }
 
   struct StatePlus : State {
@@ -1043,7 +1048,6 @@ namespace transmission {
         }
         if (nextState->isWin()) {
           nextState->printSteps();
-          fprintf(stdout, "SOLVED\n");
           solved = true;
           delete nextState;
           goto out;
@@ -1070,7 +1074,7 @@ using namespace transmission;
 
 extern "C" {
 int solveLevelXML(const char * xml, bool allObjTogether) {
-  createLevelFromXML(xml);
+  if (!createLevelFromXML(xml)) { return -1; }
   printConnectable();
 
   // if we need to try to meet different kinds of objectives together
@@ -1100,7 +1104,7 @@ int solveLevelXML(const char * xml, bool allObjTogether) {
 }
 
 int printConnectableFromLevelXML(const char * xml) {
-  createLevelFromXML(xml);
+  if (!createLevelFromXML(xml)) { return -1; };
   printConnectable();
   return 0;
 }
