@@ -758,6 +758,9 @@ namespace transmission {
       }
       for (auto& obj: objectives) { obj->useIdMap(idMap); }
       for (auto& e: elements) { e->init(elements); }
+      printf("idMap = {");
+      for (auto& i: idMap) { printf("%d: %d, ", i.first, i.second);  }
+      printf("};\n");
     }
   };
 
