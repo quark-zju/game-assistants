@@ -14,6 +14,20 @@
 #define DEBUG_LEVEL 0
 #define D(x) if (DEBUG_LEVEL >= x)
 
+
+#ifdef EMSCRIPTEN
+#include <emscripten.h>
+
+void emRunScript(const char * script) {
+  D(10) printf("script: %s\n", script);
+  emscripten_run_script(script);
+}
+void initEmOut() {
+  emRunScript("if (!window.Em) window.Em={}; if (!window.Em.out) window.Em.out={};");
+}
+#endif
+
+
 namespace geometry {
 #ifdef EMSCRIPTEN
   typedef float real;
@@ -621,7 +635,7 @@ namespace transmission {
 
 
   struct ObjectiveElement : Element {
-    virtual void print(FILE * fd = stderr) { fprintf(fd, "Objective: Win\n"); };
+    virtual std::string description() { return "Win"; }
     virtual void apply() { };
     virtual void useIdMap(std::map<int, int>& idMap) { };
     bool isObjective() { return true; }
@@ -629,19 +643,19 @@ namespace transmission {
   struct ObjectiveCrossedWiresElement : ObjectiveElement {
     void read(FILE * fp) {  }
     void readXML(const char * s) {  } 
-    void print(FILE * fd = stderr) { fprintf(fd, "Objective: Do not cross wires\n"); };
+    std::string description() { return "Do not cross signals"; }
     void apply() { objSelected |= ObjCrossWires; };
   };
   struct ObjectiveSignalCountElement : ObjectiveElement {
     int sigCount;
     void readXML(const char * s) { sigCount = extractInt(s, "signalTarget"); } 
-    void print(FILE * fd = stderr) { fprintf(fd, "Objective: Do not use more than %d signals\n", sigCount); };
+    std::string description() { char buf[42]; snprintf(buf, sizeof buf, "Use no more than %d signals", sigCount); return buf; }
     void apply() { objSelected |= ObjSigCount; objSigCount = sigCount; };
   };
   struct ObjectiveTargetValueElement : ObjectiveElement {
     int targetValue;
     void readXML(const char * s) { targetValue = extractInt(s, "informationTarget"); } 
-    void print(FILE * fd = stderr) { fprintf(fd, "Objective: Leave additional packet on target %d\n", targetValue); };
+    std::string description() { char buf[42]; snprintf(buf, sizeof buf, "Leave information on target %d", targetValue); return buf; }
     void apply() { objSelected |= ObjTargetValue; objTargetValue = targetValue; };
     void useIdMap(std::map<int, int>& idMap) {
       assert(idMap.count(targetValue));
@@ -734,6 +748,10 @@ namespace transmission {
     bool readXML(const char * xml) {
       cleanAll();
       const char * p1 = xml; 
+#ifdef EMSCRIPTEN
+      initEmOut();
+      emRunScript("window.Em.out.idMap = {};");
+#endif
       for (;;) {
         const char * p2 = strchr(p1 + 1, '\n'); 
         std::string line;
@@ -757,6 +775,13 @@ namespace transmission {
             }
             e->id = newId;
             idMap[oldId] = newId;
+#ifdef EMSCRIPTEN
+            {
+              char buf[64];
+              snprintf(buf, sizeof(buf), "window.Em.out.idMap[%d]=%d", oldId, newId);
+              emRunScript(buf);
+            }
+#endif
             elements.push_back(e);
             if (elements.size() > MAX_ELEMENTS) {
               fprintf(stderr, "Error: element count limit exceeded.\n");
@@ -837,6 +862,10 @@ fail:
   }
 
   void calculateConnectable() {
+#ifdef EMSCRIPTEN
+    initEmOut();
+    emRunScript("window.Em.out.connectable = []");
+#endif
     auto& elements = currentLevel->elements;
     int n = (int)elements.size();
     for (int i = 0; i < n; ++i) {
@@ -846,6 +875,13 @@ fail:
         bool blocked = isWireAlwaysBlocked(i, j);
         // blocked by block elements?
         connectable[i][j] = !blocked;
+#ifdef EMSCRIPTEN
+        if (!blocked) {
+          char buf[64];
+          snprintf(buf, sizeof(buf), "window.Em.out.connectable.push([%d, %d]);", i, j);
+          emRunScript(buf);
+        }
+#endif
       } // for j
     } // for i
     memset(connectableByColor, -1, sizeof(connectableByColor));
@@ -951,11 +987,38 @@ fail:
         if (b) fputc('\n', fd);
       }
       for (int i = 0; i < n; ++i) {
-        if (amounts[i]) {
-          fprintf(fd, "%d: %d\n", i, amounts[i]);
+        if (amounts[i] || left[i]) {
+          fprintf(fd, "%d: %d %d\n", i, amounts[i], left[i]);
         }
       }
     }
+
+#ifdef EMSCRIPTEN
+    void emWriteToJsObj(const char * name) {
+      char buf[160];
+      std::string script;
+      script = "var a=" + std::string(name) + "={amounts:[],left:[],connected:[]};";
+      int n = (int)currentLevel->elements.size();
+      for (int i = 0; i < n; ++i) {
+        for (int j = 0; j < n; ++j) {
+          if (!connected[i][j]) continue;
+          snprintf(buf, sizeof(buf), "a.connected.push([%d,%d,%d]);", i, j, connected[i][j]);
+          script += buf;
+        }
+      }
+      for (int i = 0; i < n; ++i) {
+        if (left[i]) {
+          snprintf(buf, sizeof(buf), "a.left[%d]=%d;", i, left[i]);
+          script += buf;
+        }
+        if (amounts[i]) {
+          snprintf(buf, sizeof(buf), "a.amounts[%d]=%d;", i, amounts[i]);
+          script += buf;
+        }
+      }
+      emRunScript(script.c_str());
+    }
+#endif
 
     void updateLeftNumbers() { // probably unused
       auto& es = currentLevel->elements;
@@ -975,6 +1038,17 @@ fail:
         if (st->depth == 0) continue;
         printf("--- Step %d: %d -> %d ---\n", st->depth, st->lastConnection.first, st->lastConnection.second);
         st->print(false /* indent */, stdout);
+#ifdef EMSCRIPTEN
+        {
+          st->emWriteToJsObj("window.Em.out.curSearch.tmpState");
+          char buf[160];
+          snprintf(buf, sizeof(buf),
+              "var a=window.Em.out.curSearch;a.steps.unshift([%d,%d]);"
+              "a.states.unshift(a.tmpState);delete a.tmpState;",
+              st->lastConnection.first, st->lastConnection.second);
+          emRunScript(buf);
+        }
+#endif
       }
     }
 
@@ -1023,6 +1097,10 @@ fail:
   }
 
   bool search() {
+#ifdef EMSCRIPTEN
+    initEmOut();
+    emRunScript("window.Em.out.curSearch = {solved: false, steps: [], states: []};");
+#endif
     bool solved = false;
     cleanVisited();
     StatePlus * initState = getInitialState();
@@ -1058,6 +1136,9 @@ fail:
         if (nextState->isWin()) {
           nextState->printSteps();
           solved = true;
+#ifdef EMSCRIPTEN
+          emRunScript("window.Em.out.curSearch.solved=true");
+#endif
           delete nextState;
           goto out;
         }
@@ -1074,6 +1155,9 @@ fail:
 out:
     fprintf(stdout, "State size: %d\n", (int)visited.size());
     cleanVisited();
+#ifdef EMSCRIPTEN
+    emRunScript("var a=window.Em.out;a.curSearch.objective=a.curObj;a.curObj='';a.searches.push(a.curSearch)");
+#endif
     return solved;
   }
 }
@@ -1089,14 +1173,25 @@ int solveLevelXML(const char * xml, bool allObjTogether) {
   // if we need to try to meet different kinds of objectives together
   int notSolved = 0;
   objSelected = ObjAbsent;
+#ifdef EMSCRIPTEN
+  initEmOut();
+  emRunScript("var a=window.Em.out;a.curObj='';a.searches=[]");
+#endif
   if (currentLevel->objectives.size() > 0) {
     for (int i = 0; i < (int)currentLevel->objectives.size(); ++i) {
       auto& obj = currentLevel->objectives[i];
       if (!allObjTogether) {
         objSelected = ObjAbsent;
       }
-      obj->print(stdout);
       obj->apply();
+      printf("Objective: %s\n", obj->description().c_str());
+#ifdef EMSCRIPTEN
+      {
+        char buf[160];
+        snprintf(buf, sizeof(buf), "window.Em.out.curObj+='%s'+'\\n';", obj->description().c_str());
+        emRunScript(buf);
+      }
+#endif
       if (!allObjTogether) {
         if (!search()) notSolved++;
       }
@@ -1108,6 +1203,10 @@ int solveLevelXML(const char * xml, bool allObjTogether) {
   if (allObjTogether) {
     if (!search()) notSolved++;
   }
+
+#ifdef EMSCRIPTEN
+  emRunScript("var a=window.Em.out;delete a.curObj;delete a.curSearch");
+#endif
 
   return notSolved;
 }
