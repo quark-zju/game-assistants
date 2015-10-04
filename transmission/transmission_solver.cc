@@ -750,7 +750,7 @@ namespace transmission {
       const char * p1 = xml; 
 #ifdef EMSCRIPTEN
       initEmOut();
-      emRunScript("window.Em.out.idMap = {};");
+      emRunScript("var a=window.Em.out;a.idMap={};a.ridMap={};");
 #endif
       for (;;) {
         const char * p2 = strchr(p1 + 1, '\n'); 
@@ -777,8 +777,8 @@ namespace transmission {
             idMap[oldId] = newId;
 #ifdef EMSCRIPTEN
             {
-              char buf[64];
-              snprintf(buf, sizeof(buf), "window.Em.out.idMap[%d]=%d", oldId, newId);
+              char buf[160];
+              snprintf(buf, sizeof(buf), "var a=window.Em.out;a.idMap[%d]=%d;a.ridMap[%d]=%d", oldId, newId, newId, oldId);
               emRunScript(buf);
             }
 #endif
@@ -1007,14 +1007,8 @@ fail:
         }
       }
       for (int i = 0; i < n; ++i) {
-        if (left[i]) {
-          snprintf(buf, sizeof(buf), "a.left[%d]=%d;", i, left[i]);
-          script += buf;
-        }
-        if (amounts[i]) {
-          snprintf(buf, sizeof(buf), "a.amounts[%d]=%d;", i, amounts[i]);
-          script += buf;
-        }
+        snprintf(buf, sizeof(buf), "a.left[%d]=%d;a.amounts[%d]=%d;", i, left[i], i, amounts[i]);
+        script += buf;
       }
       emRunScript(script.c_str());
     }
