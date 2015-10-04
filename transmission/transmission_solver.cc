@@ -180,22 +180,66 @@ namespace geometry {
       return l.distance(Point(x, y)) <= r;
     }
   };
+}
 
+namespace xml { // naive xml processing. do not use it in production
+  using geometry::real;
+
+  std::string extractStr(const char * line, const char * field) {
+    std::string needle = std::string(" ") + field + "=\"";
+    const char * p = strstr(line, needle.c_str());
+    if (!p) return "";
+
+    p += strlen(field) + 3;
+    const char * p2 = strchr(p, '"');
+    if (!p2) return "";
+    return std::string(p, p2 - p);
+  }
+
+  real extractReal(const char * line, const char * field) {
+    return atof(extractStr(line, field).c_str());
+  }
+
+  int extractInt(const char * line, const char * field) {
+    return atoi(extractStr(line, field).c_str());
+  }
+
+  int extractBool(const char * line, const char * field) {
+    auto s = xml::extractStr(line, field);
+    if (s.length() == 0) return 0;
+    return s[0] == 't' || s[0] == 'T' || s[0] == '1' || s[0] == 'y' || s[0] == 'Y';
+  }
+
+
+  geometry::Point extractPoint(const char * line, const char * field) {
+    auto s = extractStr(line, field).c_str();
+    const char * p = strchr(s, ',');
+    if (p) {
+      return geometry::Point(atof(s), atof(p + 1));
+    } else {
+      return geometry::Point();
+    }
+  }
 }
 
 namespace transmission {
   using geometry::real;
   using geometry::Point;
+  using xml::extractStr;
+  using xml::extractInt;
+  using xml::extractReal;
+  using xml::extractPoint;
+  using xml::extractBool;
 
   const int MAX_ELEMENTS = 21;
 
-  int objCrossWires = 0;
   int objSigCount = -1;
   int objTargetValue = -1;
   enum ObjectiveIndex { ObjAbsent = 0, ObjCrossWires = 1, ObjSigCount = 2, ObjTargetValue = 4 };
   int objSelected = ObjAbsent;
 
   enum ElementType: int {
+    InvalidElement = -1,
     CellTransmitter = 0, // station ? yes
     ObjectiveCrossedWires,
     ObjectiveSignalCount,
@@ -213,12 +257,40 @@ namespace transmission {
   };
 
   enum ElementGroup: int {
-    NoColor = -1,
+    InvalidColor = -1,
     Cable = 0,
     Exchange,
     Fibre,
     Wave,
   };
+
+  ElementGroup extractElementGroup(const char * line, const char * field) {
+    auto s = xml::extractStr(line, field);
+    if (s == "Cable") return Cable;
+    else if (s == "Exchange") return Exchange;
+    else if (s == "Fibre") return Fibre;
+    else if (s == "Wave") return Wave;
+    return InvalidColor;
+  }
+
+  ElementType extractElementType(const char * line, const char * field) {
+    auto s = xml::extractStr(line, field);
+    if (s == "CellTransmitter") return CellTransmitter;
+    else if (s == "ObjectiveCrossedWires") return ObjectiveCrossedWires;
+    else if (s == "ObjectiveSignalCount") return ObjectiveSignalCount;
+    else if (s == "ObjectiveTargetValue") return ObjectiveTargetValue;
+    else if (s == "PlacedSignal") return PlacedSignal;
+    else if (s == "RadialTransmitter") return RadialTransmitter;
+    else if (s == "Receiver") return Receiver;
+    else if (s == "SignalBlock") return SignalBlock;
+    else if (s == "SignalBlockCircle") return SignalBlockCircle;
+    else if (s == "SignalBlockHexagon") return SignalBlockHexagon;
+    else if (s == "SignalBooster") return SignalBooster;
+    else if (s == "SwapperTransmitter") return SwapperTransmitter;
+    else if (s == "Transceiver") return Transceiver;
+    else if (s == "Transmitter") return Transmitter;
+    return InvalidElement;
+  }
 
   struct State {
     char amounts[MAX_ELEMENTS];
@@ -239,20 +311,13 @@ namespace transmission {
 
   struct Element {
     ElementType type;
-    ElementGroup color, altColor;
+    ElementGroup color;
     int amount;
     int target;
     int id;
     Point pos;
 
-    /* int minRadius; // RadialTransmitter
-       int sy, ex, sx, ey; // SignalBlock
-       ElementGroup blockGroup; // SignalBlock*
-       int radius; // SignalblockHexagon
-       ElementGroup swapGroup2
-       */
-
-    virtual void read(FILE * fp = stdin) = 0;
+    virtual void readXML(const char * p) = 0;
 
     // static properties
     virtual bool isSender() { return false; }
@@ -332,24 +397,27 @@ namespace transmission {
 
   struct ReceiverElement : Element {
     bool isReceiver() { return true; }
-    void read(FILE * fp = stdin) { assert(fscanf(fp, "%d %d", (int*)&color, &target) == 2); amount = 0; }
+    void readXML(const char * s) { color = extractElementGroup(s, "elementGroup"); target = extractInt(s, "target"); amount = 0; }
   };
   struct TransmitterElement : Element {
     bool isSender() { return true; }
-    void read(FILE * fp = stdin) { assert(fscanf(fp, "%d %d", (int*)&color, &amount) == 2); target = 0; }
+    void readXML(const char * s) { color = extractElementGroup(s, "elementGroup"); amount = extractInt(s, "amount"); target = 0; }
     bool isFulfilled() { return true; }
   };
   struct TransceiverElement : Element {
     bool isSender() { return true; }
     bool isReceiver() { return true; }
-    void read(FILE * fp = stdin) { assert(fscanf(fp, "%d %d %d", (int*)&color, &target, &amount) == 3); }
+    void readXML(const char * s) { color = extractElementGroup(s, "elementGroup"); amount = extractInt(s, "amount"); target = extractInt(s, "target"); }
   };
   struct RadialTransmitterElement : Element {
     real radius;
     std::vector<int> adjIds;
     bool isSender() { return false; } // not a typical sender, cannot manually connect from this to others.
     bool isReceiver() { return true; }
-    void read(FILE * fp = stdin) { assert(fscanf(fp, "%d %lf", (int*)&color, &radius) == 2); }
+    void readXML(const char * s) {
+      color = extractElementGroup(s, "elementGroup");
+      radius = extractReal(s, "minRadius");
+    }
     bool isFulfilled() { return true; }
     bool isWireless() { return true; }
     void init(std::vector<Element*>& elements) {
@@ -398,7 +466,7 @@ namespace transmission {
     bool isSender() { return true; }
     bool isReceiver() { return true; }
     bool isColorFixed() { return false; }
-    void read(FILE * fp = stdin) { assert(fscanf(fp, "%d %d %d %d", (int*)&color, (int*)&swapColor, &target, &amount) == 4); }
+    void readXML(const char * s) { color = extractElementGroup(s, "swapGroup1"); swapColor = extractElementGroup(s, "swapGroup2"); amount = extractInt(s, "amount"); target = extractInt(s, "target"); }
     bool canReceiveColor(ElementGroup color) { return this->color == color || this->swapColor == color; }
     // state->colorSwapped:
     //   0: not connected, accept either color.
@@ -439,7 +507,7 @@ namespace transmission {
   struct CellTransmitterElement : Element {
     bool isSender() { return true; }
     bool isReceiver() { return true; }
-    void read(FILE * fp = stdin) { assert(fscanf(fp, "%d", (int*)&color) == 1); target = amount = 0; }
+    void readXML(const char * s) { color = extractElementGroup(s, "elementGroup"); target = amount = 0; }
     bool isFulfilled() { return true; }
     int canReceivePacketNumberNow() { return 32767; }
     bool canReceivePacketNow() { return true; }
@@ -472,7 +540,7 @@ namespace transmission {
   struct SignalBoosterElement : Element {
     bool isSender() { return true; }
     bool isReceiver() { return true; }
-    void read(FILE * fp = stdin) { assert(fscanf(fp, "%d", (int*)&color) == 1); target = amount = 0; }
+    void readXML(const char * s) { color = extractElementGroup(s, "elementGroup"); target = amount = 0; }
     bool isFulfilled() { return true; }
 
     int canReceivePacketNumberNow() {
@@ -488,13 +556,18 @@ namespace transmission {
     }
   };
 
+
   struct BlockElement : Element {
     bool isBlock() { return true; }
     virtual bool canBlock(ElementGroup color, geometry::LineSegment& l) = 0;
   };
   struct SignalBlockElement : BlockElement {
     geometry::LineSegment l;
-    void read(FILE * fp = stdin) { assert(fscanf(fp, "%d %lf %lf %lf %lf", (int*)&color, &l.x1, &l.y1, &l.x2, &l.y2) == 5); }
+    void readXML(const char * s) {
+      color = extractElementGroup(s, "blockGroup");
+      l.x1 = extractReal(s, "sx"); l.y1 = extractReal(s, "sy");
+      l.x2 = extractReal(s, "ex"); l.y2 = extractReal(s, "ey"); 
+    }
     bool canBlock(ElementGroup color, geometry::LineSegment& line) {
       if (color != this->color) return false;
       return this->l.intersect(line);
@@ -502,7 +575,7 @@ namespace transmission {
   };
   struct SignalBlockCircleElement : BlockElement {
     real radius;
-    void read(FILE * fp = stdin) { assert(fscanf(fp, "%d %lf", (int*)&color, &radius) == 2); }
+    void readXML(const char * s) { color = extractElementGroup(s, "blockGroup"); radius = extractReal(s, "radius"); }
     bool canBlock(ElementGroup color, geometry::LineSegment& line) {
       if (color != this->color) return false;
       real d1 = pos.distance(*line.p1());
@@ -510,16 +583,17 @@ namespace transmission {
       return (d1 < radius && d2 > radius) || (d1 > radius && d2 < radius) || (d1 > radius && d2 > radius && line.distance(pos) < radius);
     }
   };
-
   struct SignalBlockHexagonElement : SignalBlockElement {
     // HEX_POINTS = [[0,0]].concat([1..6].map (k) -> [- sin(PI * k / 3), - cos(PI * k / 3)])
     // a = if flip then 1 else 0
     // points = [0..6].map (i) -> [x + HEX_POINTS[i][1 - a] * scale, y + HEX_POINTS[i][a] * scale]
     std::vector<geometry::Point> points;
-    void read(FILE * fp = stdin) {
+    void readXML(const char * s) {
       int flip;
       real radius;
-      assert(fscanf(fp, "%d %lf %d", (int*)&color, &radius, &flip) == 3);
+      color = extractElementGroup(s, "blockGroup");
+      radius = extractReal(s, "radius");
+      flip = extractBool(s, "flip");
       real pi = atan(1) * 4;
       for (int i = 1; i <= 6; ++i) {
         real a[2] = {sin(pi * i / 3), cos(pi * i / 3)};
@@ -529,6 +603,7 @@ namespace transmission {
         D(5) { fprintf(stderr, "SignalBlockHexagon %d points[%d]: ", id, i - 1); points[i - 1].print(stderr); fputc('\n', stderr); }
       }
     }
+
     bool canBlock(ElementGroup color, geometry::LineSegment& line) {
       if (color != this->color) return false;
       for (int i = 0; i < 6; ++i) {
@@ -539,35 +614,47 @@ namespace transmission {
     }
   };
 
+
   struct ObjectiveElement : Element {
     virtual void print(FILE * fd = stderr) { fprintf(fd, "Objective: Win\n"); };
     virtual void apply() { };
+    virtual void useIdMap(std::map<int, int>& idMap) { };
     bool isObjective() { return true; }
   };
   struct ObjectiveCrossedWiresElement : ObjectiveElement {
-    void read(FILE * fp) { objCrossWires = 1; }
+    void read(FILE * fp) {  }
+    void readXML(const char * s) {  } 
     void print(FILE * fd = stderr) { fprintf(fd, "Objective: Do not cross wires\n"); };
     void apply() { objSelected |= ObjCrossWires; };
   };
   struct ObjectiveSignalCountElement : ObjectiveElement {
     int sigCount;
-    void read(FILE * fp) { assert(fscanf(fp, "%d", &sigCount) == 1); }
+    void readXML(const char * s) { sigCount = extractInt(s, "signalTarget"); } 
     void print(FILE * fd = stderr) { fprintf(fd, "Objective: Do not use more than %d signals\n", sigCount); };
     void apply() { objSelected |= ObjSigCount; objSigCount = sigCount; };
   };
   struct ObjectiveTargetValueElement : ObjectiveElement {
     int targetValue;
-    void read(FILE * fp) { assert(fscanf(fp, "%d", &targetValue) == 1); }
+    void readXML(const char * s) { targetValue = extractInt(s, "informationTarget"); } 
     void print(FILE * fd = stderr) { fprintf(fd, "Objective: Leave additional packet on target %d\n", targetValue); };
     void apply() { objSelected |= ObjTargetValue; objTargetValue = targetValue; };
+    void useIdMap(std::map<int, int>& idMap) {
+      assert(idMap.count(targetValue));
+      targetValue = idMap[targetValue];
+    };
   };
 
-  Element* readElement(FILE * fp = stdin) {
+  Element* readElementFromXMLLine(const char * line) {
+    if (!strstr(line, "<element ")) return nullptr;
     ElementType type;
     Point pos;
     int id;
-    // id type pos
-    if (fscanf(fp, "%d %d %lf,%lf", &id, (int*)&type, &pos.x, &pos.y) < 3) return nullptr;
+
+    id = xml::extractInt(line, "id");
+    type = extractElementType(line, "type");
+    pos = xml::extractPoint(line, "position");
+    if (id < 0 || type < 0) return nullptr;
+
     Element* e;
     switch (type) {
       case Transmitter:
@@ -610,20 +697,16 @@ namespace transmission {
         e = new SignalBoosterElement();
         break;
       case PlacedSignal:
-        fprintf(stderr, "not implemented type: %d\n", type);
-        abort();
+        // ignore it
+        return nullptr;
+      case InvalidElement:
         return nullptr;
     }
     e->id = id;
     e->type = type;
     e->pos = pos;
-    e->color = e->altColor = NoColor;
-    e->read(fp);
-    // read till line end (ignore comment)
-    for (int ch;;) {
-      ch = fgetc(fp);
-      if (ch == EOF || ch == '\n' || ch == '\r') break;
-    }
+    e->color = InvalidColor;
+    e->readXML(line);
     return e;
   }
 
@@ -631,22 +714,44 @@ namespace transmission {
     std::vector<Element*> elements;
     std::vector<ObjectiveElement*> objectives;
     std::vector<BlockElement*> blocks;
+    std::map<int, int> idMap;
 
-    void read(FILE* fp = stdin) {
+    void clearAll() {
+      idMap.clear();
       elements.clear();
+      objectives.clear();
+      blocks.clear();
+    }
+
+    void readXML(const char * xml) {
+      clearAll();
+      const char * p1 = xml; 
       for (;;) {
-        Element * e = readElement(fp);
-        if (e == nullptr) break;
-        if (e->isObjective()) {
-          objectives.push_back((ObjectiveElement*)e);
-        } else if (e->isBlock()) {
-          blocks.push_back((BlockElement*)e);
-        } else {
-          elements.push_back(e);
+        const char * p2 = strchr(p1 + 1, '\n'); 
+        std::string line;
+        if (p2 == nullptr) line = p1; else line = std::string(p1, p2 - p1);
+        D(4) fprintf(stderr, "XML LINE [%s]\n", line.c_str());
+        Element * e = readElementFromXMLLine(line.c_str());
+        if (e) {
+          D(5) fprintf(stderr, "  GOT ELEMENT\n");
+          if (e->isObjective()) {
+            e->id = -1;
+            objectives.push_back((ObjectiveElement*)e);
+          } else if (e->isBlock()) {
+            e->id = -1;
+            blocks.push_back((BlockElement*)e);
+          } else {
+            int oldId = e->id;
+            int newId = idMap.size();
+            e->id = newId;
+            idMap[oldId] = newId;
+            elements.push_back(e);
+          }
         }
+        if (p2 == nullptr) break; else p1 = p2 + 1;
       }
-      for (auto& e : elements) { e->init(elements); }
-      if (elements.size() > MAX_ELEMENTS) { fatal("too many elements"); }
+      for (auto& obj: objectives) { obj->useIdMap(idMap); }
+      for (auto& e: elements) { e->init(elements); }
     }
   };
 
@@ -918,22 +1023,15 @@ namespace transmission {
 
 using namespace transmission;
 
-int main(int argc, char const *argv[]) {
+int solveLevelXML(const char * xml, bool allObjTogether) {
   currentLevel = new Level();
-  currentLevel->read();
+  currentLevel->readXML(xml);
   calculateConnectable();
-  int objArgv = -1;
-  if (argc >= 2) {
-    // argv[1]: specify one objective
-    sscanf(argv[1], "%d", &objArgv);
-  }
 
   // if we need to try to meet different kinds of objectives together
   int notSolved = 0;
-  bool allObjTogether = getenv("ALLOBJ");
   if (currentLevel->objectives.size() > 0) {
     for (int i = 0; i < (int)currentLevel->objectives.size(); ++i) {
-      if (objArgv != -1 && objArgv != i) continue;
       auto& obj = currentLevel->objectives[i];
       if (!allObjTogether) {
         puts("\n");
@@ -953,6 +1051,26 @@ int main(int argc, char const *argv[]) {
     if (!search()) notSolved++;
   }
 
+  return notSolved;
+}
+
+int main(int argc, char const *argv[]) {
+  int notSolved = 0;
+  for (int i = 1; i < argc; ++i) {
+    FILE * fp = fopen(argv[i], "r");
+    if (!fp) continue;
+
+    if (argc > 2) printf("## %s\n", argv[i]);
+    std::string s;
+    for (;;) {
+      char buf[20];
+      size_t n = fread(buf, 1, sizeof(buf), fp);
+      if (n == 0) break;
+      s += std::string(buf, n);
+    }
+    fclose(fp);
+    notSolved += solveLevelXML(s.c_str(), getenv("ALLOBJ"));
+  }
   return notSolved;
 }
 

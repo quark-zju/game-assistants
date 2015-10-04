@@ -1,2 +1,0 @@
-0 13 0,3.007029               0 1           # <element id="0" type="Transmitter" position="0,3.007029,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" amount="1" angleOffset="-150" signalType="Cable" transmitterType="One"/>
-1 6 0,-3.007029               0 1           # <element id="1" type="Receiver" position="0,-3.007029,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="1"/>

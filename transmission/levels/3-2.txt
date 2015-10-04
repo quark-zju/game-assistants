@@ -1,6 +1,0 @@
-0 6 5,4                       2 1           # <element id="2" type="Receiver" position="5,4,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" target="1"/>
-1 6 -5,0                      2 1           # <element id="3" type="Receiver" position="-5,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" target="1"/>
-2 6 -5,4                      2 2           # <element id="4" type="Receiver" position="-5,4,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" target="2"/>
-3 12 5,0                      2 2 0         # <element id="5" type="Transceiver" position="5,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" transmitterType="Many" target="2" amount="0" signalType="Cable" transmitterGroup="Fibre"/>
-4 13 0,-4                     2 4           # <element id="6" type="Transmitter" position="0,-4,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" amount="4" angleOffset="0" signalType="Cable" transmitterType="Many"/>
-5 12 0,0                      2 4 0         # <element id="7" type="Transceiver" position="0,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" transmitterType="Many" target="4" amount="0" signalType="Cable" transmitterGroup="Fibre"/>

@@ -1,7 +1,0 @@
-0 12 6.059712,2               2 2 0         # <element id="0" type="Transceiver" position="6.059712,2,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" transmitterType="Many" target="2" amount="0" signalType="Cable" transmitterGroup="Fibre"/>
-1 12 0,6                      2 1 1         # <element id="1" type="Transceiver" position="0,6,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" transmitterType="Many" target="1" amount="1" signalType="Cable" transmitterGroup="Fibre"/>
-2 12 -6.211609,2              2 2 1         # <element id="4" type="Transceiver" position="-6.211609,2,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" transmitterType="Many" target="2" amount="1" signalType="Cable" transmitterGroup="Fibre"/>
-3 12 0,-6                     2 2 1         # <element id="5" type="Transceiver" position="0,-6,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" transmitterType="Many" target="2" amount="1" signalType="Cable" transmitterGroup="Fibre"/>
-4 6 0,-1                      2 2           # <element id="8" type="Receiver" position="0,-1,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" target="2"/>
-5 3 0,0                       0             # <element id="7" type="ObjectiveTargetValue" position="0,0,0" scale="1,1,1" rotation="0,0,0" informationTarget="0" oid="26"/>
-6 2 0,0                       4             # <element id="9" type="ObjectiveSignalCount" position="0,0,0" scale="1,1,1" rotation="0,0,0" signalTarget="4" oid="25"/>

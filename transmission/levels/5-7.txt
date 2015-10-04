@@ -1,7 +1,0 @@
-0 13 5,-3                     1 1           # <element id="3" type="Transmitter" position="5,-3,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" amount="1" angleOffset="0"/>
-1 6 5,3                       1 1           # <element id="6" type="Receiver" position="5,3,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="1"/>
-2 6 -5,3                      1 1           # <element id="7" type="Receiver" position="-5,3,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="1"/>
-3 13 -5,-3                    1 1           # <element id="9" type="Transmitter" position="-5,-3,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" amount="1" angleOffset="0"/>
-4 11 0,5.98                   1 3 2 0       # <element id="10" type="SwapperTransmitter" position="0,5.98,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="2" swapGroup2="Wave" swapGroup1="Exchange" amount="0" transmitterGroup="Cable"/>
-5 11 0,-5.98                  1 3 2 0       # <element id="11" type="SwapperTransmitter" position="0,-5.98,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="2" swapGroup2="Wave" swapGroup1="Exchange" amount="0" transmitterGroup="Cable"/>
-6 7 0,0                       1 -20 0 20 0  # <element id="5" type="SignalBlock" position="0,0,0" scale="1,1,1" rotation="0,0,0" blockGroup="Exchange" sy="0" ex="20" sx="-20" ey="0"/>

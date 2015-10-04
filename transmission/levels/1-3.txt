@@ -1,4 +1,0 @@
-0 6 -4.346452,0.9158478       0 1           # <element id="0" type="Receiver" position="-4.346452,0.9158478,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="1"/>
-1 13 2.419363,0.9158478       0 1           # <element id="1" type="Transmitter" position="2.419363,0.9158478,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" amount="1" angleOffset="0" signalType="Cable" transmitterType="Many"/>
-2 13 -0.5876672,0.9158478     0 1           # <element id="2" type="Transmitter" position="-0.5876672,0.9158478,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" amount="1" angleOffset="0" signalType="Cable" transmitterType="Many"/>
-3 6 3.922877,-2.391884        0 1           # <element id="4" type="Receiver" position="3.922877,-2.391884,0" scale="1,1,1" rotation="0,0,0" elementGroup="Cable" target="1"/>

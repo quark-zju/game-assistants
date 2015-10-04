@@ -1,8 +1,0 @@
-0 12 5,5                      2 4 0         # <element id="1" type="Transceiver" position="5,5,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" target="4" lookupTag="" amount="0" transmitterGroup="Fibre"/>
-1 12 -5,-5                    2 3 0         # <element id="2" type="Transceiver" position="-5,-5,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" target="3" lookupTag="" amount="0" transmitterGroup="Fibre"/>
-2 12 0,-5                     2 2 0         # <element id="3" type="Transceiver" position="0,-5,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" target="2" lookupTag="" amount="0" transmitterGroup="Fibre"/>
-3 12 -5,0                     2 2 1         # <element id="4" type="Transceiver" position="-5,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" target="2" lookupTag="" amount="1" transmitterGroup="Fibre"/>
-4 12 0,5                      2 1 0         # <element id="5" type="Transceiver" position="0,5,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" target="1" lookupTag="" amount="0" transmitterGroup="Fibre"/>
-5 12 5,0                      2 1 0         # <element id="8" type="Transceiver" position="5,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Fibre" target="1" lookupTag="" amount="0" transmitterGroup="Fibre"/>
-6 1 0,0                                     # <element id="6" type="ObjectiveCrossedWires" position="0,0,0" scale="1,1,1" rotation="0,0,0" oid="59"/>
-7 3 0,0                       0             # <element id="7" type="ObjectiveTargetValue" position="0,0,0" scale="1,1,1" rotation="0,0,0" informationTarget="1" oid="58"/>

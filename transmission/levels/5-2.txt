@@ -1,6 +1,0 @@
-0 13 6.247139,1.430511E-06    3 1           # <element id="1" type="Transmitter" position="6.247139,1.430511E-06,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" amount="1" angleOffset="0" signalType="Cable" transmitterType="Many"/>
-1 6 -5.437882,-4.058517       3 1           # <element id="2" type="Receiver" position="-5.437882,-4.058517,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="1"/>
-2 12 -2.148627,0              3 1 0         # <element id="3" type="Transceiver" position="-2.148627,0,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" transmitterType="Many" target="1" amount="0" signalType="Cable" transmitterGroup="Wave"/>
-3 6 4.138096,3.740201         1 2           # <element id="4" type="Receiver" position="4.138096,3.740201,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" target="2"/>
-4 13 -3.938951,3.793254       1 1           # <element id="5" type="Transmitter" position="-3.938951,3.793254,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" amount="1" angleOffset="0" signalType="Cable" transmitterType="Many"/>
-5 13 -0.03958392,-3.978938    1 1           # <element id="6" type="Transmitter" position="-0.03958392,-3.978938,0" scale="1,1,1" rotation="0,0,0" elementGroup="Exchange" amount="1" angleOffset="0" signalType="Cable" transmitterType="Many"/>

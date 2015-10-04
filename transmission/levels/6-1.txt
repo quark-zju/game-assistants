@@ -1,5 +1,0 @@
-0 0 -2.003767,2.327124        3             # <element id="2" type="CellTransmitter" position="-2.003767,2.327124,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" transmitterGroup="Wave"/>
-1 0 2.03,-2.528269            3             # <element id="3" type="CellTransmitter" position="2.03,-2.528269,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" transmitterGroup="Wave"/>
-2 13 2.099187,2.312109        3 1           # <element id="7" type="Transmitter" position="2.099187,2.312109,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" amount="1" angleOffset="0" signalType="Cable" transmitterType="Many"/>
-3 6 -2.041934,-2.624087       3 1           # <element id="8" type="Receiver" position="-2.041934,-2.624087,0" scale="1,1,1" rotation="0,0,0" elementGroup="Wave" target="1"/>
-4 7 0,0                       3 -10 0 10 0  # <element id="1" type="SignalBlock" position="0,0,0" scale="1,1,1" rotation="0,0,0" blockGroup="Wave" sy="0" ex="10" sx="-10" ey="0"/>
