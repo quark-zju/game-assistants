@@ -744,7 +744,7 @@ namespace transmission {
             int oldId = e->id;
             int newId = idMap.size();
             if (idMap.count(oldId)) {
-              fprintf(stderr, "Error: element id conflicts.\n");
+              fprintf(stderr, "Error: element id %d conflicts.\n", oldId);
               goto fail;
             }
             e->id = newId;
@@ -756,7 +756,8 @@ namespace transmission {
             }
           }
         }
-        if (p2 == nullptr) break; else p1 = p2 + 1;
+        // In emscripten runtime, p2 == nullptr may be not a reliable end condition
+        if (p2 == nullptr || line.find("</level>") != std::string::npos) break; else p1 = p2 + 1;
       }
       for (auto& obj: objectives) { obj->useIdMap(idMap); }
       for (auto& e: elements) { e->init(elements); }
