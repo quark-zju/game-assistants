@@ -10,9 +10,11 @@
 #include <map>
 #include <set>
 
+extern "C" {
 void fatal(const char * msg) {
   puts(msg);
   exit(EXIT_FAILURE);
+}
 }
 
 #define DEBUG_LEVEL 0
@@ -210,12 +212,11 @@ namespace xml { // naive xml processing. do not use it in production
     return s[0] == 't' || s[0] == 'T' || s[0] == '1' || s[0] == 'y' || s[0] == 'Y';
   }
 
-
   geometry::Point extractPoint(const char * line, const char * field) {
-    auto s = extractStr(line, field).c_str();
-    const char * p = strchr(s, ',');
-    if (p) {
-      return geometry::Point(atof(s), atof(p + 1));
+    auto s = extractStr(line, field);
+    size_t p = s.find(',');
+    if (p != std::string::npos) {
+      return geometry::Point(atof(s.c_str()), atof(s.substr(p + 1).c_str()));
     } else {
       return geometry::Point();
     }
@@ -231,7 +232,7 @@ namespace transmission {
   using xml::extractPoint;
   using xml::extractBool;
 
-  const int MAX_ELEMENTS = 21;
+  const int MAX_ELEMENTS = 15;
 
   int objSigCount = -1;
   int objTargetValue = -1;
@@ -306,7 +307,8 @@ namespace transmission {
   struct Level;
   Level* currentLevel;
 
-  char connectable[MAX_ELEMENTS][MAX_ELEMENTS];
+  char connectable[MAX_ELEMENTS][MAX_ELEMENTS]; // fixed state after reading a level
+  char connectableByColor[4][MAX_ELEMENTS][MAX_ELEMENTS]; // on-demand calculation
   bool isWireBlockedByBlockersNow(int srcId, int dstId); // functions end with "Now" is dynamic, depends on current{Level,State}
 
   struct Element {
@@ -318,6 +320,7 @@ namespace transmission {
     Point pos;
 
     virtual void readXML(const char * p) = 0;
+    virtual ~Element() {};
 
     // static properties
     virtual bool isSender() { return false; }
@@ -746,6 +749,9 @@ namespace transmission {
             e->id = newId;
             idMap[oldId] = newId;
             elements.push_back(e);
+            if (elements.size() > MAX_ELEMENTS) {
+              fatal("element count limit exceeded.");
+            }
           }
         }
         if (p2 == nullptr) break; else p1 = p2 + 1;
@@ -785,37 +791,72 @@ namespace transmission {
     return false;
   }
 
-  bool isWireBlockedByBlockersNow(int srcId, int dstId) {
+  bool isWireBlockedByBlockersNow(int srcId, int dstId) { // dymamic because color is not fixed
     auto& elements = currentLevel->elements;
     Element * src = elements[srcId];
-    Element * dst = elements[dstId];
-    geometry::LineSegment l(src->pos, dst->pos);
     // fixed color elements are pre-tested in isWireAlwaysBlocked, should be good to go
     if (src->isColorFixed()) return false;
-    for (auto& b : currentLevel->blocks) {
-      if (b->canBlock(src->colorNow(), l)) {
-        D(3) fprintf(stderr, "# [%d, %d] dynamically blocked by blocker %d\n", src->id, dst->id, b->id);
-        return true;
+
+    ElementGroup color = src->colorNow();
+    if (connectableByColor[color][srcId][dstId] == -1) {
+      Element * dst = elements[dstId];
+      geometry::LineSegment l(src->pos, dst->pos);
+      l.shorten(1);
+      for (auto& b : currentLevel->blocks) {
+        if (b->canBlock(color, l)) {
+          D(3) fprintf(stderr, "# [%d, %d] dynamically blocked by blocker %d\n", src->id, dst->id, b->id);
+          connectableByColor[color][srcId][dstId] = 0;
+          return true;
+        }
       }
+      connectableByColor[color][srcId][dstId] = 1;
+      return false;
+    } else {
+      return connectableByColor[color][srcId][dstId] == 0;
     }
-    return false;
   }
 
   void calculateConnectable() {
     auto& elements = currentLevel->elements;
     int n = (int)elements.size();
-    printf("connectable = [");
     for (int i = 0; i < n; ++i) {
       for (int j = 0; j < n; ++j) {
         // test i -> j
         // blocked by elements?
         bool blocked = isWireAlwaysBlocked(i, j);
         // blocked by block elements?
-        if (!blocked) { printf("[%d, %d],", i, j); }
         connectable[i][j] = !blocked;
       } // for j
     } // for i
+    memset(connectableByColor, -1, sizeof(connectableByColor));
+  }
+
+  void printConnectable() {
+    printf("connectable = [");
+    int n = (int)currentLevel->elements.size();
+    for (int i = 0; i < n; ++i) {
+      for (int j = 0; j < n; ++j) {
+        if (connectable[i][j]) { printf("[%d, %d],", i, j); }
+      } // for j
+    } // for i
     printf("];\n");
+  }
+
+  void cleanLevel() {
+    if (currentLevel) {
+      for (auto& e : currentLevel->elements) { delete e; }
+      for (auto& e : currentLevel->blocks) { delete e; }
+      for (auto& e : currentLevel->objectives) { delete e; }
+      delete currentLevel;
+      currentLevel = nullptr;
+    }
+  }
+
+  void createLevelFromXML(const char * xml) {
+    cleanLevel();
+    currentLevel = new Level();
+    currentLevel->readXML(xml);
+    calculateConnectable();
   }
 
   struct StatePlus : State {
@@ -878,6 +919,7 @@ namespace transmission {
     void print(bool indent = true, FILE * fd = stderr) {
       auto& es = currentLevel->elements;
       int n = (int)es.size();
+      // connected
       for (int i = 0; i < n; ++i) {
         bool b = false;
         for (int j = 0; j < n; ++j) {
@@ -890,6 +932,11 @@ namespace transmission {
           fprintf(fd, "%d (%d); ", j, connected[i][j]);
         }
         if (b) fputc('\n', fd);
+      }
+      for (int i = 0; i < n; ++i) {
+        if (amounts[i]) {
+          fprintf(fd, "%d: %d\n", i, amounts[i]);
+        }
       }
     }
 
@@ -927,16 +974,14 @@ namespace transmission {
     }
   };
 
-  StatePlus getInitialState(Level& level = *currentLevel) {
-    StatePlus result;
-    memset(result.left, 0, sizeof(result.left));
-    memset(result.amounts, 0, sizeof(result.amounts));
-    memset(result.connected, 0, sizeof(result.connected));
-    memset(result.colorSwapped, 0, sizeof(result.colorSwapped));
-    result.prevState = nullptr;
-    result.depth = 0;
+  StatePlus * getInitialState(Level& level = *currentLevel) {
+    StatePlus * result = new StatePlus();
+    memset(result, 0, sizeof(State));
+    result->prevState = nullptr;
+    result->depth = 0;
+    result->lastConnection = std::make_pair(-1, -1);
     for (auto & e : level.elements) {
-      result.amounts[e->id] = result.left[e->id] = e->amount;
+      result->amounts[e->id] = result->left[e->id] = e->amount;
     }
     return result;
   }
@@ -948,32 +993,24 @@ namespace transmission {
   };
 
 #ifdef DEBUG_STEP
-  int debugSteps[][2] = {
-    {3, 2},
-    {6, 5},
-    {5, 2},
-    {2, 7},
-    {7, 11},
-    {11, 5},
-    {2, 10},
-    {10, 4},
-    {1, 5},
-    {7, 0},
-    {1, 8},
-    {4, 9},
-  };
+  int debugSteps[][2] = { {3, 2}, {6, 5}, {5, 2}, {2, 7}, {7, 11}, {11, 5}, {2, 10}, {10, 4}, {1, 5}, {7, 0}, {1, 8}, {4, 9}, };
 #endif
-
 
   std::set<StatePlus*, pStateCompare> visited;
   std::deque<StatePlus*> queue;
-  bool search() {
-    visited.clear(); // FIXME: memory leak
-    queue.clear(); // FIXME: memory leak
 
-    StatePlus initState = getInitialState();
-    visited.insert(&initState);
-    queue.push_back(&initState);
+  void cleanVisited() {
+    for (StatePlus* p : visited) { delete p; }
+    visited.clear();
+    queue.clear();
+  }
+
+  bool search() {
+    bool solved = false;
+    cleanVisited();
+    StatePlus * initState = getInitialState();
+    visited.insert(initState);
+    queue.push_back(initState);
 
     while (!queue.empty()) {
       // fprintf(stderr, "queue size: %d\n", (int)queue.size());
@@ -1004,7 +1041,9 @@ namespace transmission {
         if (nextState->isWin()) {
           nextState->printSteps();
           fprintf(stdout, "SOLVED\n");
-          return true;
+          solved = true;
+          delete nextState;
+          goto out;
         }
         visited.insert(nextState);
         queue.push_back(nextState);
@@ -1016,25 +1055,28 @@ namespace transmission {
 #endif
     }
     fprintf(stdout, "NOT SOLVED :(\n");
-    return false;
+out:
+    fprintf(stdout, "State size: %d\n", (int)visited.size());
+    cleanVisited();
+    return solved;
   }
 }
 
 
 using namespace transmission;
 
+extern "C" {
 int solveLevelXML(const char * xml, bool allObjTogether) {
-  currentLevel = new Level();
-  currentLevel->readXML(xml);
-  calculateConnectable();
+  createLevelFromXML(xml);
+  printConnectable();
 
   // if we need to try to meet different kinds of objectives together
   int notSolved = 0;
+  objSelected = ObjAbsent;
   if (currentLevel->objectives.size() > 0) {
     for (int i = 0; i < (int)currentLevel->objectives.size(); ++i) {
       auto& obj = currentLevel->objectives[i];
       if (!allObjTogether) {
-        puts("\n");
         objSelected = ObjAbsent;
       }
       obj->print(stdout);
@@ -1054,6 +1096,14 @@ int solveLevelXML(const char * xml, bool allObjTogether) {
   return notSolved;
 }
 
+int printConnectableFromLevelXML(const char * xml) {
+  createLevelFromXML(xml);
+  printConnectable();
+  return 0;
+}
+}
+
+#ifndef EMSCRIPTEN
 int main(int argc, char const *argv[]) {
   int notSolved = 0;
   for (int i = 1; i < argc; ++i) {
@@ -1073,4 +1123,4 @@ int main(int argc, char const *argv[]) {
   }
   return notSolved;
 }
-
+#endif
