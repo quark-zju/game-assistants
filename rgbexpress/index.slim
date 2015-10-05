@@ -1,0 +1,122 @@
+doctype html
+html
+  meta charset='utf-8'
+  title RGB Express Level Explorer
+  script src='http://cdn.bootcss.com/react/0.13.2/react.min.js'
+  script == "levels = #{File.read('levels.json')}"
+  script == "hints = #{File.read('hints.json')}"
+  scss:
+    table { 
+      border-spacing: 1px;
+      border-collapse: separate;
+    }
+    td.cell {
+      height: 30px;
+      width: 30px;
+      display: table-cell;
+      text-align: center;
+      line-height: 0;
+    }
+    span.hint {
+      display: inline-block;
+      height: 8px;
+      width: 8px;
+      border-radius: 6px;
+      border: 2px solid white;
+      opacity: 0.1;
+      &.strong {
+        opacity: 0.5;
+        &.current {
+          opacity: 1;
+        }
+      }
+    }
+    .hint1 {
+      background-color: blue;
+    }
+    .hint2 {
+      background-color: green;
+    }
+    .hint3 {
+      background-color: red;
+    }
+    .hint4 {
+      background-color: yellow;
+    }
+    td.m-2, td.m-water, td.m-waterhorizontal, td.m-watercorner3, td.m-watercorner2, td.m-watercorner1, td.m-watercross, td.m-watertripleright, td.m-watervertical {
+      background: #497E90;
+    }
+    td.m- { /* grass */
+      background: #8ABA32;
+    }
+    td.m-r {
+      background: #9F9F9A;
+    }
+    td.m-red, td.m-green, td.m-yellow, td.m-blue {
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+    }
+    td.m-red {
+      background: #C73C3B;
+    }
+    td.m-green {
+      background: #3DB010;
+    }
+    td.m-yellow {
+      background: #CFA505;
+    }
+    td.m-blue {
+      background: #45A4D1;
+    }
+body
+  div#root
+
+  coffee:
+    {td, tr, table, tbody, p, input, div, span} = React.DOM
+    A = React.createFactory React.createClass
+      getInitialState: ->
+        {currentLevel: 0, tick: 0}
+      componentDidMount: ->
+        @interval = window.setInterval (=> @setState tick: @state.tick + 1), 100
+      componentWillUnmount: ->
+        window.clearInterval @interval
+      render: ->
+        level = window.level = levels[@state.currentLevel]
+        hint = window.hint = hints[@state.currentLevel]
+        tiles = level['tiles']
+        rows = []
+        for y in [0..10]
+          row = []
+          for x in [0..10]
+            id = y * 11 + x
+            tile = tiles[id]
+            className = "cell m-#{tile.m}"
+            hintIds = []
+            try
+              for hintId in [1..4]
+                linesCar = hint["linesCar#{hintId}"]
+                continue unless linesCar
+                hintIndex = linesCar.indexOf(y * 11 + x + 1)
+                if hintIndex >= 0
+                  tickIndex = @state.tick % (linesCar.length + 10) + 2
+                  hintIds.push([hintId, hintIndex, tickIndex])
+            row.push(
+              td className: className, title: "#{JSON.stringify(tile)}",
+                hintIds.map ([hintId, hintIndex, tickIndex]) ->
+                  className = "hint hint#{hintId}"
+                  if hintIndex == tickIndex
+                    className += ' current'
+                  if hintIndex <= tickIndex
+                    className += ' strong'
+                  span key: hintId, className: className
+            )
+          rows.push tr({}, row)
+        div null,
+          table {},
+            tbody {},
+              rows
+          p {}, "Length #{levels.length}"
+          input type: 'number', value: @state.currentLevel, onChange: (e) => try @setState currentLevel: parseInt(e.target.value)
+    document.addEventListener 'DOMContentLoaded', ->
+      element = document.getElementById('root')
+      React.render A(), element
