@@ -2,9 +2,11 @@
 #include <set>
 #include <vector>
 #include <cstdio>
+#include <cstdlib>
 #include <cassert>
 #include <cstring>
 #include <deque>
+#include <string>
 
 using namespace std;
 
